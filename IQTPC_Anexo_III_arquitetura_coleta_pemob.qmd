@@ -1,0 +1,200 @@
+# Anexo III, Arquitetura de coleta e desidratação da PeMOB
+
+## Divisão de trabalho entre PNDTPC, SIMU, PeMOB Municipal, PeMOB Metropolitana e PeMOB Usuário
+
+**Documento principal:** Parâmetros nacionais de qualidade do transporte público coletivo
+**Natureza:** proposta técnica de arquitetura de coleta
+
+---
+
+## Sumário
+
+1. [O que a PeMOB é hoje](#o-que-a-pemob-é-hoje)
+2. [O princípio: não perguntar o que a plataforma calcula](#o-princípio-não-perguntar-o-que-a-plataforma-calcula)
+3. [Critério de triagem das perguntas](#critério-de-triagem-das-perguntas)
+4. [Aplicação aos temas da PeMOB](#aplicação-aos-temas-da-pemob)
+5. [O irredutível: o que sobra na PeMOB](#o-irredutível-o-que-sobra-na-pemob)
+6. [A assimetria por porte](#a-assimetria-por-porte)
+7. [Efeitos colaterais positivos](#efeitos-colaterais-positivos)
+8. [A família PeMOB](#a-família-pemob)
+9. [Cronograma de desidratação](#cronograma-de-desidratação)
+10. [Riscos](#riscos)
+
+---
+
+## 1. O que a PeMOB é hoje
+
+A PeMOB é o instrumento existente mais próximo daquilo que o IQTPC exige, dentro da própria SEMOB, e o desenho da coleta parte dela.
+
+| Atributo | Situação |
+|---|---|
+| Início | 2018 (Municipal); 2019 (Metropolitana) |
+| Periodicidade | Anual |
+| Universo Municipal | Municípios acima de 250 mil habitantes, recorte herdado do Grupo 2 do Programa Avançar Cidades |
+| Universo Metropolitano | Governos estaduais e operadores federais de transporte metropolitano |
+| Temas | Transporte público coletivo, tarifas, planejamento, segurança viária, fiscalização, financiamento e infraestrutura |
+| Natureza | Declaratória, sob responsabilidade das prefeituras |
+| Adesão | Voluntária |
+| Taxa de resposta | 67 de 116 municípios em 2023, cerca de 58% |
+| Origem do questionário | Formulário do GT instituído pela Portaria MCID nº 263/2013 |
+| Destinação | Alimenta o SIMU |
+
+Cinco observações relevantes para o desenho:
+
+1. **A série de oito edições é um ativo subaproveitado.** Qualquer componente do IQTPC que possa ser retrocalculado com base PeMOB nasce com série histórica, em vez de esperar dois ciclos para ter comparação. Isso altera favoravelmente o cronograma da Fase 1.
+2. **O recorte de 250 mil habitantes não é escolha metodológica**, é herança de um programa de financiamento. Com o art. 13 da Lei nº 15.432/2026, o universo passa a ser o conjunto dos titulares que prestam o serviço, e o recorte perde fundamento.
+3. **O questionário tem origem em 2013**, anterior ao Marco Legal. Sua revisão para refletir o art. 31 é necessária de todo modo, o que torna esta a janela natural para a reforma proposta neste anexo.
+4. **A PeMOB Metropolitana já acomoda a titularidade estadual** desde 2019, junto a governos estaduais e a operadores como CBTU, Trensurb e ANTT. O desenho da PeMOB Usuário (Anexo II, seção 3) reaproveita essa solução em vez de criar outra.
+5. **A PeMOB é o embrião do Cadastro Nacional de Sistemas de TPC** para o topo do universo, com série anual desde 2018 e base publicada no SIMU. O cadastro proposto no Anexo II, seção 2.2, parte dela.
+
+---
+
+## 2. O princípio: não perguntar o que a plataforma calcula
+
+A diretriz é direta e tem consequências amplas:
+
+> **Nenhuma pergunta deve permanecer na PeMOB se a resposta puder ser calculada a partir de dado que a plataforma nacional já recebe.**
+
+Hoje a lógica está invertida. Pede-se ao município que **agregue** (quantos passageiros, quantos quilômetros, qual a frota, quanto de subsídio) e se recebe o resultado da agregação, sem o insumo. Isso produz três problemas simultâneos:
+
+- **Custo de conformidade alto**, jogado sobre o ente, que é justamente o que explica 58% de resposta.
+- **Dado inauditável.** Agregado declarado não tem verificação possível. Não há como saber se os 4.200 quilômetros de ciclovia foram medidos ou estimados.
+- **Rigidez analítica.** Agregado responde só à pergunta que foi feita. Dado bruto responde a perguntas futuras, inclusive as que ainda não foram formuladas.
+
+Com a plataforma, a lógica se inverte: **o ente envia o dado uma vez e a União calcula os indicadores**. O município deixa de ser produtor de estatística e volta a ser fonte de dado, que é o papel adequado.
+
+Isso não é apenas eficiência administrativa. É a diferença entre um sistema que mede o que o gestor diz e um sistema que mede o que o serviço faz.
+
+---
+
+## 3. Critério de triagem das perguntas
+
+Cada item do questionário atual é submetido a uma triagem com cinco destinos possíveis. A pergunta permanece na PeMOB apenas se não couber em nenhum dos quatro primeiros.
+
+| Destino | Critério | Natureza do dado |
+|---|---|---|
+| **D1. PNDTPC** | Existe registro digital gerado pela operação | Alta frequência, automatizável (GTFS, GTFS-RT, AVL, bilhetagem) |
+| **D2. Cadastro** | É estrutural e muda por evento, não por ano | Atualização por fato gerador, não por survey (contratos, frota, tarifa, entidade reguladora) |
+| **D3. Cruzamento externo** | Já existe em outra base federal | SENATRAN, DATASUS/SIM, IBGE, RAIS, sistemas de transferência da União |
+| **D4. PeMOB Usuário** | Refere-se à experiência ou percepção de pessoas | Pesquisa amostral junto a usuários e não usuários |
+| **D5. PeMOB residual** | Não tem registro digital, não é estrutural, não está em outra base e não é percepção do usuário | Declaratório irredutível |
+
+Aplicada com rigor, esta triagem tende a esvaziar a maior parte do questionário atual. Não é efeito colateral, é o objetivo.
+
+Regra prática de decisão: **se a resposta puder ser conferida contra um registro, ela não é pergunta de survey; é dado a ser recebido.**
+
+---
+
+## 4. Aplicação aos temas da PeMOB
+
+Exercício indicativo sobre os sete temas atuais, a ser refeito item a item sobre o questionário real.
+
+### Transporte público coletivo
+Frota, linhas, extensão da rede, viagens, quilometragem, passageiros transportados, gratuidades, integração. **Praticamente tudo migra para D1 e D2.** Frota migra para D2 com validação D3 no SENATRAN. Restam em D5 apenas decisões institucionais, como a existência de política de gratuidade além do mínimo legal e sua fonte de custeio.
+
+### Tarifas
+Valor da tarifa, política tarifária, integração tarifária. **Migra para D2**, com atualização por evento (cada reajuste é um fato gerador, e perguntar anualmente o valor vigente é perder a série intra-anual). Restam em D5 os critérios de reajuste e o processo decisório.
+
+### Planejamento
+Existência e vigência do PlanMob, conteúdo, revisão, participação social. **É o núcleo de D5.** Não há registro digital de que um plano foi discutido em audiência pública. Este tema tende a se tornar o maior bloco remanescente da PeMOB.
+
+### Segurança viária
+Óbitos e lesões. **Migra para D3**, por cruzamento com DATASUS e bases de trânsito, e para o registro de sinistros do PNDTPC (Manual, S-01). Restam em D5 as ações e programas locais, que não têm registro nacional.
+
+### Fiscalização
+Estrutura, efetivo, autuações. **Parcialmente D2** (existência e natureza da entidade reguladora designada, art. 10) e **parcialmente D5** (capacidade instalada, prática fiscalizatória).
+
+### Financiamento
+Subsídio, fontes extratarifárias, receita contratual. **D2 e D3.** Transferências federais já constam de sistemas da União. Subsídio local com origem orçamentária identificável é dado estrutural, não survey. Resta em D5 a existência de fundo específico e sua governança.
+
+### Infraestrutura
+Corredores, faixas exclusivas, terminais, ciclovias, acessibilidade de paradas. **Migra para D1 e D2**, idealmente como dado geoespacial, e não como quilometragem declarada. Esta é a migração de maior ganho de qualidade: 4.200 quilômetros declarados valem muito menos que a mesma rede em geometria verificável. O cadastro de infraestrutura de pontos e terminais é um dos quatro registros a criar no PNDTPC (Manual, seção 12).
+
+---
+
+## 5. O irredutível: o que sobra na PeMOB
+
+Após a triagem, a PeMOB residual concentra-se em quatro naturezas de informação, todas caracterizadas pela ausência de rastro digital:
+
+1. **Governança e processo.** Existência e vigência de plano, realização de audiência pública, funcionamento de conselho, forma de designação da entidade reguladora.
+2. **Intenção e projeto.** Investimentos previstos, projetos em elaboração, metas assumidas, cronogramas de eletrificação.
+3. **Capacidade institucional.** Existência de estrutura técnica dedicada, quadro de pessoal, ferramentas de planejamento em uso.
+4. **Contexto e justificativa.** Explicação para descontinuidades e ocorrências excepcionais, que dão sentido a variações abruptas do dado automatizado.
+
+Esta última categoria merece atenção porque costuma ser esquecida: um sistema que sofreu paralisação prolongada apresentará queda no subíndice de confiabilidade, e **a única fonte da explicação é o próprio titular**. Sem um campo qualitativo, o índice registra o fato e perde a causa, o que empobrece a análise e aumenta a contestação.
+
+Ordem de grandeza pretendida: um questionário que possa ser respondido em menos de uma hora por um servidor com acesso às informações, contra o esforço atual de compilação distribuída por várias áreas da prefeitura.
+
+---
+
+## 6. A assimetria por porte
+
+Esta é a principal ressalva ao desenho, e precisa estar explícita desde já.
+
+**A desidratação da PeMOB só funciona onde existe dado automatizado.** Sistema sem GTFS, sem bilhetagem eletrônica e sem AVL não alimenta o PNDTPC, e para ele o destino D1 é inexistente. O resultado é perverso se não for antecipado: o município grande, que já tem sistemas, responde um questionário curto; o município pequeno, com menor capacidade técnica, continua respondendo o questionário longo.
+
+Três consequências de desenho:
+
+1. **A PeMOB deve ter duas versões desde o início da transição**: a residual, para sistemas integrados à plataforma, e a completa, para os demais. Isso reproduz a lógica do PLHIS Simplificado da habitação, mencionada no Anexo IV, com o sinal invertido.
+2. **A migração de um sistema da versão completa para a residual deve ser explicitamente comemorada e comunicada.** Ela sinaliza integração à plataforma, e transformar isso em marco reconhecível cria incentivo real.
+3. **O apoio técnico previsto no art. 20 da Lei nº 15.432/2026** deve ser dirigido prioritariamente a viabilizar essa migração, notadamente à produção e publicação de GTFS, que é o insumo de menor custo e maior retorno.
+
+---
+
+## 7. Efeitos colaterais positivos
+
+**Taxa de resposta.** A combinação de questionário curto com obrigatoriedade decorrente dos arts. 13 e 21 ataca simultaneamente as duas causas do patamar de 58%: o custo de responder e a ausência de consequência por não responder. É razoável esperar convergência para os níveis observados no saneamento, onde a adimplência vinculada a recurso federal produz adesão elevada.
+
+**Auditabilidade.** Dado bruto é conferível; agregado declarado não é. Isso viabiliza a aplicação da metodologia de certificação discutida no Anexo IV, que não teria sobre o que operar em um universo de números autodeclarados.
+
+**Granularidade temporal.** A PeMOB é anual porque survey é caro. Dado automatizado é contínuo. O IQTPC tem apuração contínua em seus componentes automatizados, com consolidação anual (Manual, seção 9), o que muda a natureza do instrumento: de retrato para monitoramento.
+
+**Redução do risco de erro de preenchimento.** Boa parte da inconsistência de bases declaratórias vem de interpretação divergente de definição, e não de má-fé. Dado bruto com dicionário único elimina a maior parte dessa classe de erro.
+
+**Liberação de capacidade da equipe.** O esforço hoje dedicado a cobrar, validar e consistir respostas pode se deslocar para análise, que é onde o valor está.
+
+---
+
+## 8. A família PeMOB
+
+A marca é preservada. Oito edições construíram reconhecimento institucional junto aos entes, e criar nomenclatura nova desperdiçaria esse capital e geraria confusão.
+
+| Instrumento | Respondente | Natureza | Situação |
+|---|---|---|---|
+| **PeMOB Municipal** | Titulares municipais | Declaratório residual | Existente, a desidratar |
+| **PeMOB Metropolitana** | Governos estaduais e operadores | Declaratório residual | Existente, a desidratar |
+| **PeMOB Usuário** | Pessoas, usuárias e não usuárias | Amostral probabilística | A criar (Anexo II) |
+
+A nomenclatura deixa evidente a divisão de trabalho: as duas primeiras perguntam ao poder público o que só ele sabe; a terceira pergunta às pessoas o que só elas sabem; e o PNDTPC mede o que ninguém precisa contar.
+
+---
+
+## 9. Cronograma de desidratação
+
+| Edição | Ação |
+|---|---|
+| **PeMOB 2026** | Ciclo normal. Em paralelo, triagem item a item do questionário segundo os cinco destinos, com registro da decisão por item |
+| **PeMOB 2027** | Primeira versão reduzida, com remoção dos itens já cobertos pela plataforma nos sistemas integrados. Ampliação do universo para além do recorte de 250 mil habitantes, conforme o art. 13. Duas versões, residual e completa |
+| **PeMOB 2028** | Versão residual consolidada. Ano de eleição municipal, sem coleta da PeMOB Usuário |
+| **PeMOB 2029** | Primeiro ciclo da PeMOB Usuário nos Estratos A e B |
+| **PeMOB 2030** | Publicação integrada: IQTPC, PeMOB residual e PeMOB Usuário em produto único |
+| **PeMOB 2031 em diante** | Revisão quadrienal do questionário residual, acompanhando a revisão de pesos e componentes do índice |
+
+**Regra de transição.** Um item só é removido da PeMOB depois de **pelo menos um ciclo de sobreposição**, em que o dado é coletado pelas duas vias e os resultados comparados. Remover antes da validação cria descontinuidade na série e destrói o ativo de oito edições, que é justamente o que se quer preservar.
+
+---
+
+## 10. Riscos
+
+| Risco | Efeito | Mitigação |
+|---|---|---|
+| Remover item antes de a plataforma estar operante | Buraco na série histórica | Ciclo de sobreposição obrigatório antes de qualquer remoção |
+| Perda de itens sem equivalente na plataforma | Empobrecimento temático da série | Triagem item a item documentada, com justificativa registrada por item removido |
+| Questionário curto interpretado como redução de exigência | Percepção de afrouxamento | Comunicar como transferência de encargo, não como redução: menos perguntas porque mais dado |
+| Sistemas sem automação ficarem com carga relativamente maior | Iniquidade de esforço entre entes | Duas versões do instrumento; apoio técnico do art. 20 dirigido à migração |
+| Perda da informação qualitativa de contexto | Índice sem explicação para variações abruptas | Campo qualitativo obrigatório na PeMOB residual |
+| Confusão entre PeMOB Usuário e PeMOB Municipal | Erro de interpretação dos resultados | Publicação separada, com identificação clara de respondente e método |
+
+---
+
+*Proposta técnica da CGDI/DEREG/SEMOB/MCID. A triagem por tema apresentada na seção 4 é indicativa e deve ser refeita item a item sobre o questionário vigente.*

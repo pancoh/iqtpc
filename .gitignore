@@ -1,0 +1,6 @@
+# Artefatos de build do Quarto
+/_book/
+/.quarto/
+
+# macOS
+.DS_Store

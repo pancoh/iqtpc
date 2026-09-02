@@ -1,0 +1,48 @@
+project:
+  type: book
+
+book:
+  title: "IQTPC, Índice de Qualidade do Transporte Público Coletivo"
+  subtitle: "Proposta técnica"
+  output-file: "IQTPC"
+  author: "CGDI/DEREG/SEMOB/MCID"
+  date: "2026-09-01"
+  date-format: "MMMM [de] YYYY"
+  language: pt-br
+  page-footer:
+    left: "CGDI/DEREG/SEMOB/MCID"
+    right: "Proposta técnica, setembro de 2026"
+  sidebar:
+    style: docked
+    collapse-level: 1
+  chapters:
+    - index.qmd
+    - IQTPC_parametros_qualidade_transporte_publico.qmd
+    - IQTPC_Manual_de_calculo.qmd
+    - IQTPC_Anexo_I_matriz_origem_dados.qmd
+    - IQTPC_Anexo_II_pesquisa_nacional.qmd
+    - IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd
+    - IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 4
+    number-sections: false
+    code-copy: false
+  pdf:
+    documentclass: report
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    pdf-engine: lualatex
+    geometry:
+      - margin=2.5cm
+    mainfont: "Latin Modern Roman"
+  docx:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+
+lang: pt-br

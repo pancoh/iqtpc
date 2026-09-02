@@ -1,0 +1,509 @@
+# Manual de cálculo do IQTPC
+
+## Metodologia de cálculo e origem de todas as métricas
+
+**Documento de referência:** Parâmetros nacionais de qualidade do transporte público coletivo (documento principal) e Anexos I a IV
+**Base normativa:** Lei nº 15.432/2026, arts. 12, 13 e 31; Lei nº 12.587/2012, art. 16, IX e X
+**Natureza:** documento de referência para o cálculo. Em caso de divergência com o documento principal ou com os anexos, prevalece este Manual
+
+---
+
+## Sumário
+
+1. [Objeto e convenções](#objeto-e-convenções)
+2. [Estrutura de cálculo em cinco níveis](#estrutura-de-cálculo-em-cinco-níveis)
+3. [Origem dos dados: as quatro fontes](#origem-dos-dados-as-quatro-fontes)
+4. [Passo 1, normalização das métricas](#passo-1-normalização-das-métricas)
+5. [Passo 2, fator A](#passo-2-fator-a)
+6. [Passo 3, subíndices de desempenho](#passo-3-subíndices-de-desempenho)
+7. [Passo 4, fator D](#passo-4-fator-d)
+8. [Passo 5, IQTPC e suas versões](#passo-5-iqtpc-e-suas-versões)
+9. [Período de referência, periodicidade e publicação](#período-de-referência-periodicidade-e-publicação)
+10. [Quadro-síntese de origem de todas as métricas](#quadro-síntese-de-origem-de-todas-as-métricas)
+11. [Exemplo numérico completo](#exemplo-numérico-completo)
+12. [Pré-requisitos de implantação](#pré-requisitos-de-implantação)
+13. [Definições pendentes do dicionário de dados](#definições-pendentes-do-dicionário-de-dados)
+
+---
+
+## 1. Objeto e convenções
+
+Este manual consolida em um único documento a metodologia de cálculo do Índice de Qualidade do Transporte Público Coletivo e a origem de cada uma das suas métricas: 29 métricas objetivas mais o bloco de percepção (P), que reúne 9 dimensões compostoras e 1 de acompanhamento. Contadas as dimensões de P, são 39 variáveis de entrada; contado P como um bloco, são 30 linhas de cálculo. Substitui, para efeito de cálculo, as descrições dispersas no documento principal e nos anexos, que permanecem como fundamentação.
+
+Convenções:
+
+- Métricas são identificadas por código no formato `X-nn`, em que X é o fator ou subíndice (A, C, S, P, F, V, E, M).
+- Toda métrica é convertida a uma **pontuação de 1 a 10** antes de qualquer agregação. Nenhum cálculo é feito sobre a métrica bruta.
+- A origem de cada variável é classificada nas quatro fontes da seção 3, e a situação da fonte em três estados: **existe**, **a implantar** (a fonte existe mas o fluxo ainda não) e **a criar** (a fonte não existe).
+- Os valores de piso e referência apresentados são **indicativos** e constituem, quando fixados por portaria, as normas de referência nacionais de qualidade do art. 16, IX, da Lei nº 12.587/2012.
+- Os pesos apresentados são propostas e estão sujeitos a consulta pública antes da fixação por portaria.
+
+---
+
+## 2. Estrutura de cálculo em cinco níveis
+
+```
+Nível 5   IQTPC = A × D                                    (escala 0 a 10)
+             │
+Nível 4   A = (A_cob × A_op)^0,5        D = Π Xᵢ^wᵢ         (A de 0 a 1; D de 1 a 10)
+             │                              │
+Nível 3   A_cob, A_op                    C, S, P, F, V, E, M  (cada um de 1 a 10)
+             │                              │
+Nível 2   pontuação de cada métrica, de 1 a 10 (normalização contra piso e referência)
+             │
+Nível 1   métrica bruta, na unidade própria (percentual, anos, ocorrências por milhão etc.)
+```
+
+Regras de agregação por nível:
+
+| Passagem | Método | Razão |
+|---|---|---|
+| Nível 1 para 2 | Normalização linear com piso e referência, ou bilateral com platô | Torna as métricas comparáveis |
+| Nível 2 para 3 | **Média aritmética ponderada** dos componentes dentro de cada subíndice | Componentes de um mesmo subíndice são parcialmente substituíveis e alguns são declaratórios; a média aritmética tolera isso |
+| Nível 3 para 4 | **Média geométrica ponderada** dos subíndices | Subíndices não são substituíveis entre si; a média geométrica impede compensação |
+| Nível 4 para 5 | Produto A × D | Acesso e desempenho se travam mutuamente |
+
+---
+
+## 3. Origem dos dados: as quatro fontes
+
+Toda variável do IQTPC vem de uma das quatro origens abaixo. A distinção entre as duas primeiras responde à pergunta central deste manual: o que vem de fonte já consolidada e o que vem da plataforma nacional de dados.
+
+| Sigla | Fonte | Natureza | O que fornece |
+|---|---|---|---|
+| **FC** | **Fontes consolidadas externas ao setor** | Bases federais já existentes, com série histórica e governança própria | Grade estatística e setores censitários do Censo 2022 (IBGE); RAIS georreferenciada; SIM e SIH (DATASUS); RENAVAM (SENATRAN); preços de combustível (ANP); rede viária e de pedestres (OpenStreetMap); fatores de emissão (CETESB, Inventário Nacional) |
+| **PA** | **PNDTPC, módulo automatizado** | Dado operacional gerado pela própria operação e ingerido pela plataforma sem intervenção humana | GTFS estático (oferta programada); GTFS-RT ou AVL (posição e passagem de veículos); bilhetagem eletrônica (embarques por viagem e trecho) |
+| **PC** | **PNDTPC, módulo cadastral e de registro** | Informação estrutural ou de evento fornecida pelo titular ou operador na plataforma, com validação amostral | Cadastro de sistemas e contratos; cadastro de frota individualizado; cadastro tarifário; cadastro de infraestrutura (pontos, terminais, estações); registro de sinistros com vítima; registro de ocorrências de segurança pessoal; registro de interrupções; ouvidoria; metas do planejamento |
+| **PU** | **PeMOB Usuário** | Pesquisa amostral de percepção junto a usuários e não usuários | Todas as dimensões do subíndice P |
+
+Uma regra decorre da tabela: **nenhuma variável é pedida ao ente se puder ser obtida de FC ou calculada a partir de PA**. A categoria PC existe apenas para o que não tem rastro digital nem base externa.
+
+---
+
+## 4. Passo 1, normalização das métricas
+
+### 4.1 Métrica monotônica, em que maior é melhor
+
+```
+Pontuação = 1 + 9 × min(1, max(0, (x − x_piso) ÷ (x_ref − x_piso)))
+```
+
+### 4.2 Métrica monotônica, em que menor é melhor
+
+```
+Pontuação = 1 + 9 × min(1, max(0, (x_piso − x) ÷ (x_piso − x_ref)))
+```
+
+Em ambas, `x_piso` é o valor a partir do qual se atribui pontuação mínima e `x_ref` o valor de serviço adequado pleno, que recebe pontuação máxima.
+
+### 4.3 Métrica bilateral, com faixa ótima
+
+Aplicável quando tanto o excesso quanto a falta são defeitos. Dentro da faixa ótima `[x_inf, x_sup]` a pontuação é 10. Fora, decresce linearmente até 1 nos extremos `x_min` e `x_max`, com fatores de assimetria `k_inf` e `k_sup`.
+
+```
+p_inf = k_inf × (x_inf − x) ÷ (x_inf − x_min)      se x < x_inf, senão 0
+p_sup = k_sup × (x − x_sup) ÷ (x_max − x_sup)      se x > x_sup, senão 0
+Pontuação = 1 + 9 × [1 − min(1, max(p_inf, p_sup))]
+```
+
+### 4.4 Por que o piso é 1 e não 0
+
+A média geométrica do nível 4 anula o conjunto se qualquer subíndice for zero. Com piso 1, o pior desempenho possível ainda pesa fortemente (um subíndice em 1 reduz D de forma expressiva) sem aniquilar o resultado. A escala final permanece de 0 a 10 porque o fator A varia de 0 a 1.
+
+### 4.5 Valores de referência por modo
+
+Os valores de piso e referência são definidos **por modo** (ônibus, BRT, VLT, metrô, trem, hidroviário) e, onde relevante, por porte. Uma frota ferroviária com idade média de 20 anos pode estar adequada; uma frota de ônibus com 10, não. Sistemas multimodais têm cada subíndice calculado por modo e agregado por passageiros-quilômetro ou, na ausência, por embarques.
+
+---
+
+## 5. Passo 2, fator A
+
+```
+A = (A_cob × A_op)^0,5            versão madura
+A = A_cob                          versão inicial, onde A_op não for calculável
+```
+
+| Código | Métrica | Fórmula | Variáveis e origem | Situação |
+|---|---|---|---|---|
+| **A-01** | Cobertura espacial e de frequência | População residente a até 500 m (por rede de pedestres) de parada com intervalo médio no pico ≤ 20 min, ou a até 1.000 m de estação de média ou alta capacidade ÷ população urbana total | População por célula: **FC**, grade estatística do Censo 2022. Paradas, estações e intervalos: **PA**, GTFS estático. Rede de pedestres: **FC**, OpenStreetMap | Existe onde há GTFS |
+| **A-02** | Acessibilidade a oportunidades | Empregos formais alcançáveis em até 60 min por TPC, ponderados pela população de origem ÷ total de empregos formais da área | Empregos: **FC**, RAIS georreferenciada. Tempos: roteamento sobre **PA** (GTFS) e **FC** (rede de pedestres), conforme metodologia do Projeto Acesso a Oportunidades do IPEA | Existe nas RMs cobertas pelo IPEA; a implantar nas demais |
+
+O fator A varia de 0 a 1 e não passa por normalização: já é uma proporção. Na versão simplificada (seção 8.3), A-01 é substituído por cobertura de traçado sem frequência, a partir de geometria de linhas fornecida pelo titular (**PC**).
+
+---
+
+## 6. Passo 3, subíndices de desempenho
+
+Cada subíndice é a média aritmética ponderada das pontuações de seus componentes, resultando em valor de 1 a 10.
+
+### 6.1 Subíndice C, confiabilidade (peso 0,22 em D)
+
+```
+C = 0,40·C-01 + 0,25·C-02 + 0,20·C-03 + 0,15·C-04
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência (ônibus) | Situação |
+|---|---|---|---|---|---|
+| **C-01** | Cumprimento de viagens | Viagens realizadas ÷ viagens programadas, no período | Programadas: **PA**, GTFS estático (trips). Realizadas: **PA**, GTFS-RT ou AVL, com viagem considerada realizada se detectada em ao menos 80% dos pontos de controle | 85% / 99% | A implantar |
+| **C-02** | Pontualidade | % de partidas de terminal com desvio entre −1 e +3 min do programado | Programado: **PA**, GTFS (stop_times). Real: **PA**, AVL | 50% / 90% | A implantar |
+| **C-03** | Continuidade | Horas-passageiro perdidas em interrupções não programadas ÷ horas-passageiro ofertadas, por mil | Interrupções (linha, início, fim, causa): **PC**, registro obrigatório do titular, validado por inferência sobre AVL. Passageiros habituais da linha: **PA**, bilhetagem, média de 12 meses | 5,0 / 0,2 | A criar |
+| **C-04** | Regularidade de intervalo | Coeficiente de variação do intervalo observado entre veículos sucessivos, em linhas com intervalo programado ≤ 10 min | **PA**, AVL | 0,60 / 0,20 | A implantar |
+
+### 6.2 Subíndice S, segurança (peso 0,18 em D)
+
+```
+S = 0,45·S-01 + 0,40·S-02 + 0,15·S-03
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência (ônibus) | Situação |
+|---|---|---|---|---|---|
+| **S-01** | Sinistros com vítima | Versão inicial: (óbitos + lesões graves em sinistros com veículo do sistema) ÷ milhão de quilômetros rodados. Versão madura: ÷ 100 milhões de passageiros-quilômetro | Óbitos e lesões: **PC**, registro padronizado de sinistros com vítima, preenchido pelo operador e validado pelo titular, com cruzamento amostral em **FC** (SIM, CID-10 V70 a V79 e V04; SIH para internações). Quilômetros: **PA**, AVL. Passageiros-quilômetro: **PA**, bilhetagem com inferência de desembarque | A calibrar no piloto | A criar |
+| **S-02** | Ocorrências de segurança pessoal | Ocorrências de importunação, assédio sexual, injúria e discriminação registradas ÷ milhão de embarques | Ocorrências: **PC**, registro padronizado na plataforma com tipologia única, alimentado por ouvidoria do titular e canal do operador. Embarques: **PA**, bilhetagem | A calibrar no piloto | A criar |
+| **S-03** | Canais de denúncia | Pontuação 1 se não houver canal conforme art. 16, X; havendo canal, pontuação do tempo médio de resposta | **PC**, cadastro e sistema de ouvidoria do titular | 30 dias / 5 dias | A implantar |
+
+Nota: S-01 e S-02 são publicados desagregados por gênero da vítima sempre que a base permitir.
+
+### 6.3 Subíndice P, percepção e satisfação (peso 0,17 em D, ou 0,08 a 0,10 no cenário mínimo)
+
+```
+P = média aritmética ponderada das dimensões do núcleo comum da pesquisa
+```
+
+| Código | Dimensão | Origem | Situação |
+|---|---|---|---|
+| **P-01** a **P-10** | Tempo e regularidade; lotação e conforto; frota; segurança viária; segurança pessoal; acessibilidade; informação; tratamento; custo; avaliação global | **PU**, PeMOB Usuário, escala de 1 a 5 convertida linearmente para 1 a 10 | A criar |
+
+A avaliação global (P-10) é publicada mas **não compõe** P, por efeito de halo. P só compõe D quando o sistema tiver sido pesquisado no ciclo corrente ou no anterior.
+
+### 6.4 Subíndice F, conveniência e conforto (peso 0,13 em D)
+
+```
+F = 0,28·F-01 + 0,18·F-02 + 0,17·F-03 + 0,15·F-04 + 0,13·F-05 + 0,09·F-06
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência (ônibus) | Situação |
+|---|---|---|---|---|---|
+| **F-01** | Adequação da oferta | Média das pontuações de dois lados. Superlotação: % de viagens no pico com densidade > 5 pass/m² (monotônica, menor é melhor). Ociosidade: passageiros-km ÷ lugares-km no dia típico (bilateral) | Passageiros a bordo por trecho: **PA**, bilhetagem com inferência de desembarque; alternativa **PC**, pesquisa visual de ocupação. Capacidade: **PC**, cadastro de frota. Lugares-km: **PA**, GTFS × cadastro | Superlotação 40% / 5%. Ociosidade: faixa ótima 0,20 a 0,45; extremos 0,10 e 0,60; k_inf 0,7; k_sup 1,0 | A implantar (exige método de inferência) |
+| **F-02** | Salubridade e condições sanitárias | 0,5 × pontuação de vistoria de limpeza dos veículos + 0,5 × % de terminais e estações com sanitário em funcionamento e água potável | Vistorias: **PC**, fiscalização do titular. Terminais: **PC**, cadastro de infraestrutura, verificação amostral | Vistoria: escala própria. Terminais: 30% / 100% | A criar (cadastro de infraestrutura) |
+| **F-03** | Tempo de viagem relativo | Média ponderada por população de [tempo porta a porta por TPC ÷ tempo por automóvel] em amostra de pares origem-destino | Tempo TPC: roteamento central sobre **PA** (GTFS) e **FC** (rede de pedestres). Tempo automóvel: roteamento sobre **FC** (OpenStreetMap) com velocidades de pico. Pares: **FC**, grade estatística e RAIS | 3,0 / 1,5 | Existe onde há GTFS |
+| **F-04** | Condições de espera | % de pontos de parada com abrigo, assento e iluminação, ponderado por embarques | Atributos: **PC**, cadastro de pontos. Embarques por ponto: **PA**, bilhetagem | 20% / 90% | A criar (cadastro de pontos) |
+| **F-05** | Informação ao passageiro | 0,6 × pontuação digital (10 se há GTFS público e aplicativo ou sítio com horários; 5,5 se há apenas um; 1 se nenhum) + 0,4 × pontuação de % de pontos com informação física | Digital: verificação central sobre **PA** e cadastro. Físico: **PC**, cadastro de pontos com verificação amostral | Binário / 90% | Digital existe; físico a criar |
+| **F-06** | Atendimento a manifestações | 0,5 × pontuação de tempo médio de resposta + 0,5 × taxa de resolução | **PC**, sistema de ouvidoria do titular, padronizado | 30 dias / 10 dias; 50% / 90% | A implantar |
+
+Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável (Anexo I). É medido exclusivamente pela dimensão "lotação e conforto" de **PU**.
+
+### 6.5 Subíndice V, frota (peso 0,12 em D)
+
+```
+V = 0,30·V-01 + 0,20·V-02 + 0,20·V-03 + 0,10·V-04 + 0,20·V-05
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência (ônibus) | Situação |
+|---|---|---|---|---|---|
+| **V-01** | Idade média da frota | Média da idade (ano corrente − ano de fabricação) dos veículos em operação | Ano de fabricação por veículo: **PC**, cadastro de frota com placa e chassi, validado em **FC**, RENAVAM | 10 anos / 5 anos | Existe após acordo com SENATRAN |
+| **V-02** | Cauda de frota envelhecida | % de veículos com idade superior ao limite regulamentar local | Idem; limite: **PC**, regulamento do titular | 25% / 0% | Existe após acordo |
+| **V-03** | Disponibilidade operacional | Veículos com posição no pico ÷ frota cadastrada | Operante: **PA**, AVL. Cadastrada: **PC** | 70% / 90% | A implantar |
+| **V-04** | Frota reserva | Frota reserva ÷ frota operante no pico | Reserva: **PC**, declarada. Operante: **PA** | Bilateral: faixa ótima 8% a 15%; extremos 0% e 30%; k_inf = k_sup = 1,0 | A implantar |
+| **V-05** | Acessibilidade universal | % de veículos com acessibilidade plena | **PC**, cadastro de frota, vistoria do titular; RENAVAM não registra | 60% / 100% | A implantar |
+
+### 6.6 Subíndice E, ambiental (peso 0,10 em D)
+
+```
+E = 0,30·E-01 + 0,15·E-02 + 0,20·E-03 + 0,20·E-04 + 0,15·E-05
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência (ônibus) | Situação |
+|---|---|---|---|---|---|
+| **E-01** | Eletrificação | % da frota com tração elétrica ou célula a combustível | **PC**, cadastro de frota, validado em **FC**, RENAVAM (combustível e tração) | 0% / 50% | Existe após acordo |
+| **E-02** | Combustíveis renováveis | % da frota com combustível renovável | Idem | 0% / 100% | Existe após acordo |
+| **E-03** | Emissões locais | (MP + NOx) por passageiro-quilômetro ou por embarque | Km por tipo de veículo: **PA**, AVL. Fatores: **FC**, CETESB. Denominador: **PA** | A calibrar | A implantar |
+| **E-04** | Emissões de GEE | CO2e por passageiro-quilômetro ou por embarque | Idem, fatores do Inventário Nacional | A calibrar | A implantar |
+| **E-05** | Cumprimento de meta própria | Emissão apurada ÷ meta do planejamento (art. 9º, §1º); **titular sem meta fixada recebe pontuação 1** | Meta: **PC**, planejamento do titular. Apuração: E-04 | 130% / 100% | A implantar |
+
+### 6.7 Subíndice M, modicidade (peso 0,08 em D)
+
+```
+M = 0,35·M-01 + 0,15·M-02 + 0,20·M-03 + 0,30·M-04
+```
+
+| Código | Métrica | Fórmula da métrica bruta | Variáveis e origem | Piso / Referência | Situação |
+|---|---|---|---|---|---|
+| **M-01** | Esforço tarifário | (tarifa × 44) ÷ renda domiciliar per capita mensal do primeiro quintil | Tarifa: **PC**, cadastro tarifário, atualizado por evento. Renda: **FC**, Censo 2022 por setor censitário | 15% / 4% | Existe |
+| **M-02** | Comparação intermodal | Custo mensal por TPC ÷ custo mensal por automóvel em viagem equivalente | Tarifa: **PC**. Custo automóvel: modelo central com **FC** (ANP, consumo médio, distância típica da amostra de F-03) | 0,8 / 0,3 | Existe |
+| **M-03** | Integração tarifária | Pontuação por existência de integração temporal, tarifária e intermodal | **PC**, cadastro tarifário | Escala 1 a 10 por tipo | Existe |
+| **M-04** | Sustentação extratarifária | Receita de fontes extratarifárias e subsídio ÷ receita total do sistema | **PC**, dados contratuais e financeiros do titular (a PeMOB já coleta) | 0% / 50% | Existe |
+
+Sistemas com tarifa zero: M-01 e M-02 recebem 10; M-04 passa a medir a estabilidade da fonte de custeio.
+
+---
+
+## 7. Passo 4, fator D
+
+### 7.1 IQTPC-Completo, com P
+
+```
+D = C^0,22 × S^0,18 × P^0,17 × F^0,13 × V^0,12 × E^0,10 × M^0,08
+```
+
+Equivalente computacional, mais estável numericamente:
+
+```
+D = exp( Σᵢ wᵢ × ln(Xᵢ) )
+```
+
+### 7.2 IQTPC-Completo com P em peso reduzido
+
+Enquanto a PeMOB Usuário operar no cenário mínimo viável (Anexo II, seção 12.6), em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido `w_P'`, fixado por portaria na faixa de 0,08 a 0,10. Os demais pesos são renormalizados pela regra geral:
+
+```
+wᵢ' = wᵢ × (1 − w_P') ÷ 0,83          para i em {C, S, F, V, E, M}
+```
+
+Com `w_P'` = 0,10, os pesos resultantes são:
+
+| Subíndice | Peso original | Peso com P em 0,10 |
+|---|---|---|
+| C | 0,22 | 0,239 |
+| S | 0,18 | 0,195 |
+| P | 0,17 | 0,100 |
+| F | 0,13 | 0,141 |
+| V | 0,12 | 0,130 |
+| E | 0,10 | 0,108 |
+| M | 0,08 | 0,087 |
+
+A versão é publicada com a denominação IQTPC-Completo e a indicação do peso de P vigente no ciclo.
+
+### 7.3 IQTPC-Objetivo, sem P
+
+Os pesos dos seis subíndices objetivos são divididos por 0,83 (caso particular da regra acima, com `w_P'` = 0):
+
+```
+D = C^0,265 × S^0,217 × F^0,157 × V^0,145 × E^0,120 × M^0,096
+```
+
+### 7.4 Ausência de subíndice por falta de dado
+
+Se, além de P, outro subíndice não for calculável para um sistema, o índice **não é publicado** para aquele sistema naquele ciclo. Não se admite imputação nem renormalização adicional. A regra evita que o índice de um sistema seja calculado sobre subconjunto arbitrário de dimensões.
+
+---
+
+## 8. Passo 5, IQTPC e suas versões
+
+### 8.1 Fórmula geral
+
+```
+IQTPC = A^α × D            com α = 1 na versão inicial
+```
+
+### 8.2 Versões e denominações
+
+| Versão | Fórmula | Quando se aplica | Comparável com |
+|---|---|---|---|
+| **IQTPC-Completo** | A × D com sete subíndices | Sistema com dado automatizado e pesquisado no ciclo | Apenas outros Completos |
+| **IQTPC-Objetivo** | A × D com seis subíndices renormalizados | Sistema com dado automatizado, sem pesquisa no ciclo | Apenas outros Objetivos |
+| **IQTPC-Simplificado** | A_esp × (V^0,6 × M^0,4) | Sistema sem dado automatizado, situação S2 | Apenas outros Simplificados |
+| **Não aplicável** | Sem cálculo | Município sem sistema, situações S3 e S4 | Indicador de cobertura nacional |
+
+### 8.3 IQTPC-Simplificado
+
+```
+A_esp  = população urbana a até 500 m do traçado de qualquer linha ÷ população urbana total
+IQTPC-S = A_esp × (V^0,6 × M^0,4)
+```
+
+Onde `A_esp` usa geometria de linhas fornecida pelo titular (**PC**) sem informação de frequência, V é calculado sobre o cadastro de frota validado no RENAVAM, com V-03 e V-04 excluídos e pesos renormalizados (V-01 0,43; V-02 0,29; V-05 0,29) e M sobre o cadastro tarifário. Mede acesso espacial, atualidade da frota e modicidade, que são os três atributos que um sistema pequeno consegue informar e a União consegue verificar.
+
+### 8.4 Indicadores satélites, publicados junto ao índice
+
+| Indicador | Fórmula | Origem |
+|---|---|---|
+| IQTPC-Equidade | IQTPC do quintil de menor renda ÷ IQTPC do quintil de maior renda, calculado sobre A, C, F e V territorializados | **FC** (Censo, renda por setor) e **PA** |
+| Déficit de Acesso ao TPC | Número absoluto de pessoas sem serviço adequado, por natureza da inadequação | **FC**, **PA** e **PU** |
+| Painel de produtividade | IPK, km por veículo, passageiros por veículo, custo por km, subsídio por passageiro | **PA** e **PC** |
+
+---
+
+## 9. Período de referência, periodicidade e publicação
+
+| Item | Regra |
+|---|---|
+| Período de referência | Ano civil. Métricas operacionais (C, F-01, V-03, V-04, E-03, E-04) calculadas sobre **dias úteis fora de férias escolares**, excluídos feriados nacionais, estaduais e municipais e dias com interrupção registrada em C-03 |
+| Pico | Duas horas consecutivas de maior carregamento na manhã e duas na tarde, determinadas por sistema a partir da bilhetagem do ano anterior |
+| Apuração | Contínua para PA; anual para PC; bienal para PU |
+| Consolidação | Fevereiro do ano seguinte |
+| Versão preliminar ao titular | Março, com 30 dias para manifestação |
+| Publicação | Junho do ano seguinte, junto ao certificado de adimplência do art. 13 |
+| Revisão de valores de referência | Bienal, por portaria, com consulta pública |
+| Revisão de pesos e componentes | Quadrienal, por portaria, com consulta pública; nunca vale para o ciclo em curso |
+| Ciclo da PeMOB Usuário | Coleta em **anos ímpares** (piloto 2027, primeiro ciclo 2029, segundo 2031), para evitar ano de eleição municipal |
+| Unidade de cálculo | O **titular** (art. 8º). Onde constituída unidade regional de TPC (art. 6º, XVII), ela é o titular para efeito do índice. Agregações por região metropolitana são informativas; as consequências dos arts. 21 e 28 incidem por titular |
+| Sistemas multimodais e múltiplos operadores | Cada subíndice é calculado por modo e agregado por passageiros-quilômetro ou, na ausência de inferência de desembarque, por embarques |
+| Embarques | Validações na bilhetagem **mais** estimativa padronizada da parcela não validada (gratuidades, evasão), pelo método do PNDTPC. Denominadores usam embarques, não deslocamentos, e a limitação (sistemas com integração contam mais embarques por deslocamento) é declarada |
+| Arredondamento | IQTPC e fatores A e D com uma casa decimal na divulgação; subíndices com uma casa; cálculo interno sem arredondamento |
+| Selo de origem do dado | Cada valor publicado traz a marcação **automatizado**, **declarado** ou **auditado**, no modelo do SNIS, e o índice do sistema traz o percentual de componentes em cada categoria |
+
+---
+
+## 10. Quadro-síntese de origem de todas as métricas
+
+Resposta direta à pergunta: o que vem de fonte já consolidada e o que vem da plataforma nacional.
+
+| Código | Métrica | Fonte consolidada (FC) | PNDTPC automatizado (PA) | PNDTPC cadastral (PC) | PeMOB Usuário (PU) | Situação |
+|---|---|---|---|---|---|---|
+| A-01 | Cobertura | Censo, OSM | GTFS | | | Existe com GTFS |
+| A-02 | Oportunidades | RAIS, OSM | GTFS | | | Existe em RMs |
+| C-01 | Cumprimento | | GTFS, AVL | | | A implantar |
+| C-02 | Pontualidade | | GTFS, AVL | | | A implantar |
+| C-03 | Continuidade | | Bilhetagem, AVL | Registro de interrupções | | A criar |
+| C-04 | Regularidade | | AVL | | | A implantar |
+| S-01 | Sinistros | SIM, SIH (validação) | AVL, bilhetagem | Registro de sinistros | | A criar |
+| S-02 | Segurança pessoal | | Bilhetagem | Registro de ocorrências | | A criar |
+| S-03 | Canais | | | Ouvidoria | | A implantar |
+| P-01 a P-10 | Percepção | | | | Pesquisa | A criar |
+| F-01 | Adequação da oferta | | Bilhetagem, GTFS | Frota | | A implantar |
+| F-02 | Salubridade | | | Vistoria, infraestrutura | | A criar |
+| F-03 | Tempo relativo | OSM, Censo, RAIS | GTFS | | | Existe com GTFS |
+| F-04 | Espera | | Bilhetagem | Pontos | | A criar |
+| F-05 | Informação | | GTFS | Pontos | | Parcial |
+| F-06 | Manifestações | | | Ouvidoria | | A implantar |
+| V-01 | Idade média | RENAVAM | | Frota | | Existe com acordo |
+| V-02 | Cauda | RENAVAM | | Frota, regulamento | | Existe com acordo |
+| V-03 | Disponibilidade | | AVL | Frota | | A implantar |
+| V-04 | Reserva | | AVL | Frota | | A implantar |
+| V-05 | Acessibilidade | | | Frota, vistoria | | A implantar |
+| E-01 | Eletrificação | RENAVAM | | Frota | | Existe com acordo |
+| E-02 | Renováveis | RENAVAM | | Frota | | Existe com acordo |
+| E-03 | Emissões locais | CETESB | AVL, bilhetagem | | | A implantar |
+| E-04 | GEE | Inventário | AVL, bilhetagem | | | A implantar |
+| E-05 | Meta própria | | | Planejamento | | A implantar |
+| M-01 | Esforço tarifário | Censo | | Tarifa | | Existe |
+| M-02 | Intermodal | ANP, OSM | | Tarifa | | Existe |
+| M-03 | Integração | | | Tarifa | | Existe |
+| M-04 | Extratarifária | | | Contratos | | Existe |
+
+**Contagem por origem predominante:**
+
+| Origem | Métricas | Percentual |
+|---|---|---|
+| Fonte consolidada, com ou sem apoio da plataforma | 9 | 30% |
+| PNDTPC automatizado como fonte principal | 8 | 27% |
+| PNDTPC cadastral ou de registro como fonte principal | 12 | 40% |
+| PeMOB Usuário | 1 bloco (P) | 3% |
+| **Total de linhas de cálculo** (29 métricas objetivas e o bloco P) | **30** | |
+
+Nota: contagem por origem predominante; várias métricas combinam mais de uma origem, como mostra o quadro. A correspondência com as classes de viabilidade V1 a V4 está no Anexo I, seção 4.
+
+**Contagem por situação:**
+
+| Situação | Métricas |
+|---|---|
+| Existe hoje ou após acordo com SENATRAN | 11 |
+| A implantar (fonte existe, fluxo não) | 12 |
+| Parcial (digital existe, físico a criar) | 1 |
+| A criar (fonte não existe) | 6, contando P como um bloco |
+| **Total** | **30** |
+
+---
+
+## 11. Exemplo numérico completo
+
+Sistema hipotético de ônibus, porte médio-grande, sem pesquisa de percepção no ciclo (IQTPC-Objetivo).
+
+### 11.1 Normalização de quatro métricas, para ilustrar o passo 1
+
+| Métrica | Valor bruto | Piso | Referência | Sentido | Pontuação |
+|---|---|---|---|---|---|
+| C-01, cumprimento | 96% | 85% | 99% | maior é melhor | 1 + 9 × (96−85)/(99−85) = **8,07** |
+| C-02, pontualidade | 72% | 50% | 90% | maior é melhor | 1 + 9 × (72−50)/(90−50) = **5,95** |
+| V-01, idade média | 6,2 anos | 10 | 5 | menor é melhor | 1 + 9 × (10−6,2)/(10−5) = **7,84** |
+| M-01, esforço tarifário | 9% da renda | 15% | 4% | menor é melhor | 1 + 9 × (15−9)/(15−4) = **5,91** |
+
+Bilateral, lado da ociosidade em F-01: aproveitamento de 0,17, abaixo da faixa ótima de 0,20. `p_inf = 0,7 × (0,20−0,17)/(0,20−0,10) = 0,21`. Pontuação = 1 + 9 × (1 − 0,21) = **8,11**.
+
+### 11.2 Subíndices, passo 3
+
+| Subíndice | Pontuações dos componentes | Cálculo | Resultado |
+|---|---|---|---|
+| C | 8,07; 5,95; 7,00; 5,50 | 0,40×8,07 + 0,25×5,95 + 0,20×7,00 + 0,15×5,50 | **6,94** |
+| S | 6,00; 5,00; 8,00 | 0,45×6 + 0,40×5 + 0,15×8 | **5,90** |
+| F | 6,50; 4,00; 5,00; 3,50; 8,00; 6,00 | 0,28×6,5 + 0,18×4 + 0,17×5 + 0,15×3,5 + 0,13×8 + 0,09×6 | **5,50** |
+| V | 7,84; 8,00; 8,50; 6,00; 7,50 | soma ponderada | **7,75** |
+| E | 2,00; 3,00; 4,00; 4,50; 6,00 | soma ponderada | **3,65** |
+| M | 5,91; 7,00; 10,00; 4,00 | soma ponderada | **6,32** |
+
+### 11.3 Fator D, passo 4, versão Objetivo
+
+Pesos renormalizados: C 0,265; S 0,217; F 0,157; V 0,145; E 0,120; M 0,096.
+
+```
+D = exp(0,265·ln 6,94 + 0,217·ln 5,90 + 0,157·ln 5,50 + 0,145·ln 7,75 + 0,120·ln 3,65 + 0,096·ln 6,32)
+D = 6,02
+```
+
+Observe o efeito da média geométrica: a média aritmética ponderada dos seis subíndices seria 6,15, pouco acima, porque nenhum está muito baixo. Se E fosse 1,0 em vez de 3,65, a aritmética cairia para 5,83 e a geométrica para 5,15. A penalização por dimensão muito fraca é o comportamento desejado.
+
+### 11.4 Fator A, passo 2
+
+A-01 = 0,82 (cobertura); A-02 = 0,55 (oportunidades).
+
+```
+A = (0,82 × 0,55)^0,5 = 0,672
+```
+
+### 11.5 IQTPC, passo 5
+
+```
+IQTPC-Objetivo = 0,672 × 6,02 = 4,04
+```
+
+Divulgação: **IQTPC-Objetivo 4,0**, cobertura 67%, desempenho 6,0. Decomposição obrigatória: os dois subíndices que mais deprimem o resultado são E (3,65) e F (5,50).
+
+Se o sistema tivesse sido pesquisado com P = 6,2, o IQTPC-Completo seria 0,672 × 6,05 = **4,06**.
+
+### 11.6 O mesmo sistema na versão simplificada, para comparação
+
+Com A_esp = 0,88 (cobertura de traçado, sem frequência), V recalculado sem V-03 e V-04 = 7,79 e M = 6,32:
+
+```
+IQTPC-S = 0,88 × (7,79^0,6 × 6,32^0,4) = 6,30
+```
+
+O valor é muito superior ao da versão completa, o que ilustra por que as versões **não são comparáveis**: a simplificada não vê confiabilidade, segurança, conforto nem ambiente, e mede cobertura sem exigir frequência.
+
+---
+
+## 12. Pré-requisitos de implantação
+
+Da leitura do quadro da seção 10, três providências condicionam a maior parte das métricas e devem preceder qualquer cálculo:
+
+| Pré-requisito | Métricas que desbloqueia | Responsável |
+|---|---|---|
+| **GTFS estático publicado pelo sistema** | A-01, A-02, C-01, C-02, F-01, F-03, F-05 e, indiretamente, todas as que usam lugares-km | Titular, com apoio técnico do art. 20 |
+| **Cadastro de frota individualizado validado no RENAVAM** | V-01, V-02, V-05, E-01, E-02 e a capacidade em F-01 | Titular fornece; União valida por acordo com SENATRAN |
+| **Método padronizado de inferência de desembarque** | F-01 nos dois lados, S-01 e E-03/E-04 na versão madura, agregações por passageiros-km | União, como especificação técnica do PNDTPC |
+
+Em seguida, quatro registros a criar no módulo cadastral do PNDTPC, sem os quais C-03, S-01, S-02, F-02 e F-04 não existem: registro de interrupções, registro de sinistros com vítima, registro de ocorrências de segurança pessoal e cadastro de infraestrutura de pontos e terminais.
+
+As fichas técnicas de todas as métricas, no modelo do Anexo I, seção 5, são o produto documental que precede a consulta pública.
+
+---
+
+## 13. Definições pendentes do dicionário de dados
+
+Pico, período de referência, dias excluídos, embarques, raio de cobertura por rede de pedestres, unidade de cálculo, arredondamento e selo de origem do dado estão definidos na seção 9. Os termos abaixo precisam ser fixados pelo dicionário de dados antes de sua publicação.
+
+| Termo | Onde aparece | O que falta definir |
+|---|---|---|
+| **Viagem** e **passageiro** | C, F, produtividade | Viagem programada é a do GTFS (trip). Passageiro é embarque; com integração, um deslocamento gera dois ou três embarques. A limitação está declarada na seção 9, mas o painel de produtividade precisa de regra de conversão para IPK comparável entre sistemas com e sem integração |
+| **Gratuidades** | F-01, M, produtividade | Idosos e outros beneficiários frequentemente não validam. Método padronizado de estimativa da parcela não validada, por sistema |
+| **Interrupção não programada** | C-03 | Limiar mínimo (proposta: interrupção total de linha por mais de 2 horas, ou de mais de 20% da rede por qualquer período); regra de contagem para greve e para evento externo (enchente, bloqueio) |
+| **Frota operante, cadastrada e reserva** | V | Definições excludentes, com regra para veículo em manutenção programada versus quebrado |
+| **Idade do veículo** | V-01, V-02 | Data de fabricação, de primeiro emplacamento ou de entrada no sistema. Proposta: ano de fabricação do RENAVAM, por ser verificável |
+| **Terminal** e **estação** | F-02 | O que distingue terminal de ponto de parada com abrigo, para efeito de exigência sanitária |
+| **Ocorrência de segurança pessoal** | S-02 | Tipologia única e base de registro (ouvidoria do titular, canal do operador, boletim de ocorrência), para que contagens sejam comparáveis |
+| **Sistema** | Todos | Fronteira entre sistema municipal, intermunicipal e metropolitano, para efeito de unidade de cálculo e de enquadramento em S1 a S4 |
+| **Serviço complementar** | F-01 | Critério objetivo de enquadramento para a faixa própria de ociosidade (documento principal, 6.4.1 e seção 14) |
+
+---
+
+*Proposta técnica da CGDI/DEREG/SEMOB/MCID. Pesos, pisos e valores de referência são indicativos até sua fixação por portaria, após consulta pública e calibração no piloto.*

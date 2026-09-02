@@ -1,0 +1,293 @@
+# Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades
+
+## Saneamento básico e habitação como precedentes institucionais para o IQTPC
+
+**Documento principal:** Parâmetros nacionais de qualidade do transporte público coletivo
+**Natureza:** levantamento de precedentes institucionais
+
+---
+
+## Sumário
+
+1. [Por que olhar para dentro de casa primeiro](#por-que-olhar-para-dentro-de-casa-primeiro)
+2. [Saneamento: o precedente mais próximo](#saneamento-o-precedente-mais-próximo)
+3. [Habitação: certificação e avaliação de conformidade](#habitação-certificação-e-avaliação-de-conformidade)
+4. [Quadro de transferência](#quadro-de-transferência)
+5. [Diferenças que impedem cópia direta](#diferenças-que-impedem-cópia-direta)
+6. [Ganhos transversais de integração](#ganhos-transversais-de-integração)
+7. [Encaminhamentos propostos](#encaminhamentos-propostos)
+
+---
+
+## 1. Por que olhar para dentro de casa primeiro
+
+As comparações do documento principal foram feitas com saúde e educação, setores maduros mas de outros ministérios, com outra lógica federativa e outros instrumentos de transferência. O saneamento oferece algo diferente e mais útil: **um precedente construído sob a mesma competência constitucional, com titularidade municipal, prestação delegada, regulação infranacional e dependência de transferência voluntária da União**, e operado pela secretaria vizinha, dentro do mesmo ministério.
+
+Em vários pontos, o que a SEMOB precisa desenhar já foi desenhado, testado e corrigido pela Secretaria Nacional de Saneamento Ambiental. Reaproveitar não é apenas economia de esforço: é redução de risco e ganho de legitimidade, porque replica solução que já sobreviveu ao escrutínio da CONJUR, dos órgãos de controle e dos entes.
+
+---
+
+## 2. Saneamento: o precedente mais próximo
+
+### 2.1 A arquitetura jurídica é quase idêntica
+
+A Lei nº 14.026/2020 estruturou o setor sobre três peças que a Lei nº 15.432/2026 reproduz quase ponto a ponto:
+
+| Função | Saneamento | Transporte público coletivo |
+|---|---|---|
+| Competência para editar normas de referência de qualidade | Art. 4º-A, §1º, I, da Lei nº 9.984/2000: a ANA estabelece normas de referência sobre padrões de qualidade e eficiência na prestação, manutenção e operação | Art. 12 da Lei nº 15.432/2026 (parâmetros de referência por ato do Executivo federal) e art. 16, IX, da Lei nº 12.587/2012 (normas de referência nacionais de qualidade e produtividade) |
+| Condicionalidade de recursos federais à observância das normas | Art. 4º-B da Lei nº 9.984/2000 e art. 50 da Lei nº 11.445/2007 | Art. 21 e art. 28, III, da Lei nº 15.432/2026 |
+| Sistema nacional de informações como base do monitoramento | SINISA, art. 53 da Lei nº 11.445/2007 | SIMU, art. 13 da Lei nº 15.432/2026 |
+
+A regulamentação dessa arquitetura pelo Decreto nº 11.599/2023 é o modelo de redação mais próximo disponível para o decreto do art. 12. Ele condiciona a alocação de recursos federais, entre outros itens, à observância das normas de referência da ANA e ao desempenho do prestador comprovado por declaração da entidade reguladora.
+
+**Técnica de transição a copiar.** O decreto do saneamento prevê que as condicionantes só sejam exigidas **após** a publicação das normas de referência e dos prazos de adequação conferidos ao ente regulador. É exatamente o mecanismo de que o IQTPC precisa para não entrar em vigor antes de existir padrão contra o qual medir, e resolve com elegância o problema de sequenciamento tratado na seção 12 do documento principal.
+
+**Precedente adicional relevante.** O Decreto nº 11.467/2023 flexibilizou prazos de condicionantes de regionalização, adiando a exigência. Isso mostra que o instrumento admite calibração temporal sem alteração legal, o que é útil considerando a facultatividade da adesão às unidades regionais de TPC prevista no art. 8º, §§ 5º e 7º, da Lei nº 15.432/2026.
+
+### 2.2 O certificado de adimplência do SINISA
+
+Este é o achado mais diretamente aproveitável de todo o levantamento.
+
+O ciclo do SINISA, disciplinado por portaria ministerial (ciclo 2026, Portaria MCID nº 1.069), opera com calendário fechado:
+
+| Etapa | Prazo no ciclo 2026 |
+|---|---|
+| Abertura da coleta | 13 de maio |
+| Encerramento do preenchimento pelos titulares e prestadores | 3 de setembro |
+| Envio da versão preliminar das informações | 3 de novembro |
+| Manifestação ou validação da versão preliminar | 17 de novembro |
+| Publicação dos indicadores e divulgação do **certificado de adimplência** | 31 de dezembro |
+
+E a regra que faz tudo funcionar: **a adimplência é condição obrigatória para acessar recursos federais de investimento no setor**.
+
+O paralelo com o art. 21 da Lei nº 15.432/2026 é praticamente literal. O art. 21 condiciona a contratação de projetos de TPC com recursos federais ao atendimento do art. 13, que é o fornecimento de dados ao SIMU na metodologia e periodicidade definidas pela União. **O certificado de adimplência é a forma jurídica e operacional já testada de implementar esse gate.**
+
+O que se aproveita:
+
+- O conceito e a nomenclatura do certificado, já compreendidos pelos municípios.
+- O desenho de ciclo com etapa intermediária de **versão preliminar e manifestação**, que é uma solução simples e eficaz para reduzir contestação posterior. O ente vê o próprio dado antes da publicação e pode se manifestar.
+- O uso de portaria ministerial como veículo do calendário anual, preservando o decreto para o que é estrutural.
+- A fixação da publicação dos indicadores e do certificado no mesmo ato e na mesma data, o que amarra dado e consequência.
+
+**Recomendação:** o SIMU deve emitir certificado de adimplência em modelo espelhado ao do SINISA, com calendário deslocado alguns meses para não concorrer com a janela de coleta do saneamento.
+
+### 2.3 A metodologia ACERTAR
+
+O SINISA incorpora módulo de regulação destinado às entidades reguladoras infranacionais, que permite a essas entidades acompanhar a coleta e aplicar a metodologia **ACERTAR**, de auditoria e certificação das informações prestadas.
+
+Este é o elemento que resolve, a custo baixo, o problema de auditoria levantado no documento principal. A lógica é descentralizar a verificação para a rede de reguladores infranacionais, em vez de custear auditoria federal direta em centenas de sistemas.
+
+A transposição é viável porque a Lei nº 15.432/2026 cria a rede equivalente:
+
+- **Art. 10**: compete ao titular designar órgão ou, preferencialmente, entidade responsável pela regulação e fiscalização.
+- **Art. 11, VIII**: é atribuição do titular definir periodicidade, formatos e fluxos de compartilhamento de dados entre titular e prestadores.
+- **Art. 31, §1º**: o regulamento do poder concedente deve ser elaborado com base nas normas de referência da União.
+- **Art. 9º, XI**: comissão de fiscalização nos moldes do art. 30 da Lei nº 8.987/1995.
+
+Ou seja, o TPC terá, por força de lei, a mesma malha de entidades reguladoras infranacionais sobre a qual o ACERTAR se apoia no saneamento.
+
+**Ressalva importante:** o ACERTAR nasceu como remédio tardio para um problema criado por décadas de dado autodeclarado sem verificação. O SNIS coletou desde 1995 e a certificação veio muito depois. **O IQTPC pode nascer com a camada de certificação desde o primeiro ciclo**, o que é a principal vantagem de chegar atrasado a essa festa.
+
+### 2.4 O cadastro do módulo de Gestão Municipal
+
+O SINISA inclui módulo de Gestão Municipal que reúne cadastro de prestadores, cadastro de reguladores, instrumentos de planejamento municipal, informação sobre prestação regionalizada e soluções alternativas de acesso.
+
+Isso é, funcionalmente, o **Cadastro Nacional de Sistemas de Transporte Público Coletivo** proposto como primeiro entregável no Anexo II, seção 2.2. O modelo de dados, a lógica de responsabilidade pelo preenchimento e a arquitetura de validação podem ser adaptados em vez de concebidos do zero.
+
+Correspondência conceitual:
+
+| SINISA, Gestão Municipal | Equivalente no TPC |
+|---|---|
+| Cadastro de prestadores | Cadastro de operadores e contratos vigentes |
+| Cadastro de reguladores | Entidade reguladora designada (art. 10) |
+| Instrumentos de planejamento | PlanMob e planejamento do art. 9º |
+| Prestação regionalizada | Unidade regional de TPC (art. 6º, XVII) e gestão associada (art. 8º) |
+| Soluções alternativas de acesso | Serviços complementares e acessórios (art. 6º, IV, "b" e "c") |
+
+Note-se que a categoria de "soluções alternativas" do saneamento resolve o mesmo problema classificatório que o Anexo II enfrentou ao propor as situações S1 a S4: como registrar atendimento precário ou não convencional sem tratá-lo como ausência de serviço nem como serviço regular.
+
+### 2.5 A lição da série histórica
+
+O SNIS coletou dados de água e esgoto desde 1995, de resíduos sólidos desde 2002 e de drenagem desde 2015, encerrando em 2023 para dar lugar ao SINISA em 2024.
+
+Três lições:
+
+1. **O valor está na série, não na edição.** Trinta anos de dado comparável tornaram o SNIS referência para gestores, reguladores, pesquisadores, instituições financeiras e organismos internacionais. Nenhuma edição isolada teria esse efeito. Isso reforça o princípio de sequenciamento do documento principal (seção 12) e a exigência de imutabilidade do núcleo da pesquisa nacional.
+2. **A transição entre sistemas é possível sem perder a série**, desde que planejada. O SINISA foi apresentado explicitamente como continuidade do legado do SNIS, e não como ruptura. É o modelo para a relação futura entre SIMU e PNDTPC.
+3. **Dado declaratório sem verificação envelhece mal.** A necessidade do ACERTAR e a reformulação em SINISA são, em parte, resposta a limitações acumuladas do modelo autodeclaratório original.
+
+---
+
+## 3. Habitação: certificação e avaliação de conformidade
+
+A habitação não oferece paralelo de índice territorial, mas oferece algo que o saneamento não tem: **modelos maduros de certificação de empresas e de avaliação de conformidade de tecnologias**, ambos com efeito de pré-requisito para acesso a recurso federal.
+
+### 3.1 PBQP-H e SiAC: modelo para o IQTPC-Operador
+
+O Sistema de Avaliação da Conformidade de Empresas de Serviços e Obras (SiAC), dentro do Programa Brasileiro da Qualidade e Produtividade do Habitat, certifica construtoras em dois níveis, A (atendimento total aos requisitos) e B (atendimento parcial), e é **pré-requisito para empresas que pretendem construir unidades habitacionais com recurso federal**.
+
+Esta é a referência mais próxima, dentro do MCID, para a camada 3 da arquitetura do IQTPC, o IQTPC-Operador, prevista no art. 6º, XII, e no art. 31, §2º, da Lei nº 15.432/2026.
+
+O que se aproveita:
+
+- **Certificação por níveis, não por nota contínua.** Faixas são mais estáveis, mais comunicáveis e menos litigiosas que décimos de ponto quando há consequência financeira. Recomenda-se que o IQTPC-Operador seja expresso em faixas, ainda que calculado em escala contínua.
+- **A lógica de pré-requisito**, que evita a discussão sobre punição e a converte em habilitação.
+- **A governança tripartite** do PBQP-H, com participação da cadeia produtiva, que no TPC teria interlocutores já organizados.
+
+Ressalva relevante: certificação de empresa afere sistema de gestão, não resultado entregue ao usuário. No TPC, o art. 31, §2º, exige vínculo com o **atendimento aos requisitos mínimos**, ou seja, com desempenho, e não apenas com conformidade processual. O SiAC serve como modelo de forma, não de conteúdo.
+
+### 3.2 SiNAT: avaliação de tecnologia sem norma técnica
+
+O Sistema Nacional de Avaliações Técnicas avalia produtos inovadores ainda sem norma da ABNT, por meio de Instituições Técnicas Avaliadoras credenciadas, emitindo Documento de Avaliação Técnica (DATec), renovável a cada dois anos, ou Ficha de Avaliação de Desempenho para sistemas convencionais.
+
+Há uma lacuna correspondente e não atendida no TPC. A Lei nº 15.432/2026 pede, em vários dispositivos, exatamente esse tipo de mecanismo:
+
+- **Art. 4º, XIII**: padronização de equipamentos e insumos da cadeia produtiva do setor.
+- **Art. 4º, VIII**: atualização e modernização contínua das técnicas, equipamentos e instalações.
+- **Art. 7º, IX**: uso de tecnologias modernas e eficientes, compatíveis com os níveis exigidos de qualidade.
+- **Art. 37, II e §2º**: reequilíbrio por incorporação de inovações tecnológicas na frota, com cronograma que considere a viabilidade de fornecimento pela indústria.
+- **Art. 6º, XXI**: transporte de média e alta capacidade definido por parâmetros técnicos de referência a serem estabelecidos por norma específica.
+
+Hoje não existe mecanismo federal de avaliação de conformidade para tecnologia embarcada de TPC, sistemas de bilhetagem, ITS, novos sistemas de propulsão ou soluções de recarga. O art. 37, §2º, é particularmente eloquente: ele condiciona a substituição tecnológica à viabilidade de fornecimento, o que pressupõe alguma forma de avaliação prévia da tecnologia.
+
+**Recomendação:** avaliar a criação de mecanismo análogo ao SiNAT para o setor de TPC, com credenciamento de instituições avaliadoras e documento de avaliação com validade determinada. O modelo do DATec, com renovação bienal, é adequado a um setor de inovação rápida.
+
+### 3.3 SNHIS e o PLHIS Simplificado
+
+O Sistema Nacional de Habitação de Interesse Social, da Lei nº 11.124/2005, opera adesão dos entes com consulta pública de situação e pendências, com publicação periódica da situação de cada município.
+
+Dois aproveitamentos:
+
+1. **Painel público de situação e pendências por ente.** Instrumento simples, de baixo custo e alto efeito reputacional, que pode ser replicado para a adimplência do SIMU.
+2. **O PLHIS Simplificado**, versão reduzida do plano local para municípios de menor porte, é o precedente institucional direto para a **versão simplificada do IQTPC** proposta na Fase 2 do sequenciamento, e para a discussão sobre planos de mobilidade simplificados. Ele demonstra que a diferenciação por porte já é prática consolidada no MCID e não representa inovação arriscada.
+
+### 3.4 SiMaC
+
+O Sistema de Qualificação de Empresas de Materiais, Componentes e Sistemas Construtivos combate a não conformidade na fabricação, importação e distribuição, exigindo cumprimento das normas da ABNT. É referência secundária para eventual qualificação de fornecedores de componentes do TPC, tema conexo ao art. 4º, XIII, e ao art. 5º, VIII (fomento à indústria nacional de produtos e equipamentos para o TPC).
+
+---
+
+## 3.5 Parâmetros de qualidade transferidos das políticas irmãs
+
+A transferência de **máquina institucional** (gate, auditoria, cadastro, certificação, calendário) é o aproveitamento mais evidente. A leitura das políticas irmãs com foco nos indicadores, e não na governança, produz ainda quatro parâmetros de qualidade e uma orientação metodológica, todos incorporados ao documento principal e ao Manual de cálculo.
+
+| Acréscimo | Origem | Onde entrou |
+|---|---|---|
+| **Continuidade**, horas-passageiro perdidas em interrupções não programadas | SNIS e SINISA, indicadores de intermitência do abastecimento | Subíndice C, métrica C-03, peso interno 0,20 |
+| **Salubridade e condições sanitárias**, incluindo sanitário em funcionamento e água potável em terminais | Saneamento, e o próprio art. 3º, IV, da Lei nº 15.432/2026 | Subíndice F, métrica F-02, peso interno 0,18 |
+| **Atendimento a manifestações**, tempo de resposta e taxa de resolução | SNIS e Lei nº 13.460/2017 | Subíndice F, métrica F-06, peso interno 0,09 |
+| **Déficit de Acesso ao TPC**, número absoluto de pessoas sem serviço adequado | Déficit habitacional, Fundação João Pinheiro | Indicador satélite, documento principal, 8.1 |
+| **Norma de desempenho em vez de norma prescritiva** | NBR 15575 e PBQP-H | Forma das normas de referência, ver 3.5.2 |
+
+A NBR 15575 também oferece limiares mensuráveis de conforto térmico e acústico. O componente correspondente não integra o índice objetivo, por ausência de fonte viável (Anexo I), e o atributo é medido pela PeMOB Usuário.
+
+### 3.5.1 A salubridade como ponto cego setorial
+
+O art. 3º, IV, da Lei nº 15.432/2026 arrola oito atributos da qualidade: cortesia, salubridade, conforto, segurança, eficiência, regularidade, atualidade e continuidade. Um desenho feito apenas a partir da literatura de transporte tende a cobrir sete deles e a usar **salubridade** como argumento para penalizar a superlotação, sem jamais medi-la.
+
+A causa é o enquadramento setorial: salubridade e condições sanitárias soam como assunto de outra secretaria. É exatamente o tipo de ponto cego que o exercício de comparação intraministerial serve para corrigir, e a razão pela qual a revisão cruzada entre secretarias deve ser etapa formal antes da consulta pública, e não conversa informal.
+
+### 3.5.2 Norma de desempenho em vez de norma prescritiva
+
+Contribuição metodológica, não de indicador, mas de alcance maior que qualquer um deles.
+
+A NBR 15575 representou uma mudança de paradigma na habitação: em vez de prescrever soluções construtivas, ela estabelece **níveis de desempenho verificáveis** e deixa ao construtor a escolha do meio. O PBQP-H e o SiNAT operam sobre essa mesma lógica.
+
+As normas de referência de qualidade do TPC, previstas no art. 12 e no art. 16, IX, da Lei nº 12.587/2012, deveriam adotar a mesma orientação: fixar **níveis de serviço aferíveis**, e não especificar tecnologia, tipologia de veículo ou solução operacional. Três razões: preserva a autonomia do titular, que é sensível do ponto de vista federativo; não congela a norma diante de inovação tecnológica; e é coerente com o art. 7º, IX, que fala em tecnologias compatíveis com os níveis exigidos de qualidade, ou seja, o nível é o comando e a tecnologia é o meio.
+
+Formulado como regra: **a norma de referência define o quanto, o regulamento local define o como.**
+
+### 3.5.3 O que não teve equivalente
+
+Duas dimensões centrais do IQTPC não encontraram contribuição nas políticas irmãs: **segurança viária e pessoal** e **satisfação percebida**. Nenhuma das duas tem instrumento correspondente em saneamento ou habitação, o que confirma que, nesses pontos, as referências úteis permanecem externas ao ministério.
+
+### 3.6 Verificação: existe índice composto em alguma política do MCID?
+
+Verificação em fontes públicas, setembro de 2026. **Não existe.** Em nenhuma das políticas do ministério há índice composto de qualidade publicado pelo próprio MCID.
+
+| Política | O que o MCID publica | Quem compõe o número de referência |
+|---|---|---|
+| Saneamento | Informações e indicadores do SINISA, por prestador e município | Instituto Trata Brasil (Ranking do Saneamento, 100 maiores municípios, três dimensões, desde 2009) e ABES (Ranking da Universalização, cinco indicadores, 2.558 municípios) |
+| Habitação | Dados e cadastros | Fundação João Pinheiro (déficit habitacional), por encomenda do ministério |
+| Mobilidade | Indicadores do SIMU, PeMOB, relatório do GT de indicadores de efetividade da PNMU (Portaria MCID nº 536/2015, 12 indicadores, dados até 2016) | Nenhum; o IMUS (Costa, 2008) é acadêmico e nunca foi adotado |
+
+**Leitura.** Há um padrão institucional consistente e nunca explicitado: **o MCID produz o dado; o número composto é produzido por fora**, seja por fundação de pesquisa contratada, seja por sociedade civil. O padrão tem uma lógica: protege o ministério do custo político de ranquear municípios, e transfere a terceiros a disputa metodológica que todo índice composto atrai.
+
+O IQTPC rompe esse padrão ao ser concebido como índice publicado pela SEMOB. O IDEB, publicado pelo INEP, mostra que a ruptura é possível e pode funcionar. Mas é uma escolha estratégica com custo político real e precisa ser tomada de forma explícita. Está registrada entre as questões em aberto (documento principal, seção 14).
+
+**Sobre o GT da Portaria nº 536/2015.** É o antecedente direto do IQTPC dentro da própria SEMOB. Seu relatório definiu 12 indicadores de efetividade da PNMU e foi descontinuado após 2016. O IQTPC deve, no mínimo, explicar sua relação com esse trabalho: quais indicadores absorve, quais descarta e por quê. Ignorá-lo expõe o projeto à objeção de que reinventa o que já foi feito (documento principal, seção 14).
+
+---
+
+## 4. Quadro de transferência
+
+| Instrumento de origem | Política | O que se transfere | Prioridade |
+|---|---|---|---|
+| Certificado de adimplência do SINISA | Saneamento | Forma operacional do gate do art. 21, com ciclo, prazos e veículo normativo | **Alta** |
+| Etapa de versão preliminar e manifestação | Saneamento | Redução de contestação; o ente valida o próprio dado antes da publicação | **Alta** |
+| Metodologia ACERTAR | Saneamento | Auditoria e certificação do dado por reguladores infranacionais | **Alta** |
+| Módulo de Gestão Municipal do SINISA | Saneamento | Modelo de dados do Cadastro Nacional de Sistemas de TPC | **Alta** |
+| Decreto nº 11.599/2023 | Saneamento | Modelo de redação do decreto do art. 12, com técnica de transição das condicionantes | **Alta** |
+| Módulo de regulação do SINISA | Saneamento | Interface para entidades reguladoras designadas pelo art. 10 | Média |
+| Estrutura modular por componente | Saneamento | Organização do SIMU por modo mais gestão mais regulação | Média |
+| SiAC, certificação por níveis | Habitação | Forma do IQTPC-Operador, em faixas e como pré-requisito | Média |
+| Painel de situação e pendências do SNHIS | Habitação | Transparência da adimplência por ente | Média |
+| PLHIS Simplificado | Habitação | Precedente para versão simplificada do índice e de planos por porte | Média |
+| SiNAT e DATec | Habitação | Avaliação de conformidade de tecnologia de TPC | Baixa no curto prazo, alta no médio |
+| SiMaC | Habitação | Qualificação de fornecedores de componentes | Baixa |
+| Indicadores de intermitência do SNIS | Saneamento | **Métrica de continuidade no subíndice C** | **Incorporado** |
+| Indicadores sanitários e de salubridade | Saneamento | **Métrica de salubridade no subíndice F** | **Incorporado** |
+| NBR 15575, norma de desempenho | Habitação | **A forma da norma de referência: níveis de desempenho, não prescrição** | **Incorporado** |
+| Tempo de atendimento a solicitações | Saneamento | **Métrica de atendimento a manifestações no subíndice F** | **Incorporado** |
+| Déficit habitacional, FJP | Habitação | **Déficit de Acesso ao TPC como indicador satélite** | **Incorporado** |
+
+---
+
+## 5. Diferenças que impedem cópia direta
+
+Registrar as diferenças é tão importante quanto registrar as semelhanças, porque transposição malfeita de instrumento maduro produz fracasso com aparência de solidez.
+
+**5.1 Não há agência reguladora nacional no TPC.** No saneamento, a competência para normas de referência é da ANA, autarquia com autonomia técnica, mandato dirigente e processo regulatório próprio, incluindo análise de impacto e consulta pública obrigatória. No TPC, a Lei nº 15.432/2026 atribuiu a competência a ato do Poder Executivo federal (art. 12) e à União (art. 16, IX, da PNMU), sem criar agência. Consequência dupla: maior agilidade e menor blindagem técnica. Recomenda-se compensar por processo, adotando voluntariamente consulta pública prévia, análise de impacto regulatório e comitê técnico permanente.
+
+**5.2 A frequência do dado é radicalmente distinta.** O saneamento coleta dado anual de rede física e de gestão, que muda devagar. O TPC precisa, para o subíndice C, de dado operacional de alta frequência, idealmente contínuo via GTFS-RT ou AVL. **O SIMU não pode ser apenas um SINISA do transporte.** A arquitetura correta é híbrida: ciclo anual declaratório para o que é estrutural (cadastro, frota, contratos, tarifa, financiamento) e ingestão contínua automatizada para o operacional. Essa distinção coincide, aliás, com a fronteira entre SIMU e PNDTPC.
+
+**5.3 A universalização tem meta legal no saneamento e não no TPC.** A meta de 2033 organiza todo o setor de saneamento e dá sentido às condicionantes. O TPC não tem meta quantificada equivalente, o que enfraquece a narrativa das condicionantes e reforça a importância de estabelecer meta nacional para o IQTPC, conforme a Fase 3 do sequenciamento.
+
+**5.4 O apoio ao custeio é diferente.** No saneamento, a condicionalidade incide sobre investimento. No TPC, o art. 28, III, abre a possibilidade de apoio ao custeio vinculado a metas de desempenho, satisfação e ambientais, o que não tem paralelo direto no saneamento e aproxima o TPC do modelo do Previne Brasil. É o dispositivo mais potente da Lei nº 15.432/2026 e o que menos referência interna encontra.
+
+**5.5 A titularidade é mais fragmentada.** No TPC, os Estados são titulares do serviço intermunicipal de caráter urbano (art. 8º, II), o que significa que parte relevante do universo não é municipal. O SINISA lida com prestação regionalizada, mas a titularidade permanece municipal. O desenho do SIMU precisa acomodar titular estadual desde o cadastro.
+
+**5.6 A qualidade percebida não tem equivalente no saneamento.** Não há, no SINISA, instrumento nacional de satisfação do usuário. Nesse ponto específico, o TPC não tem de quem copiar dentro do MCID, e as referências permanecem sendo o SAEB, o PMAQ-AB e a experiência internacional. É a única lacuna do levantamento sem solução interna.
+
+---
+
+## 6. Ganhos transversais de integração
+
+**6.1 Janela única de coleta do MCID.** Hoje o mesmo município responde separadamente ao SINISA, ao SNHIS e à PeMOB, com interlocutores, calendários e sistemas distintos. Um calendário unificado, com janelas deslocadas e ponto de contato único por ente, reduziria custo de conformidade e elevaria a taxa de resposta. Vale notar que a taxa de resposta da PeMOB (67 de 116 municípios elegíveis em 2023) é justamente o problema que a adimplência vinculada a recurso resolve no saneamento.
+
+**6.2 Cadastro comum de entes e responsáveis.** Um único cadastro ministerial de entes, gestores, entidades reguladoras e prestadores, compartilhado entre as secretarias, evita triplicação de esforço e inconsistência entre bases.
+
+**6.3 Reaproveitamento de infraestrutura de TI.** A SNS já resolveu ingestão, validação, painel de indicadores, emissão de certificado e publicação. Avaliar reúso de componentes antes de especificar solução nova para o SIMU e o PNDTPC pode ter efeito relevante sobre o escopo da contratação em curso.
+
+**6.4 Aprendizado organizacional direto.** A equipe que conduziu a transição SNIS para SINISA enfrentou, entre 2020 e 2024, quase exatamente o problema que a SEMOB enfrentará entre 2026 e 2030. Uma agenda técnica estruturada com a SNS provavelmente tem a melhor relação entre custo e retorno de todo este anexo.
+
+**6.5 Coerência do discurso ministerial.** Três políticas do mesmo ministério com lógicas de condicionalidade divergentes enfraquecem todas. Convergir o desenho fortalece a posição do MCID perante entes, controle e Congresso.
+
+---
+
+## 7. Encaminhamentos propostos
+
+| Nº | Encaminhamento | Prazo sugerido |
+|---|---|---|
+| E1 | Reunião técnica com a Secretaria Nacional de Saneamento Ambiental sobre o desenho do ciclo do SINISA, o certificado de adimplência e a metodologia ACERTAR | Imediato |
+| E2 | Obtenção do modelo de dados do módulo de Gestão Municipal do SINISA como base do Cadastro Nacional de Sistemas de TPC | Imediato |
+| E3 | Estudo comparado do Decreto nº 11.599/2023 como referência de redação para o decreto do art. 12 da Lei nº 15.432/2026 | Curto |
+| E4 | Verificação de reúso de componentes de TI do SINISA no escopo do SIMU e do PNDTPC | Curto, antes da conclusão da contratação |
+| E5 | Consulta à Secretaria Nacional de Habitação sobre a governança do PBQP-H e do SiAC, com foco na modelagem do IQTPC-Operador | Curto |
+| E6 | Proposta de calendário unificado de coleta de dados do MCID, com janelas deslocadas | Médio |
+| E7 | Avaliação de viabilidade de mecanismo de avaliação de conformidade tecnológica para o TPC, no modelo do SiNAT | Médio |
+
+---
+
+*Proposta técnica da CGDI/DEREG/SEMOB/MCID. As descrições dos instrumentos de saneamento e habitação são baseadas em fontes públicas e devem ser confirmadas diretamente com as secretarias responsáveis antes de qualquer uso formal.*

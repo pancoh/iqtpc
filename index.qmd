@@ -1,0 +1,58 @@
+# IQTPC, Índice de Qualidade do Transporte Público Coletivo
+
+## Índice dos documentos e ordem de precedência
+
+**Data:** setembro de 2026
+**Unidade:** CGDI/DEREG/SEMOB/MCID
+**Natureza:** proposta técnica, composta de documento principal, Manual de cálculo e quatro anexos
+
+---
+
+## Como ler o conjunto
+
+| Ordem | Documento | Função | Prevalece para |
+|---|---|---|---|
+| 1 | **Manual de cálculo** | Metodologia em cinco níveis, fórmulas, origem de cada métrica, exemplo numérico, pré-requisitos, definições pendentes do dicionário de dados | **Cálculo.** Em caso de divergência, o Manual prevalece sobre todos os demais |
+| 2 | **Documento principal**, Parâmetros nacionais de qualidade | Base legal, lições de outros índices, arquitetura, subíndices, travas contra manipulação, consequências institucionais, sequenciamento, questões em aberto e plano de enfrentamento | **Fundamentação e proposta** |
+| 3 | **Anexo I**, Matriz de origem dos dados | Rastreabilidade de cada variável, classificação de viabilidade, modelo de ficha técnica e três fichas | **Viabilidade de cada métrica** |
+| 4 | **Anexo II**, PeMOB Usuário | Desenho da pesquisa de percepção: universo, amostra, instrumento, execução, escada de custo, cronograma | **Subíndice P** |
+| 5 | **Anexo III**, Arquitetura de coleta | Divisão de trabalho entre PNDTPC, SIMU e família PeMOB; desidratação da PeMOB | **De onde vem o dado e quem pergunta o quê** |
+| 6 | **Anexo IV**, Políticas irmãs do MCID | O que se transfere do saneamento e da habitação; verificação de que não existe índice composto no ministério | **Precedentes institucionais** |
+
+---
+
+## A proposta em uma página
+
+**Arquitetura.** Dimensões derivadas do art. 31 da Lei nº 15.432/2026; IQTPC = A × D, com A (acesso, de 0 a 1) e D (desempenho, de 1 a 10); média geométrica entre os sete subíndices e aritmética dentro deles; piso 1 em toda métrica; normalização contra valores absolutos de piso e referência; produtividade fora do índice, em painel satélite; três versões nomeadas e incomparáveis entre si (Completo, Objetivo, Simplificado); IQTPC-Equidade e Déficit de Acesso publicados sempre ao lado do índice.
+
+**Dados.** Quatro origens: fontes consolidadas externas, PNDTPC automatizado, PNDTPC cadastral e PeMOB Usuário. Nenhuma variável é pedida ao ente se puder ser obtida de base externa ou calculada pela plataforma.
+
+**Consequências.** Condicionalidade do art. 21 sobre o envio de dado, por certificado de adimplência; apoio ao custeio do art. 28, III, sobre o resultado, quando houver lei específica; IQTPC-Operador para remuneração contratual (art. 31, §2º).
+
+**Sujeito a consulta pública e calibração no piloto.** Todos os pesos, pisos e valores de referência; o expoente α; o cenário de coleta da pesquisa; o peso de P no cenário mínimo viável.
+
+**Aberto e a resolver antes do decreto.** Quem publica o composto; desenho do IQTPC-Operador; governança do índice; veículo normativo. Antes da consulta pública: tabelas de referência por modo e fichas técnicas de todas as métricas. Antes do piloto: custo da infraestrutura de dados e método de definição de metas (documento principal, seção 14).
+
+**Pré-requisitos de qualquer cálculo.** GTFS publicado pelos sistemas; cadastro de frota individualizado validado no RENAVAM; método padronizado de inferência de desembarque; quatro registros a criar no PNDTPC (interrupções, sinistros, ocorrências de segurança pessoal, infraestrutura).
+
+**Calendário.** Vigência da Lei em 14/06/2027. Piloto da pesquisa em 2027. Sem coleta em 2028. IQTPC-Objetivo piloto em 2027 e 2028. Primeiro ciclo da pesquisa em 2029; P incorporado a partir de 2030.
+
+---
+
+## Números de referência
+
+| Item | Valor |
+|---|---|
+| Subíndices | 7 (C, S, P, F, V, E, M) |
+| Métricas objetivas | 29, mais o bloco P com 9 dimensões compostoras e 1 de acompanhamento |
+| Linhas de cálculo | 30 |
+| Métricas calculáveis hoje ou após acordo com SENATRAN | 11 |
+| Métricas que exigem plataforma ou padronização de fluxo | 12 |
+| Métricas que exigem registro novo | 6, contando P |
+| Custo da pesquisa, cenário recomendado | R$ 2 a 4 milhões por ano |
+| Custo da pesquisa, piloto | R$ 0,9 a 2,0 milhões |
+| Universo | cerca de 1.700 sistemas municipais; cerca de 82% da população |
+
+---
+
+*Todos os documentos estão em Markdown e podem ser convertidos para o padrão SEI.*

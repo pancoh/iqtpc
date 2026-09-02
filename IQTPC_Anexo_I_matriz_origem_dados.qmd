@@ -1,0 +1,235 @@
+# Anexo I, Matriz de origem dos dados por métrica
+
+## Rastreabilidade de cada variável do IQTPC
+
+**Documento principal:** Parâmetros nacionais de qualidade do transporte público coletivo
+**Finalidade:** descer ao nível da variável, que é o nível em que o cálculo acontece ou não acontece. O documento principal (seção 11) resume a fonte por subíndice; o Manual (seção 10) classifica cada métrica por origem predominante; este anexo rastreia cada variável e classifica a viabilidade de cada métrica
+**Natureza:** matriz de rastreabilidade e modelo de ficha técnica
+
+---
+
+## Sumário
+
+1. [Por que a fonte precisa estar no nível da variável](#por-que-a-fonte-precisa-estar-no-nível-da-variável)
+2. [Classificação de viabilidade](#classificação-de-viabilidade)
+3. [Matriz completa](#matriz-completa)
+4. [Balanço: o que é calculável e quando](#balanço-o-que-é-calculável-e-quando)
+5. [Modelo de ficha técnica de indicador](#modelo-de-ficha-técnica-de-indicador)
+6. [Fichas de exemplo](#fichas-de-exemplo)
+7. [Consequências para o desenho](#consequências-para-o-desenho)
+
+---
+
+## 1. Por que a fonte precisa estar no nível da variável
+
+Um indicador é uma razão entre variáveis, e cada variável tem origem própria, periodicidade própria e limitação própria. Dizer que o subíndice de segurança vem "de registros do titular e do SIM/DATASUS" não informa que o numerador não identifica o sistema e o denominador não existe. O SNIS e o SINISA resolvem isso com ficha técnica por indicador, com código, fórmula, unidade, origem de cada variável, periodicidade e restrições de uso. É esse padrão que o IQTPC adota, e este anexo é o primeiro passo.
+
+Os códigos das métricas seguem o Manual de cálculo. As quatro origens (FC, PA, PC e PU) estão definidas no Manual, seção 3.
+
+---
+
+## 2. Classificação de viabilidade
+
+| Classe | Significado |
+|---|---|
+| **V1, calculável hoje** | Todas as variáveis existem em base acessível à União, sem novo dado do ente, ou passam a existir com o acordo com o SENATRAN. Pode ser computado centralmente já no piloto |
+| **V2, exige plataforma** | Depende de dado operacional automatizado (GTFS-RT, AVL, bilhetagem) ingerido pelo PNDTPC. Calculável apenas nos sistemas integrados |
+| **V3, declaratório** | Depende de informação prestada pelo titular ou operador em cadastro ou sistema já existente, sem verificação automatizada. Calculável para todos, auditável por amostra |
+| **V4, exige criação de registro** | Não há fonte hoje. Requer instituir registro padronizado novo na plataforma |
+| **V5, sem fonte viável** | Não há caminho realista nos próximos três anos. Critério de exclusão do índice objetivo, aplicado ao conforto térmico e acústico |
+| **P** | Pesquisa de percepção (PeMOB Usuário) |
+
+Correspondência com a coluna "Situação" do Manual: V1 e os declaratórios já existentes correspondem a **existe**; V2 e os declaratórios cujo fluxo falta padronizar correspondem a **a implantar**; V4 e P correspondem a **a criar**.
+
+---
+
+## 3. Matriz completa
+
+### Fator A, acesso e disponibilidade
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| A-01 | Cobertura espacial e de frequência | População urbana por célula; localização de paradas e estações; intervalo no pico por parada; rede de pedestres | Grade estatística do Censo 2022 (IBGE); GTFS estático (stops, stop_times, frequencies); OpenStreetMap | V1 onde há GTFS. Na versão simplificada, V3 (traçado sem horário, fornecido pelo titular) |
+| A-02 | Acessibilidade a oportunidades | Empregos formais georreferenciados; tempo de viagem por TPC entre células | RAIS georreferenciada; roteamento sobre GTFS e rede de pedestres, conforme metodologia do Projeto Acesso a Oportunidades (IPEA) | V1 nas RMs cobertas pelo IPEA; V1 com processamento central nas demais com GTFS |
+
+### Subíndice C, confiabilidade
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| C-01 | Cumprimento de viagens | Viagens programadas; viagens realizadas | GTFS estático (trips); GTFS-RT ou AVL (viagem detectada por passagem em ao menos 80% dos pontos de controle) | V2 |
+| C-02 | Pontualidade | Horário programado por partida; horário real | GTFS estático (stop_times); AVL | V2 |
+| C-03 | Continuidade | Interrupções não programadas com linha, início, fim e causa; passageiros habituais das linhas afetadas | **Não há fonte.** Registro obrigatório do titular na plataforma, validado por inferência sobre AVL (ausência de veículos em linha por período superior a limiar); bilhetagem histórica | V4 (registro), com validação V2 |
+| C-04 | Regularidade de intervalo | Intervalos observados entre veículos sucessivos em linhas com intervalo programado de até 10 min | AVL | V2 |
+
+### Subíndice S, segurança
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| S-01 | Sinistros com vítima | Óbitos e lesões graves em sinistros com veículo do sistema; quilômetros rodados (versão inicial); passageiros-quilômetro (versão madura) | **Numerador:** o SIM/DATASUS identifica ocupantes de ônibus (CID-10 V70 a V79) mas não separa ônibus de caminhão em atropelamentos (V04) e não identifica sistema ou operador; boletins de ocorrência têm formato heterogêneo por UF; o registro de sinistros do operador é a única fonte que identifica o sistema. **Denominador:** quilômetros do AVL; passageiros-quilômetro só existem com inferência de desembarque | V4 para o numerador (registro padronizado, cruzado por amostra com SIM, SIH e boletins); V2 para o denominador |
+| S-02 | Ocorrências de segurança pessoal | Ocorrências de importunação, assédio, injúria e discriminação; embarques | Ouvidoria do titular, canal do operador e boletins de ocorrência têm definições distintas e não há consolidação nacional; embarques da bilhetagem | V4 (registro padronizado na plataforma, com tipologia única); V2 para o denominador |
+| S-03 | Canais de denúncia | Existência do canal; data de registro e de resposta por manifestação | Cadastro do titular; sistema de ouvidoria do titular | V3 |
+
+### Subíndice P, percepção
+
+| Código | Métrica | Origem | Classe |
+|---|---|---|---|
+| P-01 a P-10 | Dimensões do núcleo comum | PeMOB Usuário (Anexo II) | P |
+
+### Subíndice F, conveniência e conforto
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| F-01 | Adequação da oferta, lado superlotação | Passageiros a bordo por trecho e viagem; área útil do veículo | Bilhetagem (embarques) com desembarque **inferido**; cadastro de frota (tipologia e área). Alternativa: pesquisa visual de ocupação em pontos de controle | V2 com método de inferência; V3 por pesquisa visual |
+| F-01 | Adequação da oferta, lado ociosidade | Passageiros-quilômetro; lugares-quilômetro | Bilhetagem com inferência de desembarque; GTFS mais cadastro de frota | V2 com método de inferência |
+| F-02 | Salubridade | Resultado de vistorias de limpeza; inventário de terminais e estações com sanitário e água potável | Fiscalização do titular, sem padrão nacional; cadastro de infraestrutura do titular, **inexistente na maioria dos sistemas** | V4 (cadastro de infraestrutura a criar), com vistoria V3 e verificação amostral |
+| F-03 | Tempo de viagem relativo | Tempo porta a porta por TPC entre pares origem-destino; tempo por automóvel nos mesmos pares | Roteamento sobre GTFS e rede de pedestres (r5r ou equivalente); roteamento sobre rede viária OpenStreetMap com velocidades de tráfego (fonte comercial ou OSRM) | V1, calculável centralmente |
+| F-04 | Condições de espera | Abrigo, assento e iluminação por ponto de parada; embarques por ponto | O GTFS (stops.txt) não traz esses atributos; cadastro de pontos do titular, raro; bilhetagem | V4 (cadastro de pontos a criar) |
+| F-05 | Informação ao passageiro | Existência de GTFS público, aplicativo, sítio; informação física nos pontos | Verificação central (GTFS publicado, aplicativo listado); cadastro de pontos com verificação amostral em campo | V1 para o digital; V3 para o físico |
+| F-06 | Atendimento a manifestações | Manifestações registradas; tempo até resposta; resolução | Sistema de ouvidoria do titular; o Fala.BR só cobre entes que aderiram | V3, padronizável |
+
+Conforto térmico e acústico (temperatura e ruído internos em operação) exigiria sensores embarcados ou medição amostral instrumentada. Classe V5; não integra o índice objetivo.
+
+### Subíndice V, frota
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| V-01 | Idade média | Ano de fabricação por veículo | Cadastro de frota com placa e chassi, validado no RENAVAM (SENATRAN) | V1 após acordo com SENATRAN; V3 antes |
+| V-02 | Cauda de frota envelhecida | Idade por veículo; limite regulamentar local | Idem; regulamento do titular | V1 após acordo; V3 antes |
+| V-03 | Disponibilidade operacional | Veículos com posição no pico; frota cadastrada | AVL; cadastro | V2 |
+| V-04 | Frota reserva | Frota reserva declarada; frota operante | Cadastro (declarado); AVL | V2, com numerador V3 |
+| V-05 | Acessibilidade universal | Atributo por veículo | Cadastro de frota e vistoria do titular; o RENAVAM não registra acessibilidade | V3 |
+
+### Subíndice E, ambiental
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| E-01 | Eletrificação | Tipo de tração por veículo | Cadastro de frota; o RENAVAM registra combustível e tração | V1 após acordo com SENATRAN |
+| E-02 | Combustíveis renováveis | Combustível por veículo | Idem | V1 após acordo |
+| E-03 | Emissões locais | Quilometragem por tipo de veículo; fatores de emissão; passageiros-quilômetro ou embarques | AVL; fatores CETESB; denominador inferido ou embarques | V2, com denominador dependente de inferência |
+| E-04 | Emissões de GEE | Idem | AVL; fatores do Inventário Nacional; idem | V2, com denominador dependente de inferência |
+| E-05 | Cumprimento de meta própria | Meta de emissões no planejamento; emissões apuradas | PlanMob ou plano do art. 9º (declaratório); E-04 | V3 |
+
+### Subíndice M, modicidade
+
+| Código | Métrica | Variáveis | Origem de cada variável | Classe |
+|---|---|---|---|---|
+| M-01 | Esforço tarifário | Tarifa vigente; renda domiciliar per capita do primeiro quintil | Cadastro tarifário (declaratório, atualizado por evento); Censo 2022 por setor censitário (a PNAD Contínua não tem estimativa municipal universal) | V1 com cadastro tarifário |
+| M-02 | Comparação intermodal | Custo mensal por TPC; custo mensal por automóvel em viagem equivalente | Tarifa; modelo central com preço de combustível (ANP), consumo médio e distância típica | V1, calculável centralmente com modelo |
+| M-03 | Integração tarifária | Existência e regras de integração | Cadastro tarifário | V3 |
+| M-04 | Sustentação extratarifária | Receita tarifária; subsídio e outras fontes | Dados contratuais e financeiros do titular; a PeMOB já pergunta | V3 |
+
+---
+
+## 4. Balanço: o que é calculável e quando
+
+| Classe | Métricas | Códigos | Leitura |
+|---|---|---|---|
+| V1, calculável hoje | 9 | A-01, A-02, F-03, V-01, V-02, E-01, E-02, M-01, M-02 | **Sete das nove dependem do GTFS ou do cadastro de frota validado no SENATRAN**, o que confirma que esses dois são os pré-requisitos de tudo |
+| V2, exige plataforma | 8 | C-01, C-02, C-04, F-01, V-03, V-04, E-03, E-04 | **Quatro delas (F-01, E-03, E-04 e a versão madura de S-01) dependem de inferência de desembarque**, que é método a padronizar antes de qualquer cálculo |
+| V3, declaratório | 7 | S-03, F-05, F-06, V-05, E-05, M-03, M-04 | Calculáveis para todos os sistemas, com valor probatório baixo até haver auditoria |
+| V4, exige criação de registro | 5 | C-03, S-01, S-02, F-02, F-04 | **Três delas estão no bloco de maior peso do índice** (C e S somam 0,40 do fator D) |
+| V5, sem fonte viável | 0 | | Critério aplicado ao conforto térmico e acústico, excluído do índice objetivo |
+| P, pesquisa | 1 | P-01 a P-10 | Depende da PeMOB Usuário |
+| **Total** | **30** | | 29 métricas objetivas e o bloco P, conforme Manual, seção 10 |
+
+Dois achados que o balanço torna visíveis:
+
+**Primeiro.** O subíndice S, com peso 0,18, tem dois de três componentes na classe V4. O bloco C e S, que soma 0,40 do fator D, depende de registros que hoje não existem em forma padronizada.
+
+**Segundo.** A inferência de desembarque não é detalhe técnico: é pré-condição de quatro métricas em três subíndices e de todas as agregações por passageiros-quilômetro. É tratada como entregável de primeira ordem do PNDTPC, ao lado do GTFS e do cadastro de frota (Manual, seção 12).
+
+---
+
+## 5. Modelo de ficha técnica de indicador
+
+Padrão a ser adotado para cada uma das 29 métricas objetivas e para o bloco de percepção, inspirado nas fichas do SINISA.
+
+| Campo | Conteúdo |
+|---|---|
+| Código | Identificador único (por exemplo, S-01) |
+| Nome | Denominação do indicador |
+| Subíndice e peso interno | Onde entra e com que peso |
+| Base legal | Dispositivo da Lei nº 15.432/2026 que fundamenta |
+| Definição | O que o indicador mede, em uma frase |
+| Fórmula | Expressão algébrica com as variáveis nomeadas |
+| Variáveis | Uma linha por variável: nome, código, unidade, origem, responsável pelo fornecimento, periodicidade, método de validação |
+| Unidade e sentido | Unidade do resultado; se maior é melhor, menor é melhor ou bilateral |
+| Valores de referência | Piso e referência para normalização, por modo e porte quando aplicável |
+| Classe de viabilidade | V1 a V5 ou P |
+| Período de referência | Ano civil, dias úteis, pico etc. |
+| Limitações conhecidas | O que o indicador não capta ou capta mal |
+| Riscos de manipulação | Vetor conhecido e trava |
+| Situação | Ativo, piloto, suspenso |
+
+---
+
+## 6. Fichas de exemplo
+
+### S-01, Sinistros com vítima envolvendo veículos de TPC
+
+| Campo | Conteúdo |
+|---|---|
+| Subíndice e peso | S, 0,45 |
+| Base legal | Art. 31, III; art. 16, IX |
+| Definição | Taxa de óbitos e lesões graves em sinistros de trânsito com envolvimento de veículo do sistema, por unidade de exposição |
+| Fórmula, versão inicial | (Óbitos + lesões graves em sinistros com veículo do sistema no ano) ÷ (quilômetros rodados no ano ÷ 1.000.000) |
+| Fórmula, versão madura | Idem, com denominador em passageiros-quilômetro ÷ 100.000.000 |
+| Variável 1 | Óbitos em sinistros com veículo do sistema. Origem: **registro padronizado de sinistros com vítima**, a instituir na plataforma, preenchido pelo operador e validado pelo titular, com placa do veículo, data, local e vítimas. Validação: cruzamento amostral com SIM/DATASUS (CID-10 V70 a V79 e V04) por município e data, e com boletins de ocorrência onde disponíveis. Periodicidade: contínua, consolidação anual |
+| Variável 2 | Lesões graves. Mesma origem. Definição de "grave": internação hospitalar, validável por amostra no SIH/DATASUS |
+| Variável 3 (versão inicial) | Quilômetros rodados no ano. Origem: AVL, via PNDTPC. Periodicidade: contínua. Os contratos vigentes já costumam exigir esta medida |
+| Variável 4 (versão madura) | Passageiros-quilômetro. Origem: bilhetagem com inferência de desembarque por método padronizado pelo PNDTPC |
+| Sentido | Menor é melhor |
+| Valores de referência | A calibrar no piloto, por modo |
+| Classe | V4 (numerador), V2 (denominador) |
+| Limitações | Não distingue responsabilidade pelo sinistro (adequado para o índice de sistema; inadequado para o de operador, documento principal, seção 4); depende de registro pelo próprio operador, com incentivo à subnotificação; comparabilidade entre modos exige tabela própria |
+| Risco e trava | Subnotificação. Trava: cruzamento amostral com SIM e SIH, com penalização por divergência acima de limiar |
+| Situação | Não calculável até instituição do registro |
+
+### C-03, Continuidade do serviço
+
+| Campo | Conteúdo |
+|---|---|
+| Subíndice e peso | C, 0,20 |
+| Base legal | Art. 31, I; art. 3º, IV |
+| Definição | Intensidade das interrupções não programadas do serviço, ponderada por passageiros afetados e duração |
+| Fórmula | Σ (passageiros habituais das linhas afetadas × horas de interrupção) ÷ (horas-passageiro ofertadas no ano), expressa em horas-passageiro perdidas por mil horas-passageiro ofertadas |
+| Variável 1 | Interrupções: linha, início, fim, causa. Origem: **registro obrigatório do titular na plataforma**, a instituir, com limiar mínimo proposto (interrupção total de linha por mais de 2 horas, ou de mais de 20% da rede por qualquer período). Validação: inferência por AVL (ausência de veículos em linha) |
+| Variável 2 | Passageiros habituais da linha. Origem: bilhetagem, média dos 12 meses anteriores |
+| Sentido | Menor é melhor |
+| Valores de referência | Piso 5,0; referência 0,2 (ônibus) |
+| Classe | V4, com validação V2 |
+| Limitações | Greve é interrupção não programada do ponto de vista do usuário; o tratamento (contar ou não) é definição pendente do dicionário de dados (Manual, seção 13). Interrupção por evento externo (enchente) idem |
+| Situação | Não calculável até instituição do registro |
+
+### F-03, Tempo de viagem por TPC em relação ao automóvel
+
+| Campo | Conteúdo |
+|---|---|
+| Subíndice e peso | F, 0,17 |
+| Base legal | Art. 16, VI; art. 5º, VI |
+| Definição | Razão entre o tempo porta a porta médio por TPC e por automóvel para uma amostra padronizada de pares origem-destino |
+| Fórmula | Média ponderada por população de [tempo TPC (i,j) ÷ tempo automóvel (i,j)] sobre pares (i,j) amostrados |
+| Variável 1 | Tempo por TPC. Origem: roteamento multimodal sobre GTFS estático mais rede de pedestres (OpenStreetMap), com ferramenta r5r ou equivalente, calculado centralmente pela União |
+| Variável 2 | Tempo por automóvel. Origem: roteamento sobre rede viária OpenStreetMap com velocidades de tráfego em horário de pico; fonte de velocidades a definir (dado comercial ou estimativa por OSRM com penalização) |
+| Variável 3 | Pares origem-destino. Origem: amostra de células da grade estatística, ponderada por população, com destinos nos principais polos de emprego (RAIS) |
+| Sentido | Menor é melhor |
+| Valores de referência | Piso 3,0; referência 1,5 |
+| Classe | V1 |
+| Limitações | Usa tempo programado, não realizado; sistema com GTFS otimista pontua melhor que a realidade. Mitigação: usar tempos do AVL onde disponíveis |
+| Situação | Calculável no piloto para todo sistema com GTFS |
+
+---
+
+## 7. Consequências para o desenho
+
+**1. Três entregáveis de primeira ordem condicionam a maioria das métricas:** GTFS publicado, cadastro de frota validado no SENATRAN e método padronizado de inferência de desembarque. Sem os três, o índice calculável se reduz a M e a parte de A e V (Manual, seção 12).
+
+**2. O piloto é desenhado sobre as classes V1 e V2**, com os componentes V3 publicados separadamente como declaratórios e os V4 substituídos por versões provisórias (como a taxa de sinistros por quilômetro) até que os registros existam.
+
+**3. A classe V5 é critério permanente de exclusão.** Componente sem fonte viável nos próximos três anos não entra no índice objetivo e migra para a percepção ou para o painel diagnóstico (documento principal, 14.6).
+
+**4. As fichas técnicas das 27 métricas restantes são o produto documental que falta** antes da consulta pública (documento principal, seção 14). Sem elas, a consulta receberá a pergunta que motivou este anexo, e não terá resposta.
+
+---
+
+*Proposta técnica da CGDI/DEREG/SEMOB/MCID. A classificação de viabilidade depende de confirmação com as fontes indicadas; pesos, pisos e valores de referência são indicativos até sua fixação por portaria.*
