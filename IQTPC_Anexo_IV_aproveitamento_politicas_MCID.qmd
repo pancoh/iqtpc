@@ -21,7 +21,7 @@
 
 ## 1. Por que olhar para dentro de casa primeiro
 
-As comparações do documento principal foram feitas com saúde e educação, setores maduros mas de outros ministérios, com outra lógica federativa e outros instrumentos de transferência. O saneamento oferece algo diferente e mais útil: **um precedente construído sob a mesma competência constitucional, com titularidade municipal, prestação delegada, regulação infranacional e dependência de transferência voluntária da União**, e operado pela secretaria vizinha, dentro do mesmo ministério.
+As comparações do [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd) foram feitas com saúde e educação, setores maduros mas de outros ministérios, com outra lógica federativa e outros instrumentos de transferência. O saneamento oferece algo diferente e mais útil: **um precedente construído sob a mesma competência constitucional, com titularidade municipal, prestação delegada, regulação infranacional e dependência de transferência voluntária da União**, e operado pela secretaria vizinha, dentro do mesmo ministério.
 
 Em vários pontos, o que a SEMOB precisa desenhar já foi desenhado, testado e corrigido pela Secretaria Nacional de Saneamento Ambiental. Reaproveitar não é apenas economia de esforço: é redução de risco e ganho de legitimidade, porque replica solução que já sobreviveu ao escrutínio da CONJUR, dos órgãos de controle e dos entes.
 
@@ -41,7 +41,7 @@ A Lei nº 14.026/2020 estruturou o setor sobre três peças que a Lei nº 15.432
 
 A regulamentação dessa arquitetura pelo Decreto nº 11.599/2023 é o modelo de redação mais próximo disponível para o decreto do art. 12. Ele condiciona a alocação de recursos federais, entre outros itens, à observância das normas de referência da ANA e ao desempenho do prestador comprovado por declaração da entidade reguladora.
 
-**Técnica de transição a copiar.** O decreto do saneamento prevê que as condicionantes só sejam exigidas **após** a publicação das normas de referência e dos prazos de adequação conferidos ao ente regulador. É exatamente o mecanismo de que o IQTPC precisa para não entrar em vigor antes de existir padrão contra o qual medir, e resolve com elegância o problema de sequenciamento tratado na seção 12 do documento principal.
+**Técnica de transição a copiar.** O decreto do saneamento prevê que as condicionantes só sejam exigidas **após** a publicação das normas de referência e dos prazos de adequação conferidos ao ente regulador. É exatamente o mecanismo de que o IQTPC precisa para não entrar em vigor antes de existir padrão contra o qual medir, e resolve com elegância o problema de sequenciamento tratado na [seção 12 do documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd#sequenciamento-de-implantação).
 
 **Precedente adicional relevante.** O Decreto nº 11.467/2023 flexibilizou prazos de condicionantes de regionalização, adiando a exigência. Isso mostra que o instrumento admite calibração temporal sem alteração legal, o que é útil considerando a facultatividade da adesão às unidades regionais de TPC prevista no art. 8º, §§ 5º e 7º, da Lei nº 15.432/2026.
 
@@ -76,7 +76,7 @@ O que se aproveita:
 
 O SINISA incorpora módulo de regulação destinado às entidades reguladoras infranacionais, que permite a essas entidades acompanhar a coleta e aplicar a metodologia **ACERTAR**, de auditoria e certificação das informações prestadas.
 
-Este é o elemento que resolve, a custo baixo, o problema de auditoria levantado no documento principal. A lógica é descentralizar a verificação para a rede de reguladores infranacionais, em vez de custear auditoria federal direta em centenas de sistemas.
+Este é o elemento que resolve, a custo baixo, o problema de auditoria levantado no [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd). A lógica é descentralizar a verificação para a rede de reguladores infranacionais, em vez de custear auditoria federal direta em centenas de sistemas.
 
 A transposição é viável porque a Lei nº 15.432/2026 cria a rede equivalente:
 
@@ -93,7 +93,7 @@ Ou seja, o TPC terá, por força de lei, a mesma malha de entidades reguladoras 
 
 O SINISA inclui módulo de Gestão Municipal que reúne cadastro de prestadores, cadastro de reguladores, instrumentos de planejamento municipal, informação sobre prestação regionalizada e soluções alternativas de acesso.
 
-Isso é, funcionalmente, o **Cadastro Nacional de Sistemas de Transporte Público Coletivo** proposto como primeiro entregável no Anexo II, seção 2.2. O modelo de dados, a lógica de responsabilidade pelo preenchimento e a arquitetura de validação podem ser adaptados em vez de concebidos do zero.
+Isso é, funcionalmente, o **Cadastro Nacional de Sistemas de Transporte Público Coletivo** proposto como primeiro entregável no [Anexo II, seção 2.2](IQTPC_Anexo_II_pesquisa_nacional.qmd#primeiro-entregável-o-cadastro-do-universo). O modelo de dados, a lógica de responsabilidade pelo preenchimento e a arquitetura de validação podem ser adaptados em vez de concebidos do zero.
 
 Correspondência conceitual:
 
@@ -105,7 +105,7 @@ Correspondência conceitual:
 | Prestação regionalizada | Unidade regional de TPC (art. 6º, XVII) e gestão associada (art. 8º) |
 | Soluções alternativas de acesso | Serviços complementares e acessórios (art. 6º, IV, "b" e "c") |
 
-Note-se que a categoria de "soluções alternativas" do saneamento resolve o mesmo problema classificatório que o Anexo II enfrentou ao propor as situações S1 a S4: como registrar atendimento precário ou não convencional sem tratá-lo como ausência de serviço nem como serviço regular.
+Note-se que a categoria de "soluções alternativas" do saneamento resolve o mesmo problema classificatório que o [Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd) enfrentou ao propor as situações S1 a S4: como registrar atendimento precário ou não convencional sem tratá-lo como ausência de serviço nem como serviço regular.
 
 ### 2.5 A lição da série histórica
 
@@ -113,7 +113,7 @@ O SNIS coletou dados de água e esgoto desde 1995, de resíduos sólidos desde 2
 
 Três lições:
 
-1. **O valor está na série, não na edição.** Trinta anos de dado comparável tornaram o SNIS referência para gestores, reguladores, pesquisadores, instituições financeiras e organismos internacionais. Nenhuma edição isolada teria esse efeito. Isso reforça o princípio de sequenciamento do documento principal (seção 12) e a exigência de imutabilidade do núcleo da pesquisa nacional.
+1. **O valor está na série, não na edição.** Trinta anos de dado comparável tornaram o SNIS referência para gestores, reguladores, pesquisadores, instituições financeiras e organismos internacionais. Nenhuma edição isolada teria esse efeito. Isso reforça o princípio de sequenciamento do [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd#sequenciamento-de-implantação) (seção 12) e a exigência de imutabilidade do núcleo da pesquisa nacional.
 2. **A transição entre sistemas é possível sem perder a série**, desde que planejada. O SINISA foi apresentado explicitamente como continuidade do legado do SNIS, e não como ruptura. É o modelo para a relação futura entre SIMU e PNDTPC.
 3. **Dado declaratório sem verificação envelhece mal.** A necessidade do ACERTAR e a reformulação em SINISA são, em parte, resposta a limitações acumuladas do modelo autodeclaratório original.
 
@@ -170,17 +170,17 @@ O Sistema de Qualificação de Empresas de Materiais, Componentes e Sistemas Con
 
 ## 3.5 Parâmetros de qualidade transferidos das políticas irmãs
 
-A transferência de **máquina institucional** (gate, auditoria, cadastro, certificação, calendário) é o aproveitamento mais evidente. A leitura das políticas irmãs com foco nos indicadores, e não na governança, produz ainda quatro parâmetros de qualidade e uma orientação metodológica, todos incorporados ao documento principal e ao Manual de cálculo.
+A transferência de **máquina institucional** (gate, auditoria, cadastro, certificação, calendário) é o aproveitamento mais evidente. A leitura das políticas irmãs com foco nos indicadores, e não na governança, produz ainda quatro parâmetros de qualidade e uma orientação metodológica, todos incorporados ao [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd) e ao [Manual de cálculo](IQTPC_Manual_de_calculo.qmd).
 
 | Acréscimo | Origem | Onde entrou |
 |---|---|---|
 | **Continuidade**, horas-passageiro perdidas em interrupções não programadas | SNIS e SINISA, indicadores de intermitência do abastecimento | Subíndice C, métrica C-03, peso interno 0,20 |
 | **Salubridade e condições sanitárias**, incluindo sanitário em funcionamento e água potável em terminais | Saneamento, e o próprio art. 3º, IV, da Lei nº 15.432/2026 | Subíndice F, métrica F-02, peso interno 0,18 |
 | **Atendimento a manifestações**, tempo de resposta e taxa de resolução | SNIS e Lei nº 13.460/2017 | Subíndice F, métrica F-06, peso interno 0,09 |
-| **Déficit de Acesso ao TPC**, número absoluto de pessoas sem serviço adequado | Déficit habitacional, Fundação João Pinheiro | Indicador satélite, documento principal, 8.1 |
+| **Déficit de Acesso ao TPC**, número absoluto de pessoas sem serviço adequado | Déficit habitacional, Fundação João Pinheiro | Indicador satélite, [documento principal, 8.1](IQTPC_parametros_qualidade_transporte_publico.qmd#déficit-de-acesso-ao-transporte-público-coletivo) |
 | **Norma de desempenho em vez de norma prescritiva** | NBR 15575 e PBQP-H | Forma das normas de referência, ver 3.5.2 |
 
-A NBR 15575 também oferece limiares mensuráveis de conforto térmico e acústico. O componente correspondente não integra o índice objetivo, por ausência de fonte viável (Anexo I), e o atributo é medido pela PeMOB Usuário.
+A NBR 15575 também oferece limiares mensuráveis de conforto térmico e acústico. O componente correspondente não integra o índice objetivo, por ausência de fonte viável ([Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd)), e o atributo é medido pela PeMOB Usuário.
 
 ### 3.5.1 A salubridade como ponto cego setorial
 
@@ -214,9 +214,9 @@ Verificação em fontes públicas, setembro de 2026. **Não existe.** Em nenhuma
 
 **Leitura.** Há um padrão institucional consistente e nunca explicitado: **o MCID produz o dado; o número composto é produzido por fora**, seja por fundação de pesquisa contratada, seja por sociedade civil. O padrão tem uma lógica: protege o ministério do custo político de ranquear municípios, e transfere a terceiros a disputa metodológica que todo índice composto atrai.
 
-O IQTPC rompe esse padrão ao ser concebido como índice publicado pela SEMOB. O IDEB, publicado pelo INEP, mostra que a ruptura é possível e pode funcionar. Mas é uma escolha estratégica com custo político real e precisa ser tomada de forma explícita. Está registrada entre as questões em aberto (documento principal, seção 14).
+O IQTPC rompe esse padrão ao ser concebido como índice publicado pela SEMOB. O IDEB, publicado pelo INEP, mostra que a ruptura é possível e pode funcionar. Mas é uma escolha estratégica com custo político real e precisa ser tomada de forma explícita. Está registrada entre as questões em aberto ([documento principal, seção 14](IQTPC_parametros_qualidade_transporte_publico.qmd#questões-em-aberto-e-plano-de-enfrentamento)).
 
-**Sobre o GT da Portaria nº 536/2015.** É o antecedente direto do IQTPC dentro da própria SEMOB. Seu relatório definiu 12 indicadores de efetividade da PNMU e foi descontinuado após 2016. O IQTPC deve, no mínimo, explicar sua relação com esse trabalho: quais indicadores absorve, quais descarta e por quê. Ignorá-lo expõe o projeto à objeção de que reinventa o que já foi feito (documento principal, seção 14).
+**Sobre o GT da Portaria nº 536/2015.** É o antecedente direto do IQTPC dentro da própria SEMOB. Seu relatório definiu 12 indicadores de efetividade da PNMU e foi descontinuado após 2016. O IQTPC deve, no mínimo, explicar sua relação com esse trabalho: quais indicadores absorve, quais descarta e por quê. Ignorá-lo expõe o projeto à objeção de que reinventa o que já foi feito ([documento principal, seção 14](IQTPC_parametros_qualidade_transporte_publico.qmd#questões-em-aberto-e-plano-de-enfrentamento)).
 
 ---
 

@@ -63,7 +63,7 @@ A assimetria entre **cerca de 30% dos municípios e cerca de 82% da população*
 
 ### 2.1 Consequência para o IQTPC, e não apenas para a pesquisa
 
-Há aqui uma implicação que extrapola o desenho amostral e precisa ser incorporada ao documento principal:
+Há aqui uma implicação que extrapola o desenho amostral e precisa ser incorporada ao [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd):
 
 > **O IQTPC não se aplica a município sem serviço de TPC.** Município sem sistema não tem índice zero, tem índice **não aplicável**.
 
@@ -82,11 +82,11 @@ Propõe-se, portanto, uma classificação nacional em quatro situações:
 
 Nenhum desenho amostral é possível antes de existir o cadastro. A base disponível hoje é declaratória, defasada e de definição instável, já que a própria MUNIC variou nos critérios entre edições.
 
-A construção não parte do zero. A PeMOB já constitui o embrião deste cadastro para o topo do universo, com série anual desde 2018 e base publicada no SIMU, e a PeMOB Metropolitana já cobre, desde 2019, os sistemas de titularidade estadual (Anexo III).
+A construção não parte do zero. A PeMOB já constitui o embrião deste cadastro para o topo do universo, com série anual desde 2018 e base publicada no SIMU, e a PeMOB Metropolitana já cobre, desde 2019, os sistemas de titularidade estadual ([Anexo III](IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd)).
 
 **Entregável 1: Cadastro Nacional de Sistemas de Transporte Público Coletivo**, contendo, por sistema: titular, modalidade de prestação, contratos vigentes, modos operados, frota, extensão da rede, população atendida, existência de GTFS e enquadramento em S1 a S4.
 
-O cadastro se constrói cruzando: dados do art. 13 (fornecimento obrigatório ao Simu), MUNIC, PeMOB, cadastro de frota validado no SENATRAN (documento principal, 6.5) e repositórios de GTFS. Ele serve simultaneamente como base amostral da pesquisa, denominador do índice e instrumento de verificação do gate do art. 21.
+O cadastro se constrói cruzando: dados do art. 13 (fornecimento obrigatório ao Simu), MUNIC, PeMOB, cadastro de frota validado no SENATRAN ([documento principal, 6.5](IQTPC_parametros_qualidade_transporte_publico.qmd#v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012)) e repositórios de GTFS. Ele serve simultaneamente como base amostral da pesquisa, denominador do índice e instrumento de verificação do gate do art. 21.
 
 ---
 
@@ -431,7 +431,7 @@ O desenho da seção 5 é o tecnicamente ideal, não o financeiramente viável. 
 
 ### 12.8 Consequências para o IQTPC
 
-Operar no Cenário 3 tem três consequências que precisam estar registradas no documento principal:
+Operar no Cenário 3 tem três consequências que precisam estar registradas no [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd):
 
 1. **O subíndice P deve entrar com peso reduzido**, na faixa de 0,08 a 0,10 em vez de 0,17, enquanto a medição não tiver precisão para desagregação. Peso alto sobre medida imprecisa transfere ruído para o índice.
 2. **O IQTPC-Equidade é calculado sem P**, apenas com os componentes objetivos territorializáveis.
@@ -459,7 +459,7 @@ Os valores permanecem estimativas de dimensionamento e **não substituem pesquis
 
 ### 13.1 Regra de composição
 
-O subíndice P **só compõe** o IQTPC quando o sistema tiver sido pesquisado no ciclo corrente ou no imediatamente anterior. Fora disso, o índice é calculado sem P, com renormalização dos pesos dos demais subíndices, e publicado como IQTPC-Objetivo (Manual, seção 7.3).
+O subíndice P **só compõe** o IQTPC quando o sistema tiver sido pesquisado no ciclo corrente ou no imediatamente anterior. Fora disso, o índice é calculado sem P, com renormalização dos pesos dos demais subíndices, e publicado como IQTPC-Objetivo ([Manual, seção 7.3](IQTPC_Manual_de_calculo.qmd#iqtpc-objetivo-sem-p)).
 
 Vedação expressa: imputar valor de P por sistema similar, por média do estrato ou por qualquer método de modelagem. Imputação em índice com consequência financeira é convite a litígio.
 

@@ -3,7 +3,7 @@
 ## Rastreabilidade de cada variável do IQTPC
 
 **Documento principal:** Parâmetros nacionais de qualidade do transporte público coletivo
-**Finalidade:** descer ao nível da variável, que é o nível em que o cálculo acontece ou não acontece. O documento principal (seção 11) resume a fonte por subíndice; o Manual (seção 10) classifica cada métrica por origem predominante; este anexo rastreia cada variável e classifica a viabilidade de cada métrica
+**Finalidade:** descer ao nível da variável, que é o nível em que o cálculo acontece ou não acontece. O [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd#fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade) (seção 11) resume a fonte por subíndice; o [Manual](IQTPC_Manual_de_calculo.qmd#quadro-síntese-de-origem-de-todas-as-métricas) (seção 10) classifica cada métrica por origem predominante; este anexo rastreia cada variável e classifica a viabilidade de cada métrica
 **Natureza:** matriz de rastreabilidade e modelo de ficha técnica
 
 ---
@@ -24,7 +24,7 @@
 
 Um indicador é uma razão entre variáveis, e cada variável tem origem própria, periodicidade própria e limitação própria. Dizer que o subíndice de segurança vem "de registros do titular e do SIM/DATASUS" não informa que o numerador não identifica o sistema e o denominador não existe. O SNIS e o SINISA resolvem isso com ficha técnica por indicador, com código, fórmula, unidade, origem de cada variável, periodicidade e restrições de uso. É esse padrão que o IQTPC adota, e este anexo é o primeiro passo.
 
-Os códigos das métricas seguem o Manual de cálculo. As quatro origens (FC, PA, PC e PU) estão definidas no Manual, seção 3.
+Os códigos das métricas seguem o [Manual de cálculo](IQTPC_Manual_de_calculo.qmd). As quatro origens (FC, PA, PC e PU) estão definidas no [Manual, seção 3](IQTPC_Manual_de_calculo.qmd#origem-dos-dados-as-quatro-fontes).
 
 ---
 
@@ -39,7 +39,7 @@ Os códigos das métricas seguem o Manual de cálculo. As quatro origens (FC, PA
 | **V5, sem fonte viável** | Não há caminho realista nos próximos três anos. Critério de exclusão do índice objetivo, aplicado ao conforto térmico e acústico |
 | **P** | Pesquisa de percepção (PeMOB Usuário) |
 
-Correspondência com a coluna "Situação" do Manual: V1 e os declaratórios já existentes correspondem a **existe**; V2 e os declaratórios cujo fluxo falta padronizar correspondem a **a implantar**; V4 e P correspondem a **a criar**.
+Correspondência com a coluna "Situação" do [Manual](IQTPC_Manual_de_calculo.qmd): V1 e os declaratórios já existentes correspondem a **existe**; V2 e os declaratórios cujo fluxo falta padronizar correspondem a **a implantar**; V4 e P correspondem a **a criar**.
 
 ---
 
@@ -73,7 +73,7 @@ Correspondência com a coluna "Situação" do Manual: V1 e os declaratórios já
 
 | Código | Métrica | Origem | Classe |
 |---|---|---|---|
-| P-01 a P-10 | Dimensões do núcleo comum | PeMOB Usuário (Anexo II) | P |
+| P-01 a P-10 | Dimensões do núcleo comum | PeMOB Usuário ([Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd)) | P |
 
 ### Subíndice F, conveniência e conforto
 
@@ -130,13 +130,13 @@ Conforto térmico e acústico (temperatura e ruído internos em operação) exig
 | V4, exige criação de registro | 5 | C-03, S-01, S-02, F-02, F-04 | **Três delas estão no bloco de maior peso do índice** (C e S somam 0,40 do fator D) |
 | V5, sem fonte viável | 0 | | Critério aplicado ao conforto térmico e acústico, excluído do índice objetivo |
 | P, pesquisa | 1 | P-01 a P-10 | Depende da PeMOB Usuário |
-| **Total** | **30** | | 29 métricas objetivas e o bloco P, conforme Manual, seção 10 |
+| **Total** | **30** | | 29 métricas objetivas e o bloco P, conforme [Manual, seção 10](IQTPC_Manual_de_calculo.qmd#quadro-síntese-de-origem-de-todas-as-métricas) |
 
 Dois achados que o balanço torna visíveis:
 
 **Primeiro.** O subíndice S, com peso 0,18, tem dois de três componentes na classe V4. O bloco C e S, que soma 0,40 do fator D, depende de registros que hoje não existem em forma padronizada.
 
-**Segundo.** A inferência de desembarque não é detalhe técnico: é pré-condição de quatro métricas em três subíndices e de todas as agregações por passageiros-quilômetro. É tratada como entregável de primeira ordem do PNDTPC, ao lado do GTFS e do cadastro de frota (Manual, seção 12).
+**Segundo.** A inferência de desembarque não é detalhe técnico: é pré-condição de quatro métricas em três subíndices e de todas as agregações por passageiros-quilômetro. É tratada como entregável de primeira ordem do PNDTPC, ao lado do GTFS e do cadastro de frota ([Manual, seção 12](IQTPC_Manual_de_calculo.qmd#pré-requisitos-de-implantação)).
 
 ---
 
@@ -181,7 +181,7 @@ Padrão a ser adotado para cada uma das 29 métricas objetivas e para o bloco de
 | Sentido | Menor é melhor |
 | Valores de referência | A calibrar no piloto, por modo |
 | Classe | V4 (numerador), V2 (denominador) |
-| Limitações | Não distingue responsabilidade pelo sinistro (adequado para o índice de sistema; inadequado para o de operador, documento principal, seção 4); depende de registro pelo próprio operador, com incentivo à subnotificação; comparabilidade entre modos exige tabela própria |
+| Limitações | Não distingue responsabilidade pelo sinistro (adequado para o índice de sistema; inadequado para o de operador, [documento principal, seção 4](IQTPC_parametros_qualidade_transporte_publico.qmd#arquitetura-em-três-camadas)); depende de registro pelo próprio operador, com incentivo à subnotificação; comparabilidade entre modos exige tabela própria |
 | Risco e trava | Subnotificação. Trava: cruzamento amostral com SIM e SIH, com penalização por divergência acima de limiar |
 | Situação | Não calculável até instituição do registro |
 
@@ -198,7 +198,7 @@ Padrão a ser adotado para cada uma das 29 métricas objetivas e para o bloco de
 | Sentido | Menor é melhor |
 | Valores de referência | Piso 5,0; referência 0,2 (ônibus) |
 | Classe | V4, com validação V2 |
-| Limitações | Greve é interrupção não programada do ponto de vista do usuário; o tratamento (contar ou não) é definição pendente do dicionário de dados (Manual, seção 13). Interrupção por evento externo (enchente) idem |
+| Limitações | Greve é interrupção não programada do ponto de vista do usuário; o tratamento (contar ou não) é definição pendente do dicionário de dados ([Manual, seção 13](IQTPC_Manual_de_calculo.qmd#definições-pendentes-do-dicionário-de-dados)). Interrupção por evento externo (enchente) idem |
 | Situação | Não calculável até instituição do registro |
 
 ### F-03, Tempo de viagem por TPC em relação ao automóvel
@@ -222,13 +222,13 @@ Padrão a ser adotado para cada uma das 29 métricas objetivas e para o bloco de
 
 ## 7. Consequências para o desenho
 
-**1. Três entregáveis de primeira ordem condicionam a maioria das métricas:** GTFS publicado, cadastro de frota validado no SENATRAN e método padronizado de inferência de desembarque. Sem os três, o índice calculável se reduz a M e a parte de A e V (Manual, seção 12).
+**1. Três entregáveis de primeira ordem condicionam a maioria das métricas:** GTFS publicado, cadastro de frota validado no SENATRAN e método padronizado de inferência de desembarque. Sem os três, o índice calculável se reduz a M e a parte de A e V ([Manual, seção 12](IQTPC_Manual_de_calculo.qmd#pré-requisitos-de-implantação)).
 
 **2. O piloto é desenhado sobre as classes V1 e V2**, com os componentes V3 publicados separadamente como declaratórios e os V4 substituídos por versões provisórias (como a taxa de sinistros por quilômetro) até que os registros existam.
 
-**3. A classe V5 é critério permanente de exclusão.** Componente sem fonte viável nos próximos três anos não entra no índice objetivo e migra para a percepção ou para o painel diagnóstico (documento principal, 14.6).
+**3. A classe V5 é critério permanente de exclusão.** Componente sem fonte viável nos próximos três anos não entra no índice objetivo e migra para a percepção ou para o painel diagnóstico ([documento principal, 14.6](IQTPC_parametros_qualidade_transporte_publico.qmd#regra-de-permanência-das-métricas)).
 
-**4. As fichas técnicas das 27 métricas restantes são o produto documental que falta** antes da consulta pública (documento principal, seção 14). Sem elas, a consulta receberá a pergunta que motivou este anexo, e não terá resposta.
+**4. As fichas técnicas das 27 métricas restantes são o produto documental que falta** antes da consulta pública ([documento principal, seção 14](IQTPC_parametros_qualidade_transporte_publico.qmd#questões-em-aberto-e-plano-de-enfrentamento)). Sem elas, a consulta receberá a pergunta que motivou este anexo, e não terá resposta.
 
 ---
 

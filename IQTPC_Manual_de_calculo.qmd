@@ -2,9 +2,9 @@
 
 ## Metodologia de cálculo e origem de todas as métricas
 
-**Documento de referência:** Parâmetros nacionais de qualidade do transporte público coletivo (documento principal) e Anexos I a IV
+**Documento de referência:** Parâmetros nacionais de qualidade do transporte público coletivo ([documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd)) e Anexos I a IV
 **Base normativa:** Lei nº 15.432/2026, arts. 12, 13 e 31; Lei nº 12.587/2012, art. 16, IX e X
-**Natureza:** documento de referência para o cálculo. Em caso de divergência com o documento principal ou com os anexos, prevalece este Manual
+**Natureza:** documento de referência para o cálculo. Em caso de divergência com o [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd) ou com os anexos, prevalece este Manual
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 1. Objeto e convenções
 
-Este manual consolida em um único documento a metodologia de cálculo do Índice de Qualidade do Transporte Público Coletivo e a origem de cada uma das suas métricas: 29 métricas objetivas mais o bloco de percepção (P), que reúne 9 dimensões compostoras e 1 de acompanhamento. Contadas as dimensões de P, são 39 variáveis de entrada; contado P como um bloco, são 30 linhas de cálculo. Substitui, para efeito de cálculo, as descrições dispersas no documento principal e nos anexos, que permanecem como fundamentação.
+Este manual consolida em um único documento a metodologia de cálculo do Índice de Qualidade do Transporte Público Coletivo e a origem de cada uma das suas métricas: 29 métricas objetivas mais o bloco de percepção (P), que reúne 9 dimensões compostoras e 1 de acompanhamento. Contadas as dimensões de P, são 39 variáveis de entrada; contado P como um bloco, são 30 linhas de cálculo. Substitui, para efeito de cálculo, as descrições dispersas no [documento principal](IQTPC_parametros_qualidade_transporte_publico.qmd) e nos anexos, que permanecem como fundamentação.
 
 Convenções:
 
@@ -190,7 +190,7 @@ F = 0,28·F-01 + 0,18·F-02 + 0,17·F-03 + 0,15·F-04 + 0,13·F-05 + 0,09·F-06
 | **F-05** | Informação ao passageiro | 0,6 × pontuação digital (10 se há GTFS público e aplicativo ou sítio com horários; 5,5 se há apenas um; 1 se nenhum) + 0,4 × pontuação de % de pontos com informação física | Digital: verificação central sobre **PA** e cadastro. Físico: **PC**, cadastro de pontos com verificação amostral | Binário / 90% | Digital existe; físico a criar |
 | **F-06** | Atendimento a manifestações | 0,5 × pontuação de tempo médio de resposta + 0,5 × taxa de resolução | **PC**, sistema de ouvidoria do titular, padronizado | 30 dias / 10 dias; 50% / 90% | A implantar |
 
-Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável (Anexo I). É medido exclusivamente pela dimensão "lotação e conforto" de **PU**.
+Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável ([Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd)). É medido exclusivamente pela dimensão "lotação e conforto" de **PU**.
 
 ### 6.5 Subíndice V, frota (peso 0,12 em D)
 
@@ -253,7 +253,7 @@ D = exp( Σᵢ wᵢ × ln(Xᵢ) )
 
 ### 7.2 IQTPC-Completo com P em peso reduzido
 
-Enquanto a PeMOB Usuário operar no cenário mínimo viável (Anexo II, seção 12.6), em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido `w_P'`, fixado por portaria na faixa de 0,08 a 0,10. Os demais pesos são renormalizados pela regra geral:
+Enquanto a PeMOB Usuário operar no cenário mínimo viável ([Anexo II, seção 12.6](IQTPC_Anexo_II_pesquisa_nacional.qmd#escada-de-cenários)), em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido `w_P'`, fixado por portaria na faixa de 0,08 a 0,10. Os demais pesos são renormalizados pela regra geral:
 
 ```
 wᵢ' = wᵢ × (1 − w_P') ÷ 0,83          para i em {C, S, F, V, E, M}
@@ -391,7 +391,7 @@ Resposta direta à pergunta: o que vem de fonte já consolidada e o que vem da p
 | PeMOB Usuário | 1 bloco (P) | 3% |
 | **Total de linhas de cálculo** (29 métricas objetivas e o bloco P) | **30** | |
 
-Nota: contagem por origem predominante; várias métricas combinam mais de uma origem, como mostra o quadro. A correspondência com as classes de viabilidade V1 a V4 está no Anexo I, seção 4.
+Nota: contagem por origem predominante; várias métricas combinam mais de uma origem, como mostra o quadro. A correspondência com as classes de viabilidade V1 a V4 está no [Anexo I, seção 4](IQTPC_Anexo_I_matriz_origem_dados.qmd#balanço-o-que-é-calculável-e-quando).
 
 **Contagem por situação:**
 
@@ -484,7 +484,7 @@ Da leitura do quadro da seção 10, três providências condicionam a maior part
 
 Em seguida, quatro registros a criar no módulo cadastral do PNDTPC, sem os quais C-03, S-01, S-02, F-02 e F-04 não existem: registro de interrupções, registro de sinistros com vítima, registro de ocorrências de segurança pessoal e cadastro de infraestrutura de pontos e terminais.
 
-As fichas técnicas de todas as métricas, no modelo do Anexo I, seção 5, são o produto documental que precede a consulta pública.
+As fichas técnicas de todas as métricas, no modelo do [Anexo I, seção 5](IQTPC_Anexo_I_matriz_origem_dados.qmd#modelo-de-ficha-técnica-de-indicador), são o produto documental que precede a consulta pública.
 
 ---
 
@@ -502,7 +502,7 @@ Pico, período de referência, dias excluídos, embarques, raio de cobertura por
 | **Terminal** e **estação** | F-02 | O que distingue terminal de ponto de parada com abrigo, para efeito de exigência sanitária |
 | **Ocorrência de segurança pessoal** | S-02 | Tipologia única e base de registro (ouvidoria do titular, canal do operador, boletim de ocorrência), para que contagens sejam comparáveis |
 | **Sistema** | Todos | Fronteira entre sistema municipal, intermunicipal e metropolitano, para efeito de unidade de cálculo e de enquadramento em S1 a S4 |
-| **Serviço complementar** | F-01 | Critério objetivo de enquadramento para a faixa própria de ociosidade (documento principal, 6.4.1 e seção 14) |
+| **Serviço complementar** | F-01 | Critério objetivo de enquadramento para a faixa própria de ociosidade (documento principal, [6.4.1](IQTPC_parametros_qualidade_transporte_publico.qmd#indicador-bilateral-de-ocupação) e [seção 14](IQTPC_parametros_qualidade_transporte_publico.qmd#questões-em-aberto-e-plano-de-enfrentamento)) |
 
 ---
 

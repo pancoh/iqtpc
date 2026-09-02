@@ -4,3 +4,10 @@
 
 # macOS
 .DS_Store
+
+**/*.quarto_ipynb
+
+# Saídas de render soltas na raiz (o build correto vai para _book/)
+/*.html
+/*.pdf
+/*.docx

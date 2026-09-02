@@ -5,7 +5,7 @@
 **Base normativa:** Lei nº 15.432, de 13 de junho de 2026 (Marco Legal do Transporte Público Coletivo Urbano)
 **Vigência da Lei:** 14 de junho de 2027 (art. 44, um ano após a publicação no DOU de 14/06/2026)
 **Unidade:** CGDI/DEREG/SEMOB/MCID
-**Natureza:** proposta técnica consolidada, acompanhada de Manual de cálculo e seis anexos
+**Natureza:** proposta técnica consolidada, acompanhada do [Manual de cálculo](IQTPC_Manual_de_calculo.qmd) e de quatro anexos
 
 ---
 
@@ -26,15 +26,15 @@
 13. [Quadro comparativo com outros índices setoriais](#quadro-comparativo-com-outros-índices-setoriais)
 14. [Questões em aberto e plano de enfrentamento](#questões-em-aberto-e-plano-de-enfrentamento)
 
-> **Manual de cálculo** (documento apartado): metodologia consolidada em cinco níveis, fórmulas de normalização e agregação, origem de cada uma das 30 métricas objetivas e do bloco de percepção, classificada em fonte consolidada, PNDTPC automatizado, PNDTPC cadastral ou pesquisa, e exemplo numérico completo. **Para efeito de cálculo, prevalece sobre este documento.**
+> **[Manual de cálculo](IQTPC_Manual_de_calculo.qmd)** (documento apartado): metodologia consolidada em cinco níveis, fórmulas de normalização e agregação, origem de cada uma das 30 métricas objetivas e do bloco de percepção, classificada em fonte consolidada, PNDTPC automatizado, PNDTPC cadastral ou pesquisa, e exemplo numérico completo. **Para efeito de cálculo, prevalece sobre este documento.**
 >
-> **Anexo I, Matriz de origem dos dados por métrica** (documento apartado): origem de cada variável das métricas, classificação de viabilidade em cinco classes, modelo de ficha técnica e três fichas de exemplo.
+> **[Anexo I, Matriz de origem dos dados por métrica](IQTPC_Anexo_I_matriz_origem_dados.qmd)** (documento apartado): origem de cada variável das métricas, classificação de viabilidade em cinco classes, modelo de ficha técnica e três fichas de exemplo.
 >
-> **Anexo II, PeMOB Usuário** (documento apartado): universo, desenho amostral, instrumento, modelo de execução, custo e cronograma da pesquisa de percepção destinada a suprir o subíndice P.
+> **[Anexo II, PeMOB Usuário](IQTPC_Anexo_II_pesquisa_nacional.qmd)** (documento apartado): universo, desenho amostral, instrumento, modelo de execução, custo e cronograma da pesquisa de percepção destinada a suprir o subíndice P.
 >
-> **Anexo III, Arquitetura de coleta e desidratação da PeMOB** (documento apartado): divisão de trabalho entre PNDTPC, SIMU e família PeMOB, com o princípio de não perguntar ao ente aquilo que a plataforma calcula.
+> **[Anexo III, Arquitetura de coleta e desidratação da PeMOB](IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd)** (documento apartado): divisão de trabalho entre PNDTPC, SIMU e família PeMOB, com o princípio de não perguntar ao ente aquilo que a plataforma calcula.
 >
-> **Anexo IV, Aproveitamento de instrumentos das demais políticas do MCID** (documento apartado): o que se transfere do saneamento (SINISA, certificado de adimplência, metodologia ACERTAR, normas de referência da ANA) e da habitação (PBQP-H, SiAC, SiNAT, PLHIS Simplificado), e o que não se transfere.
+> **[Anexo IV, Aproveitamento de instrumentos das demais políticas do MCID](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd)** (documento apartado): o que se transfere do saneamento (SINISA, certificado de adimplência, metodologia ACERTAR, normas de referência da ANA) e da habitação (PBQP-H, SiAC, SiNAT, PLHIS Simplificado), e o que não se transfere.
 
 ---
 
@@ -120,7 +120,7 @@ O Índice de Desempenho da Saúde Suplementar pontua operadoras (não entes fede
 
 ### 3.6 Precedentes internos ao Ministério das Cidades
 
-Nenhuma política do MCID publica índice composto de qualidade. O saneamento publica indicadores (SINISA) e os rankings são de terceiros; a habitação encomenda o déficit à Fundação João Pinheiro. Na mobilidade, o antecedente direto é o relatório do GT da Portaria MCID nº 536/2015, com 12 indicadores de efetividade da PNMU, descontinuado após 2016. A decisão sobre quem publica o composto e a relação com o GT de 2015 estão entre as questões em aberto (seção 14). Detalhamento no Anexo IV, seção 3.6.
+Nenhuma política do MCID publica índice composto de qualidade. O saneamento publica indicadores (SINISA) e os rankings são de terceiros; a habitação encomenda o déficit à Fundação João Pinheiro. Na mobilidade, o antecedente direto é o relatório do GT da Portaria MCID nº 536/2015, com 12 indicadores de efetividade da PNMU, descontinuado após 2016. A decisão sobre quem publica o composto e a relação com o GT de 2015 estão entre as questões em aberto (seção 14). Detalhamento no [Anexo IV, seção 3.6](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#verificação-existe-índice-composto-em-alguma-política-do-mcid).
 
 ### 3.7 Síntese
 
@@ -153,7 +153,7 @@ Este documento trata prioritariamente do **IQTPC-Sistema**. A camada de operador
 | M | Nula | Excluído |
 | A | Nula | Excluído |
 
-Em sistemas com múltiplos operadores, a agregação é por passageiros-quilômetro de cada contrato. A conversão em remuneração é por faixas, no modelo do SiAC (Anexo IV), e não por nota contínua, para reduzir litígio. O desenho completo do IQTPC-Operador é objeto de documento próprio (seção 14).
+Em sistemas com múltiplos operadores, a agregação é por passageiros-quilômetro de cada contrato. A conversão em remuneração é por faixas, no modelo do SiAC ([Anexo IV](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd)), e não por nota contínua, para reduzir litígio. O desenho completo do IQTPC-Operador é objeto de documento próprio (seção 14).
 
 ---
 
@@ -212,9 +212,9 @@ D = C^0,22 × S^0,18 × P^0,17 × F^0,13 × V^0,12 × E^0,10 × M^0,08
 
 **Cálculo na ausência do subíndice P.** Enquanto não houver pesquisa de percepção aplicada ao sistema no ciclo corrente ou no anterior, D é calculado sobre os seis subíndices objetivos, com os pesos **renormalizados proporcionalmente** para somar 1 (cada peso dividido por 0,83). O resultado recebe a denominação **IQTPC-Objetivo**; com P, **IQTPC-Completo**. As duas versões são publicadas com identificação explícita e não são comparáveis entre si.
 
-**Peso de P conforme o cenário de coleta.** O peso de 0,17 pressupõe pesquisa com amostra suficiente para desagregação (Cenário 1 ou 2 do Anexo II). No Cenário 3, mínimo viável, em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido, entre 0,08 e 0,10, conforme Anexo II, seção 12.8, com renormalização dos demais pela regra do Manual, seção 7.2.
+**Peso de P conforme o cenário de coleta.** O peso de 0,17 pressupõe pesquisa com amostra suficiente para desagregação (Cenário 1 ou 2 do [Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd)). No Cenário 3, mínimo viável, em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido, entre 0,08 e 0,10, conforme [Anexo II, seção 12.8](IQTPC_Anexo_II_pesquisa_nacional.qmd#consequências-para-o-iqtpc), com renormalização dos demais pela regra do [Manual, seção 7.2](IQTPC_Manual_de_calculo.qmd#iqtpc-completo-com-p-em-peso-reduzido).
 
-**Piso dos subíndices.** Cada subíndice é normalizado de **1 a 10**, e não de 0 a 10, para evitar que um único subíndice nulo anule o conjunto (Manual, seção 4.4). O resultado final permanece na escala de 0 a 10 porque A varia de 0 a 1.
+**Piso dos subíndices.** Cada subíndice é normalizado de **1 a 10**, e não de 0 a 10, para evitar que um único subíndice nulo anule o conjunto ([Manual, seção 4.4](IQTPC_Manual_de_calculo.qmd#por-que-o-piso-é-1-e-não-0)). O resultado final permanece na escala de 0 a 10 porque A varia de 0 a 1.
 
 ### 5.3 Por que média geométrica
 
@@ -319,7 +319,7 @@ Art. 31, V; art. 4º, IX; art. 7º, III (foco na percepção da qualidade por to
 
 Este é o subíndice que **hoje não tem fonte nacional padronizada**. É o equivalente ao SAEB na arquitetura do IDEB e sua ausência é a principal lacuna metodológica (ver seção 11).
 
-Instrumento: a **PeMOB Usuário** (Anexo II), pesquisa nacional padronizada, amostral, aplicada por terceiro independente, com núcleo comum de itens em escala de 1 a 5 sobre tempo e regularidade, lotação e conforto, frota, segurança viária, segurança pessoal, acessibilidade, informação, tratamento e custo, mais módulo de não usuário e módulo local facultativo.
+Instrumento: a **PeMOB Usuário** ([Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd)), pesquisa nacional padronizada, amostral, aplicada por terceiro independente, com núcleo comum de itens em escala de 1 a 5 sobre tempo e regularidade, lotação e conforto, frota, segurança viária, segurança pessoal, acessibilidade, informação, tratamento e custo, mais módulo de não usuário e módulo local facultativo.
 
 Enquanto o sistema não tiver sido pesquisado, o índice é calculado sem P e publicado como **IQTPC-Objetivo** (5.2). Pesquisas locais de instrumento diverso não compõem o índice, sob pena de introduzir ruído incomparável entre sistemas.
 
@@ -336,9 +336,9 @@ Art. 31, IV; art. 16, VI e XIV; art. 7º, IX; art. 4º, III.
 | Informação ao passageiro | Cumprimento do art. 16, IV: informação em pontos de embarque, aplicativos ou sítio, de forma gratuita e acessível | 0,13 |
 | **Atendimento a manifestações** | Tempo médio de resposta e taxa de resolução das manifestações do usuário | 0,09 |
 
-*Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável (Anexo I). É medido exclusivamente pela dimensão "lotação e conforto" da PeMOB Usuário.*
+*Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável ([Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd)). É medido exclusivamente pela dimensão "lotação e conforto" da PeMOB Usuário.*
 
-**Sobre salubridade.** O art. 3º, IV, arrola expressamente a **salubridade** entre os atributos da qualidade do serviço, ao lado de cortesia, conforto, segurança, eficiência, regularidade, atualidade e continuidade. Sem este componente, seria o único dos oito atributos sem parâmetro objetivo; a medida é transposta do saneamento (Anexo IV). A dimensão inclui a higienização dos veículos e, sobretudo, as condições sanitárias de terminais e estações, onde o passageiro permanece por tempo prolongado. Sanitário em funcionamento e água potável em terminal são parâmetro de qualidade de transporte, e não apenas de saneamento, e sua ausência afeta de forma desproporcional mulheres, idosos, gestantes e pessoas com condições de saúde específicas.
+**Sobre salubridade.** O art. 3º, IV, arrola expressamente a **salubridade** entre os atributos da qualidade do serviço, ao lado de cortesia, conforto, segurança, eficiência, regularidade, atualidade e continuidade. Sem este componente, seria o único dos oito atributos sem parâmetro objetivo; a medida é transposta do saneamento ([Anexo IV](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd)). A dimensão inclui a higienização dos veículos e, sobretudo, as condições sanitárias de terminais e estações, onde o passageiro permanece por tempo prolongado. Sanitário em funcionamento e água potável em terminal são parâmetro de qualidade de transporte, e não apenas de saneamento, e sua ausência afeta de forma desproporcional mulheres, idosos, gestantes e pessoas com condições de saúde específicas.
 
 **Sobre atendimento a manifestações.** O art. 16 assegura ao passageiro canais de recebimento de reclamações, e a Lei nº 13.460/2017 disciplina prazos de resposta. O SNIS mede há anos o tempo de atendimento a solicitações. O subíndice S mede o tempo de resposta dos canais específicos de segurança pessoal; este componente generaliza a medida para o conjunto das manifestações.
 
@@ -348,7 +348,7 @@ O componente de tempo de viagem responde ao art. 16, VI (direito à prioridade d
 
 #### 6.4.1 Indicador bilateral de ocupação
 
-Este é o componente que traduz a exigência de que o serviço não seja nem superlotado nem ocioso. É medido em dois momentos distintos do dia, por **duas métricas separadas**, cuja média simples compõe o componente: uma monotônica para a superlotação no pico e uma bilateral para o aproveitamento no dia típico. A forma consolidada está no Manual de cálculo, item F-01; a descrição abaixo é a fundamentação.
+Este é o componente que traduz a exigência de que o serviço não seja nem superlotado nem ocioso. É medido em dois momentos distintos do dia, por **duas métricas separadas**, cuja média simples compõe o componente: uma monotônica para a superlotação no pico e uma bilateral para o aproveitamento no dia típico. A forma consolidada está no [Manual de cálculo](IQTPC_Manual_de_calculo.qmd), item F-01; a descrição abaixo é a fundamentação.
 
 **Lado da superlotação, medido no pico:**
 
@@ -380,7 +380,7 @@ p_sup = k_sup × (x − x_sup) ÷ (x_max − x_sup)      se x > x_sup, senão 0
 Pontuação = 1 + 9 × [1 − min(1, max(p_inf, p_sup))]
 ```
 
-Dentro da faixa ótima [x_inf, x_sup] a pontuação vale 10. Fora dela, a penalização cresce linearmente até o piso 1 nos extremos `x_min` e `x_max`, fixados em 0,10 e 0,60 (Manual, F-01). Os fatores `k_inf` e `k_sup` calibram a assimetria: `k_inf` atua abaixo da faixa (ociosidade) e `k_sup` acima dela (saturação sistêmica).
+Dentro da faixa ótima [x_inf, x_sup] a pontuação vale 10. Fora dela, a penalização cresce linearmente até o piso 1 nos extremos `x_min` e `x_max`, fixados em 0,10 e 0,60 ([Manual, F-01](IQTPC_Manual_de_calculo.qmd)). Os fatores `k_inf` e `k_sup` calibram a assimetria: `k_inf` atua abaixo da faixa (ociosidade) e `k_sup` acima dela (saturação sistêmica).
 
 **A assimetria a favor de penalizar mais a superlotação é obtida de duas formas:** a superlotação no pico tem métrica própria, monotônica e com escala plena de 1 a 10, enquanto a ociosidade entra com fator de atenuação k_inf = 0,7 (e k_sup = 1,0 para a saturação acima da faixa). Razão: a superlotação é dano direto e imediato ao passageiro, com implicações de salubridade (art. 3º, IV), de dignidade e integridade física (art. 16, IX) e de exposição a importunação e assédio (art. 16, X). A ociosidade é falha de alocação, mais grave para o erário e para a área desatendida do que para quem está dentro do veículo.
 
@@ -437,7 +437,7 @@ Art. 3º, III e VI; art. 11, III; art. 25, II (capacidade de pagamento, inclusiv
 | Integração tarifária | Existência de integração temporal e tarifária entre modos e redes (art. 25, V) | 0,20 |
 | Sustentação extratarifária | % da receita contratual do operador proveniente de fontes extratarifárias e subsídio público (arts. 23 e 29) | 0,30 |
 
-*Sistemas com tarifa zero:* esforço tarifário e comparação intermodal recebem pontuação máxima; o componente de sustentação extratarifária passa a medir a estabilidade da fonte de custeio (Manual, seção 6.7).
+*Sistemas com tarifa zero:* esforço tarifário e comparação intermodal recebem pontuação máxima; o componente de sustentação extratarifária passa a medir a estabilidade da fonte de custeio ([Manual, seção 6.7](IQTPC_Manual_de_calculo.qmd#subíndice-m-modicidade-peso-008-em-d)).
 
 O último componente merece destaque: **ele mede diretamente o principal objetivo declarado do Marco Legal**, que é reduzir a dependência da tarifa paga pelo passageiro. É também o componente que dialoga com o art. 4º, XI (ampliação da participação das fontes não tarifárias).
 
@@ -453,7 +453,7 @@ Antes de qualquer normalização, é preciso delimitar a quem o índice se aplic
 
 **Município sem sistema de TPC não recebe índice zero: recebe a marcação de não aplicável.** Atribuir zero confundiria duas realidades distintas, serviço inexistente e serviço péssimo, destruiria a distribuição do índice e produziria ranking sem significado. A ausência de serviço é objeto de indicador próprio de cobertura nacional.
 
-Classificação proposta, detalhada no Anexo II:
+Classificação proposta, detalhada no [Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd):
 
 | Situação | Descrição | Tratamento |
 |---|---|---|
@@ -484,7 +484,7 @@ Para indicadores com faixa ótima, em que tanto o excesso quanto a falta são de
 
 Além da ocupação, dois outros indicadores merecem exame quanto a esse tratamento na fase de calibração: a frota reserva, cujo excesso indica imobilização improdutiva de capital, e o intervalo entre partidas, cuja frequência excessiva em corredor saturado gera comboiamento e degrada a regularidade.
 
-**Os valores de `x_piso` e `x_referência` constituem, materialmente, as normas de referência nacionais de qualidade previstas no art. 16, IX, da Lei nº 12.587/2012.** Definir a tabela de referência é, portanto, exercício de competência legal expressa, e não escolha técnica livre. A tabela é fixada em portaria, com revisão bienal dos valores e quadrienal dos pesos e componentes, sempre com consulta pública prévia (Manual, seção 9).
+**Os valores de `x_piso` e `x_referência` constituem, materialmente, as normas de referência nacionais de qualidade previstas no art. 16, IX, da Lei nº 12.587/2012.** Definir a tabela de referência é, portanto, exercício de competência legal expressa, e não escolha técnica livre. A tabela é fixada em portaria, com revisão bienal dos valores e quadrienal dos pesos e componentes, sempre com consulta pública prévia ([Manual, seção 9](IQTPC_Manual_de_calculo.qmd#período-de-referência-periodicidade-e-publicação)).
 
 Recomenda-se ainda estratificação por porte populacional e estrutura modal para efeito de **metas**, mantendo a **escala única** para efeito de cálculo. O IDSUS errou ao estratificar o próprio índice, o que inviabilizou a comparação pública e alimentou contestação permanente.
 
@@ -517,7 +517,7 @@ O fator A do IQTPC é uma razão, e razões comunicam mal. Propõe-se, em comple
 | Inacessibilidade física | Não consegue utilizar o serviço disponível por barreira de acessibilidade |
 | Inacessibilidade econômica | Deixa de realizar viagens por incapacidade de pagamento |
 
-Os dois primeiros componentes derivam de GTFS e grade estatística; os dois últimos dependem da pesquisa nacional (Anexo II, seção 13.3), o que reforça a interdependência entre os instrumentos.
+Os dois primeiros componentes derivam de GTFS e grade estatística; os dois últimos dependem da pesquisa nacional ([Anexo II, seção 13.3](IQTPC_Anexo_II_pesquisa_nacional.qmd#uso-independente)), o que reforça a interdependência entre os instrumentos.
 
 A vantagem é de comunicação e de agenda: enquanto o IQTPC responde "quão bom é o serviço", o déficit responde "quantas pessoas estão de fora", que é a pergunta que mobiliza orçamento. A decomposição em quatro naturezas de inadequação segue a lógica do déficit habitacional, que separa reposição de incremento de estoque, e permite ação diferenciada.
 
@@ -611,13 +611,13 @@ Mapeamento das fontes por subíndice:
 | E | Cadastro de frota + fatores de emissão + AVL | Calculável, com denominador problemático |
 | M | Cadastro tarifário + Censo 2022 + dados contratuais | Calculável hoje |
 
-**Esta tabela é resumo por subíndice e é insuficiente para o cálculo.** A origem de cada variável de cada métrica, com classificação de viabilidade em cinco classes, está no **Anexo I**. Três conclusões daquele anexo: sete das nove métricas calculáveis hoje dependem do GTFS ou do cadastro de frota validado; quatro métricas em três subíndices, além das agregações por passageiros-quilômetro, dependem de inferência de desembarque, que precisa ser método padronizado do PNDTPC; e o bloco C e S, que soma 0,40 do fator D, depende de registros que hoje não existem em forma padronizada.
+**Esta tabela é resumo por subíndice e é insuficiente para o cálculo.** A origem de cada variável de cada métrica, com classificação de viabilidade em cinco classes, está no **[Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd)**. Três conclusões daquele anexo: sete das nove métricas calculáveis hoje dependem do GTFS ou do cadastro de frota validado; quatro métricas em três subíndices, além das agregações por passageiros-quilômetro, dependem de inferência de desembarque, que precisa ser método padronizado do PNDTPC; e o bloco C e S, que soma 0,40 do fator D, depende de registros que hoje não existem em forma padronizada.
 
 Na analogia com a educação: **a plataforma nacional de dados do TPC faz o papel do Censo Escolar; o SAEB da mobilidade não existe.**
 
 Sem ele, o subíndice P (peso 0,17) não é calculável de forma comparável. Como o art. 31, V, e o art. 14, VII, tornam a satisfação do passageiro item obrigatório, essa lacuna não é apenas metodológica, é de conformidade legal.
 
-O desenho da pesquisa, seu custo e sua articulação com a PeMOB estão nos Anexos II e III. A denominação adotada é **PeMOB Usuário**, e o cenário recomendado é o mínimo viável (Anexo II, seção 12.6), com migração progressiva conforme disponibilidade orçamentária.
+O desenho da pesquisa, seu custo e sua articulação com a PeMOB estão no [Anexo II](IQTPC_Anexo_II_pesquisa_nacional.qmd) e no [Anexo III](IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd). A denominação adotada é **PeMOB Usuário**, e o cenário recomendado é o mínimo viável ([Anexo II, seção 12.6](IQTPC_Anexo_II_pesquisa_nacional.qmd#escada-de-cenários)), com migração progressiva conforme disponibilidade orçamentária.
 
 ---
 
@@ -633,21 +633,21 @@ O calendário é dado pelo art. 44: a Lei entra em vigor em **14 de junho de 202
 - Estruturação da infraestrutura de ingestão e processamento automatizado de dados operacionais.
 - **Publicação do dicionário de dados de cadastro de frota com identificação individual** (placa, chassi, data do primeiro emplacamento, tipologia, motorização, acessibilidade), condição necessária para os subíndices V e E.
 - **Acordo de cooperação com o SENATRAN** para cruzamento e validação do cadastro de frota, com tratamento adequado sob a LGPD.
-- **Especificação técnica do método padronizado de inferência de desembarque** e do esquema mínimo de dados de bilhetagem e AVL, como entregável do PNDTPC (Manual, seção 12).
+- **Especificação técnica do método padronizado de inferência de desembarque** e do esquema mínimo de dados de bilhetagem e AVL, como entregável do PNDTPC ([Manual, seção 12](IQTPC_Manual_de_calculo.qmd#pré-requisitos-de-implantação)).
 - Definição dos quatro registros a criar no módulo cadastral: interrupções, sinistros com vítima, ocorrências de segurança pessoal e infraestrutura de pontos e terminais.
 - Consulta pública sobre a metodologia do IQTPC, precedida de análise de impacto regulatório e de revisão cruzada com as Secretarias de Saneamento e Habitação.
-- Cláusula de transição no decreto, no modelo do Decreto nº 11.599/2023: as condicionantes só se tornam exigíveis após a publicação das normas de referência e dos prazos de adequação, o que torna eventual atraso desta fase sobrevivível (Anexo IV, 2.1).
+- Cláusula de transição no decreto, no modelo do Decreto nº 11.599/2023: as condicionantes só se tornam exigíveis após a publicação das normas de referência e dos prazos de adequação, o que torna eventual atraso desta fase sobrevivível ([Anexo IV, 2.1](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#a-arquitetura-jurídica-é-quase-idêntica)).
 
 ### Fase 1, 2027 a 2028: piloto com sistemas aptos
 
 - Cálculo do **IQTPC-Objetivo** (sem P) apenas para sistemas com GTFS e GTFS-RT publicados.
-- Divulgação identificada como piloto, sem ranqueamento e sem consequência financeira, precedida de versão preliminar ao titular com 30 dias para manifestação (Manual, seção 9).
+- Divulgação identificada como piloto, sem ranqueamento e sem consequência financeira, precedida de versão preliminar ao titular com 30 dias para manifestação ([Manual, seção 9](IQTPC_Manual_de_calculo.qmd#período-de-referência-periodicidade-e-publicação)).
 - Publicação simultânea do IQTPC-Equidade.
 - Ativação do gate do art. 21 (envio de dados como condição para contratação de projetos com recursos federais).
 
 ### Fase 2, 2028 a 2030: universalização progressiva
 
-- IQTPC-Simplificado (cobertura de traçado, frota e modicidade) para sistemas sem dados operacionais automatizados, a partir de cadastro verificável (Manual, seção 8.3).
+- IQTPC-Simplificado (cobertura de traçado, frota e modicidade) para sistemas sem dados operacionais automatizados, a partir de cadastro verificável ([Manual, seção 8.3](IQTPC_Manual_de_calculo.qmd#iqtpc-simplificado)).
 - Vedação expressa de comparação entre versões completa e simplificada.
 - Primeiro ciclo da PeMOB Usuário em 2029 (anos ímpares, fora de eleição municipal), no cenário mínimo viável, após piloto em 2027.
 - Incorporação do IQTPC-Operador em editais e contratos novos ou renovados (art. 31, §§ 2º e 3º).
@@ -690,10 +690,10 @@ Nenhuma das questões abaixo impede a consulta pública sobre a arquitetura. Vá
 
 | Questão | Natureza | Encaminhamento |
 |---|---|---|
-| Tabelas de valores de referência por modo | Produto técnico | Os parâmetros indicativos foram desenhados para ônibus. A regra (valores por modo; cálculo por modo em sistemas multimodais, agregado por passageiros-quilômetro) está no Manual, seções 4.5 e 9, com fundamento no art. 6º, XXI. Faltam as tabelas, uma métrica de segurança operacional para sistemas segregados (colisões, descarrilamentos, incidentes em plataforma) e o registro de modo por linha no cadastro |
-| Fichas técnicas das 27 métricas restantes e do bloco P | Produto técnico | Modelo e três fichas no Anexo I. Sem elas, a primeira pergunta da consulta será "de onde vem esse número" |
+| Tabelas de valores de referência por modo | Produto técnico | Os parâmetros indicativos foram desenhados para ônibus. A regra (valores por modo; cálculo por modo em sistemas multimodais, agregado por passageiros-quilômetro) está no Manual, seções [4.5](IQTPC_Manual_de_calculo.qmd#valores-de-referência-por-modo) e [9](IQTPC_Manual_de_calculo.qmd#período-de-referência-periodicidade-e-publicação), com fundamento no art. 6º, XXI. Faltam as tabelas, uma métrica de segurança operacional para sistemas segregados (colisões, descarrilamentos, incidentes em plataforma) e o registro de modo por linha no cadastro |
+| Fichas técnicas das 27 métricas restantes e do bloco P | Produto técnico | Modelo e três fichas no [Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd). Sem elas, a primeira pergunta da consulta será "de onde vem esse número" |
 | Teto de métricas | Decisão | O instrumento tem 29 métricas objetivas em três níveis de ponderação. Sugere-se teto de 25, aplicado após o piloto pela regra de permanência (14.6). Candidatos a fusão: pontualidade e regularidade de intervalo em C; emissões locais e de GEE em E |
-| Relação com o GT da Portaria MCID nº 536/2015 | Produto técnico | Antecedente direto, com 12 indicadores de efetividade da PNMU. Explicitar o que o IQTPC absorve e o que descarta (Anexo IV, 3.6) |
+| Relação com o GT da Portaria MCID nº 536/2015 | Produto técnico | Antecedente direto, com 12 indicadores de efetividade da PNMU. Explicitar o que o IQTPC absorve e o que descarta ([Anexo IV, 3.6](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#verificação-existe-índice-composto-em-alguma-política-do-mcid)) |
 | Alocação do atendimento a manifestações | Decisão | Em F, pela conveniência (art. 31, IV); na cortesia (art. 3º, IV); ou em dimensão própria de relação com o usuário |
 
 ### 14.2 Antes do decreto
@@ -701,10 +701,10 @@ Nenhuma das questões abaixo impede a consulta pública sobre a arquitetura. Vá
 | Questão | Natureza | Encaminhamento |
 |---|---|---|
 | Veículo normativo | Decisão | Decreto do art. 12 e portaria de metodologia, ou instrumento único. A separação é preferível pela estabilidade do primeiro e flexibilidade da segunda |
-| Quem publica o número composto | Decisão | Nenhuma política do MCID publica índice composto (Anexo IV, 3.6). Opções: a SEMOB publica o composto (modelo IDEB, efeito reputacional máximo e custo político de ranquear municípios); a SEMOB publica os subíndices e terceiro compõe (modelo saneamento, blindagem política e perda de controle sobre o número que vira manchete); híbrido, com composto por faixas sem ranking ordinal. O híbrido é o mais aderente ao padrão do ministério e ao art. 28, III, que exige metas fixadas pela União |
-| Governança do índice | Matéria de decreto | Não há agência reguladora nacional no TPC. Propõe-se comitê técnico permanente com o órgão gestor federal, instituição de estatística e representação dos titulares; competência para decidir contestações, com decisão fundamentada e registro público; análise de impacto regulatório e consulta pública prévia a cada revisão de método. O calendário de revisão e a etapa de versão preliminar já estão no Manual, seção 9 |
+| Quem publica o número composto | Decisão | Nenhuma política do MCID publica índice composto ([Anexo IV, 3.6](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#verificação-existe-índice-composto-em-alguma-política-do-mcid)). Opções: a SEMOB publica o composto (modelo IDEB, efeito reputacional máximo e custo político de ranquear municípios); a SEMOB publica os subíndices e terceiro compõe (modelo saneamento, blindagem política e perda de controle sobre o número que vira manchete); híbrido, com composto por faixas sem ranking ordinal. O híbrido é o mais aderente ao padrão do ministério e ao art. 28, III, que exige metas fixadas pela União |
+| Governança do índice | Matéria de decreto | Não há agência reguladora nacional no TPC. Propõe-se comitê técnico permanente com o órgão gestor federal, instituição de estatística e representação dos titulares; competência para decidir contestações, com decisão fundamentada e registro público; análise de impacto regulatório e consulta pública prévia a cada revisão de método. O calendário de revisão e a etapa de versão preliminar já estão no [Manual, seção 9](IQTPC_Manual_de_calculo.qmd#período-de-referência-periodicidade-e-publicação) |
 | Desenho completo do IQTPC-Operador | Produto técnico | Documento próprio, a partir da tabela de governabilidade da seção 4 |
-| Veículo da graduação de sanções por dado falsificado | Decisão | A regra está na seção 10. Definir se cabe no decreto ou na portaria e articular com o certificado de adimplência (Anexo IV, 2.2) |
+| Veículo da graduação de sanções por dado falsificado | Decisão | A regra está na seção 10. Definir se cabe no decreto ou na portaria e articular com o certificado de adimplência ([Anexo IV, 2.2](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#o-certificado-de-adimplência-do-sinisa)) |
 
 ### 14.3 Antes do dicionário de dados
 
@@ -713,15 +713,15 @@ Nenhuma das questões abaixo impede a consulta pública sobre a arquitetura. Vá
 | Esquema mínimo de dados de bilhetagem e AVL | Produto técnico | Não há padrão nacional, e cada fornecedor tem formato próprio. Documento técnico do PNDTPC, incorporado ou remetido pela norma de referência. É o item de maior efeito estruturante sobre a viabilidade do índice |
 | Método padronizado de inferência de desembarque | Produto técnico | Pré-requisito de F-01, E-03, E-04, da versão madura de S-01 e de toda agregação por passageiros-quilômetro. Especificação com base em encadeamento de viagens por cartão |
 | Protocolo de proteção de dados para a bilhetagem | Produto técnico | Bilhetagem é dado pessoal em larga escala. Envio à plataforma apenas de dados agregados por viagem e trecho, com anonimização na origem, e parecer prévio da Autoridade Nacional de Proteção de Dados |
-| Definições operacionais | Produto técnico | Viagem e passageiro, gratuidades, interrupção, frota operante e reserva, idade do veículo, terminal, ocorrência de segurança pessoal, sistema e serviço complementar (Manual, seção 13) |
+| Definições operacionais | Produto técnico | Viagem e passageiro, gratuidades, interrupção, frota operante e reserva, idade do veículo, terminal, ocorrência de segurança pessoal, sistema e serviço complementar ([Manual, seção 13](IQTPC_Manual_de_calculo.qmd#definições-pendentes-do-dicionário-de-dados)) |
 | Critério de enquadramento de serviço complementar | Decisão | Necessário para aplicar a faixa própria de ociosidade (6.4.1) sem abrir espaço a uso oportunista |
-| Fronteira formal entre PNDTPC e SIMU | Decisão | O PNDTPC tem módulo automatizado e módulo cadastral (Manual, seção 3); falta a fronteira formal no ato normativo |
+| Fronteira formal entre PNDTPC e SIMU | Decisão | O PNDTPC tem módulo automatizado e módulo cadastral ([Manual, seção 3](IQTPC_Manual_de_calculo.qmd#origem-dos-dados-as-quatro-fontes)); falta a fronteira formal no ato normativo |
 
 ### 14.4 Antes do piloto
 
 | Questão | Natureza | Encaminhamento |
 |---|---|---|
-| Custo da infraestrutura de dados | Estimativa | Ingestão de GTFS-RT e AVL, integração com SENATRAN e DATASUS, padronização de bilhetagem, plataforma de cálculo e publicação, apoio técnico aos entes. Provavelmente maior que o custo da pesquisa. Separar custo federal de custo do ente e verificar reúso de componentes do SINISA (Anexo IV, 6.3) |
+| Custo da infraestrutura de dados | Estimativa | Ingestão de GTFS-RT e AVL, integração com SENATRAN e DATASUS, padronização de bilhetagem, plataforma de cálculo e publicação, apoio técnico aos entes. Provavelmente maior que o custo da pesquisa. Separar custo federal de custo do ente e verificar reúso de componentes do SINISA ([Anexo IV, 6.3](IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd#ganhos-transversais-de-integração)) |
 | Cobertura temporal do fator A | Método | A cobertura é medida no pico e é cega ao horário. Testar segundo termo em A, ou componente em F, de cobertura noturna e de fim de semana, com limiar próprio (art. 4º, III) |
 | Método de definição de metas | Método | Meta nacional derivada dos valores de referência da norma e trajetórias individuais por convergência gradual, estratificadas por porte e modo, no modelo do IDEB |
 | Territorialização de C, F e V para o IQTPC-Equidade | Método | A e F-03 são territorializáveis por construção; C e V exigem vincular linhas a territórios, ponderando por embarques por ponto. Enquanto não existir, o IQTPC-Equidade é calculado sobre A e os componentes territorializáveis de F, com declaração da limitação |
@@ -737,7 +737,7 @@ Nenhuma das questões abaixo impede a consulta pública sobre a arquitetura. Vá
 | Expoente α | Reduzir se a distribuição de A mostrar que a cobertura suprime o sinal de qualidade (5.3.1) |
 | Piso 1,0 versus 0,5 | Testar por simulação |
 | Dupla contagem entre V e E | Se a elasticidade do índice à renovação de frota for excessiva, reduzir o peso interno da idade em V, e não o de eletrificação em E |
-| Peso de P no cenário mínimo viável | Fixar o valor na faixa de 0,08 a 0,10 (Manual, seção 7.2) |
+| Peso de P no cenário mínimo viável | Fixar o valor na faixa de 0,08 a 0,10 ([Manual, seção 7.2](IQTPC_Manual_de_calculo.qmd#iqtpc-completo-com-p-em-peso-reduzido)) |
 | Pesos do fator D e pesos internos | Consulta pública e painel de especialistas com método estruturado de elicitação |
 | Aplicação da regra de permanência | Ver 14.6 |
 
@@ -747,7 +747,7 @@ Acompanhamento contínuo: o veto ao art. 22 e ao parágrafo único do art. 23 af
 
 Cada métrica precisa provar três coisas para permanecer no índice, na calibração após o piloto e em toda revisão quadrienal:
 
-1. **Fonte viável** nos próximos três anos (classes V1 a V4 do Anexo I).
+1. **Fonte viável** nos próximos três anos (classes V1 a V4 do [Anexo I](IQTPC_Anexo_I_matriz_origem_dados.qmd)).
 2. **Poder discriminante**: uma métrica em que todos os sistemas pontuam igual não serve.
 3. **Não redundância** com outra métrica do mesmo subíndice.
 
@@ -757,7 +757,7 @@ Métrica que falhe em qualquer dos três sai do índice e passa ao painel diagn�
 
 - **Fator A e serviço suspenso.** A é calculado sobre GTFS programado; linha suspensa por meses continua contando como cobertura. C-03 captura parcialmente. Avaliar, no piloto, o cálculo de A sobre oferta realizada.
 - **Recorte de gênero além da segurança.** S-01 e S-02 são desagregados por gênero, mas padrões de viagem (mobilidade do cuidado, viagens encadeadas, fora de pico) não são considerados em A nem em F. Candidato a indicador satélite alimentado pela PeMOB Usuário.
-- **Contratos anteriores à Lei (art. 31, §3º).** O titular envia dados mesmo sobre operadores sob contrato antigo, mas esses operadores não têm obrigação contratual de produzi-los. Pode haver lacuna de dado por vários anos em sistemas relevantes, e a regra do Manual, seção 7.4, implica que esses sistemas ficam sem índice.
+- **Contratos anteriores à Lei (art. 31, §3º).** O titular envia dados mesmo sobre operadores sob contrato antigo, mas esses operadores não têm obrigação contratual de produzi-los. Pode haver lacuna de dado por vários anos em sistemas relevantes, e a regra do [Manual, seção 7.4](IQTPC_Manual_de_calculo.qmd#ausência-de-subíndice-por-falta-de-dado), implica que esses sistemas ficam sem índice.
 - **Interface com o PlanMob.** O índice deve alimentar a revisão dos planos (art. 9º da Lei nº 15.432/2026 e art. 24 da PNMU). A articulação precisa constar da norma de referência.
 
 ---
