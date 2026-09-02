@@ -85,23 +85,26 @@ body {
   }
 
   /* Barra superior fixa: destaque colorido e sempre visível, como o
-     cabeçalho do mkdocs-material (o padrão do Quarto a esconde ao rolar) */
-  .quarto-secondary-nav {
+     cabeçalho do mkdocs-material (o padrão do Quarto a esconde ao rolar).
+     O seletor precisa de nav.: o do Bootstrap tem especificidade maior. */
+  #quarto-header nav.quarto-secondary-nav {
     background-color: var(--bs-primary);
+    border-bottom: none;
   }
 
   #quarto-header.headroom--unpinned {
     transform: translateY(0%);
   }
 
-  .quarto-secondary-nav .quarto-btn-toggle,
-  .quarto-secondary-nav .quarto-search-button,
-  .quarto-secondary-nav nav.quarto-page-breadcrumbs a {
-    color: #fff !important;
+  #quarto-header nav.quarto-secondary-nav .quarto-btn-toggle,
+  #quarto-header nav.quarto-secondary-nav .quarto-search-button,
+  #quarto-header nav.quarto-secondary-nav .quarto-page-breadcrumbs a,
+  #quarto-header nav.quarto-secondary-nav .breadcrumb-item {
+    color: #fff;
   }
 
-  .quarto-secondary-nav button.quarto-btn-toggle,
-  .quarto-secondary-nav button.quarto-search-button {
+  #quarto-header nav.quarto-secondary-nav button.quarto-btn-toggle,
+  #quarto-header nav.quarto-secondary-nav button.quarto-search-button {
     min-width: 44px;
     min-height: 44px;
   }
