@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Anexo II, Proposta da PeMOB Usuário – IQTPC, Índice de Qualidade do Transporte Público Coletivo</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html" rel="next">
+<link href="./IQTPC_Anexo_I_matriz_origem_dados.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8a84cfd26a81cac07cced63adb3cfe4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./IQTPC_Anexo_II_pesquisa_nacional.html"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IQTPC, Índice de Qualidade do Transporte Público Coletivo</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IQTPC, Índice de Qualidade do Transporte Público Coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_parametros_qualidade_transporte_publico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Parâmetros nacionais de qualidade do transporte público coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Manual_de_calculo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manual de cálculo do IQTPC</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_I_matriz_origem_dados.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo I, Matriz de origem dos dados por métrica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_II_pesquisa_nacional.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#pesquisa-nacional-de-qualidade-percebida-do-transporte-público-coletivo" id="toc-pesquisa-nacional-de-qualidade-percebida-do-transporte-público-coletivo" class="nav-link active" data-scroll-target="#pesquisa-nacional-de-qualidade-percebida-do-transporte-público-coletivo">Pesquisa nacional de qualidade percebida do transporte público coletivo</a></li>
+  <li><a href="#sumário" id="toc-sumário" class="nav-link" data-scroll-target="#sumário">Sumário</a></li>
+  <li><a href="#o-problema" id="toc-o-problema" class="nav-link" data-scroll-target="#o-problema">1. O problema</a></li>
+  <li><a href="#o-universo-não-é-o-conjunto-dos-municípios" id="toc-o-universo-não-é-o-conjunto-dos-municípios" class="nav-link" data-scroll-target="#o-universo-não-é-o-conjunto-dos-municípios">2. O universo não é o conjunto dos municípios</a>
+  <ul>
+  <li><a href="#consequência-para-o-iqtpc-e-não-apenas-para-a-pesquisa" id="toc-consequência-para-o-iqtpc-e-não-apenas-para-a-pesquisa" class="nav-link" data-scroll-target="#consequência-para-o-iqtpc-e-não-apenas-para-a-pesquisa">2.1 Consequência para o IQTPC, e não apenas para a pesquisa</a></li>
+  <li><a href="#primeiro-entregável-o-cadastro-do-universo" id="toc-primeiro-entregável-o-cadastro-do-universo" class="nav-link" data-scroll-target="#primeiro-entregável-o-cadastro-do-universo">2.2 Primeiro entregável: o cadastro do universo</a></li>
+  </ul></li>
+  <li><a href="#unidade-de-análise-o-sistema-não-o-município" id="toc-unidade-de-análise-o-sistema-não-o-município" class="nav-link" data-scroll-target="#unidade-de-análise-o-sistema-não-o-município">3. Unidade de análise: o sistema, não o município</a></li>
+  <li><a href="#quem-deve-ser-entrevistado" id="toc-quem-deve-ser-entrevistado" class="nav-link" data-scroll-target="#quem-deve-ser-entrevistado">4. Quem deve ser entrevistado</a>
+  <ul>
+  <li><a href="#o-problema-do-viés-de-sobrevivência" id="toc-o-problema-do-viés-de-sobrevivência" class="nav-link" data-scroll-target="#o-problema-do-viés-de-sobrevivência">4.1 O problema do viés de sobrevivência</a></li>
+  <li><a href="#decisão" id="toc-decisão" class="nav-link" data-scroll-target="#decisão">4.2 Decisão</a></li>
+  </ul></li>
+  <li><a href="#desenho-amostral-em-três-estratos" id="toc-desenho-amostral-em-três-estratos" class="nav-link" data-scroll-target="#desenho-amostral-em-três-estratos">5. Desenho amostral em três estratos</a>
+  <ul>
+  <li><a href="#estrato-a-sistemas-metropolitanos-e-de-grande-porte" id="toc-estrato-a-sistemas-metropolitanos-e-de-grande-porte" class="nav-link" data-scroll-target="#estrato-a-sistemas-metropolitanos-e-de-grande-porte">Estrato A, sistemas metropolitanos e de grande porte</a></li>
+  <li><a href="#estrato-b-sistemas-de-médio-porte" id="toc-estrato-b-sistemas-de-médio-porte" class="nav-link" data-scroll-target="#estrato-b-sistemas-de-médio-porte">Estrato B, sistemas de médio porte</a></li>
+  <li><a href="#estrato-c-sistemas-de-pequeno-porte" id="toc-estrato-c-sistemas-de-pequeno-porte" class="nav-link" data-scroll-target="#estrato-c-sistemas-de-pequeno-porte">Estrato C, sistemas de pequeno porte</a></li>
+  <li><a href="#estrato-d-municípios-sem-serviço" id="toc-estrato-d-municípios-sem-serviço" class="nav-link" data-scroll-target="#estrato-d-municípios-sem-serviço">Estrato D, municípios sem serviço</a></li>
+  </ul></li>
+  <li><a href="#métodos-de-coleta-e-uso-do-gtfs-como-base-amostral" id="toc-métodos-de-coleta-e-uso-do-gtfs-como-base-amostral" class="nav-link" data-scroll-target="#métodos-de-coleta-e-uso-do-gtfs-como-base-amostral">6. Métodos de coleta e uso do GTFS como base amostral</a>
+  <ul>
+  <li><a href="#coleta-domiciliar" id="toc-coleta-domiciliar" class="nav-link" data-scroll-target="#coleta-domiciliar">6.1 Coleta domiciliar</a></li>
+  <li><a href="#coleta-embarcada" id="toc-coleta-embarcada" class="nav-link" data-scroll-target="#coleta-embarcada">6.2 Coleta embarcada</a></li>
+  <li><a href="#métodos-descartados" id="toc-métodos-descartados" class="nav-link" data-scroll-target="#métodos-descartados">6.3 Métodos descartados</a></li>
+  </ul></li>
+  <li><a href="#ponderação" id="toc-ponderação" class="nav-link" data-scroll-target="#ponderação">7. Ponderação</a></li>
+  <li><a href="#instrumento" id="toc-instrumento" class="nav-link" data-scroll-target="#instrumento">8. Instrumento</a>
+  <ul>
+  <li><a href="#estrutura" id="toc-estrutura" class="nav-link" data-scroll-target="#estrutura">8.1 Estrutura</a></li>
+  <li><a href="#itens-do-núcleo-comum-por-dimensão" id="toc-itens-do-núcleo-comum-por-dimensão" class="nav-link" data-scroll-target="#itens-do-núcleo-comum-por-dimensão">8.2 Itens do núcleo comum, por dimensão</a></li>
+  <li><a href="#cuidados-de-redação" id="toc-cuidados-de-redação" class="nav-link" data-scroll-target="#cuidados-de-redação">8.3 Cuidados de redação</a></li>
+  </ul></li>
+  <li><a href="#periodicidade" id="toc-periodicidade" class="nav-link" data-scroll-target="#periodicidade">9. Periodicidade</a></li>
+  <li><a href="#modelo-de-execução-e-governança" id="toc-modelo-de-execução-e-governança" class="nav-link" data-scroll-target="#modelo-de-execução-e-governança">10. Modelo de execução e governança</a>
+  <ul>
+  <li><a href="#alternativas" id="toc-alternativas" class="nav-link" data-scroll-target="#alternativas">10.1 Alternativas</a></li>
+  <li><a href="#recomendação" id="toc-recomendação" class="nav-link" data-scroll-target="#recomendação">10.2 Recomendação</a></li>
+  <li><a href="#governança-metodológica" id="toc-governança-metodológica" class="nav-link" data-scroll-target="#governança-metodológica">10.3 Governança metodológica</a></li>
+  </ul></li>
+  <li><a href="#base-legal-e-instrumento-normativo" id="toc-base-legal-e-instrumento-normativo" class="nav-link" data-scroll-target="#base-legal-e-instrumento-normativo">11. Base legal e instrumento normativo</a></li>
+  <li><a href="#estimativa-de-custo" id="toc-estimativa-de-custo" class="nav-link" data-scroll-target="#estimativa-de-custo">12. Estimativa de custo</a>
+  <ul>
+  <li><a href="#ancoragem-em-contratos-reais" id="toc-ancoragem-em-contratos-reais" class="nav-link" data-scroll-target="#ancoragem-em-contratos-reais">12.1 Ancoragem em contratos reais</a></li>
+  <li><a href="#custos-unitários-adotados" id="toc-custos-unitários-adotados" class="nav-link" data-scroll-target="#custos-unitários-adotados">12.2 Custos unitários adotados</a></li>
+  <li><a href="#estimativa-por-estrato" id="toc-estimativa-por-estrato" class="nav-link" data-scroll-target="#estimativa-por-estrato">12.3 Estimativa por estrato</a></li>
+  <li><a href="#resultado" id="toc-resultado" class="nav-link" data-scroll-target="#resultado">12.4 Resultado</a></li>
+  <li><a href="#métricas-de-escala" id="toc-métricas-de-escala" class="nav-link" data-scroll-target="#métricas-de-escala">12.5 Métricas de escala</a></li>
+  <li><a href="#escada-de-cenários" id="toc-escada-de-cenários" class="nav-link" data-scroll-target="#escada-de-cenários">12.6 Escada de cenários</a>
+  <ul class="collapse">
+  <li><a href="#cenário-3-mínimo-viável-detalhado" id="toc-cenário-3-mínimo-viável-detalhado" class="nav-link" data-scroll-target="#cenário-3-mínimo-viável-detalhado">Cenário 3, mínimo viável, detalhado</a></li>
+  </ul></li>
+  <li><a href="#as-cinco-alavancas-que-produzem-a-redução" id="toc-as-cinco-alavancas-que-produzem-a-redução" class="nav-link" data-scroll-target="#as-cinco-alavancas-que-produzem-a-redução">12.7 As cinco alavancas que produzem a redução</a></li>
+  <li><a href="#consequências-para-o-iqtpc" id="toc-consequências-para-o-iqtpc" class="nav-link" data-scroll-target="#consequências-para-o-iqtpc">12.8 Consequências para o IQTPC</a></li>
+  <li><a href="#o-que-não-se-deve-cortar" id="toc-o-que-não-se-deve-cortar" class="nav-link" data-scroll-target="#o-que-não-se-deve-cortar">12.9 O que não se deve cortar</a></li>
+  <li><a href="#advertência" id="toc-advertência" class="nav-link" data-scroll-target="#advertência">12.10 Advertência</a></li>
+  </ul></li>
+  <li><a href="#integração-com-o-iqtpc" id="toc-integração-com-o-iqtpc" class="nav-link" data-scroll-target="#integração-com-o-iqtpc">13. Integração com o IQTPC</a>
+  <ul>
+  <li><a href="#regra-de-composição" id="toc-regra-de-composição" class="nav-link" data-scroll-target="#regra-de-composição">13.1 Regra de composição</a></li>
+  <li><a href="#do-questionário-ao-subíndice" id="toc-do-questionário-ao-subíndice" class="nav-link" data-scroll-target="#do-questionário-ao-subíndice">13.2 Do questionário ao subíndice</a></li>
+  <li><a href="#uso-independente" id="toc-uso-independente" class="nav-link" data-scroll-target="#uso-independente">13.3 Uso independente</a></li>
+  </ul></li>
+  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma">14. Cronograma</a></li>
+  <li><a href="#riscos" id="toc-riscos" class="nav-link" data-scroll-target="#riscos">15. Riscos</a></li>
+  <li><a href="#decisões-pendentes" id="toc-decisões-pendentes" class="nav-link" data-scroll-target="#decisões-pendentes">16. Decisões pendentes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="pesquisa-nacional-de-qualidade-percebida-do-transporte-público-coletivo" class="level2">
+<h2 class="anchored" data-anchor-id="pesquisa-nacional-de-qualidade-percebida-do-transporte-público-coletivo">Pesquisa nacional de qualidade percebida do transporte público coletivo</h2>
+<p><strong>Documento principal:</strong> Parâmetros nacionais de qualidade do transporte público coletivo <strong>Finalidade:</strong> suprir o subíndice P do IQTPC e cumprir os arts. 14, VII, e 31, V, da Lei nº 15.432/2026 <strong>Natureza:</strong> proposta técnica de desenho da pesquisa</p>
+<hr>
+</section>
+<section id="sumário" class="level2">
+<h2 class="anchored" data-anchor-id="sumário">Sumário</h2>
+<ol type="1">
+<li><a href="#o-problema">O problema</a></li>
+<li><a href="#o-universo-não-é-o-conjunto-dos-municípios">O universo não é o conjunto dos municípios</a></li>
+<li><a href="#unidade-de-análise-o-sistema-não-o-município">Unidade de análise: o sistema, não o município</a></li>
+<li><a href="#quem-deve-ser-entrevistado">Quem deve ser entrevistado</a></li>
+<li><a href="#desenho-amostral-em-três-estratos">Desenho amostral em três estratos</a></li>
+<li><a href="#métodos-de-coleta-e-uso-do-gtfs-como-base-amostral">Métodos de coleta e uso do GTFS como base amostral</a></li>
+<li><a href="#ponderação">Ponderação</a></li>
+<li><a href="#instrumento">Instrumento</a></li>
+<li><a href="#periodicidade">Periodicidade</a></li>
+<li><a href="#modelo-de-execução-e-governança">Modelo de execução e governança</a></li>
+<li><a href="#base-legal-e-instrumento-normativo">Base legal e instrumento normativo</a></li>
+<li><a href="#estimativa-de-custo">Estimativa de custo</a></li>
+<li><a href="#integração-com-o-iqtpc">Integração com o IQTPC</a></li>
+<li><a href="#cronograma">Cronograma</a></li>
+<li><a href="#riscos">Riscos</a></li>
+<li><a href="#decisões-pendentes">Decisões pendentes</a></li>
+</ol>
+<hr>
+</section>
+<section id="o-problema" class="level2">
+<h2 class="anchored" data-anchor-id="o-problema">1. O problema</h2>
+<p>O subíndice P do IQTPC tem peso 0,17 e não é calculável de forma comparável, porque não existe instrumento nacional padronizado de aferição da satisfação do passageiro. Na analogia com a educação, a plataforma nacional de dados faz o papel do Censo Escolar e <strong>o SAEB da mobilidade não existe</strong>.</p>
+<p>A lacuna não é apenas metodológica, é de conformidade. A Lei nº 15.432/2026 tornou a satisfação item obrigatório em quatro dispositivos:</p>
+<ul>
+<li><strong>Art. 31, V</strong>: satisfação dos passageiros integra os requisitos mínimos de qualidade da operação.</li>
+<li><strong>Art. 14, VII</strong>: o titular deve divulgar sistematicamente os indicadores de qualidade, <strong>incluída pesquisa de satisfação dos passageiros</strong>.</li>
+<li><strong>Art. 4º, IX</strong>: a avaliação periódica do planejamento e da operação deve incluir a satisfação dos passageiros.</li>
+<li><strong>Art. 7º, III</strong>: a prestação de serviço adequado deve ter foco no passageiro e na percepção da qualidade por todas as pessoas.</li>
+<li><strong>Art. 28, III</strong>: eventual apoio federal ao custeio pode ser contrapartida ao alcance de metas <strong>de satisfação</strong>, previstas nas normas de referência expedidas pela União.</li>
+</ul>
+<p>O art. 28, III, é decisivo: ele cita expressamente metas de satisfação como base de contrapartida financeira federal. Sem instrumento padronizado, esse dispositivo é inaplicável.</p>
+<p>O que a Lei não resolve é a comparabilidade. Ela obriga cada titular a pesquisar, o que produziria centenas de instrumentos incomparáveis entre si. A função da União, nos termos do art. 16, IX, da Lei nº 12.587/2012, é padronizar.</p>
+<hr>
+</section>
+<section id="o-universo-não-é-o-conjunto-dos-municípios" class="level2">
+<h2 class="anchored" data-anchor-id="o-universo-não-é-o-conjunto-dos-municípios">2. O universo não é o conjunto dos municípios</h2>
+<p>Este é o primeiro erro a evitar. A pesquisa não tem por universo os 5.570 municípios brasileiros.</p>
+<p><strong>Dados de referência disponíveis:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fonte</th>
+<th>Achado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MUNIC 2017 (IBGE)</td>
+<td>1.679 municípios (30,1%) com ônibus municipal; 3.891 sem; destes, 1.222 atendidos apenas por linhas intermunicipais; 2.669 sem nenhum serviço de ônibus</td>
+</tr>
+<tr class="even">
+<td>MUNIC 2020 (IBGE)</td>
+<td>2.867 municípios (51%) sem ônibus; 2.703 com serviço intramunicipal ou intermunicipal; 81,9% da população residindo em municípios com serviço</td>
+</tr>
+<tr class="odd">
+<td>PeMOB (SEMOB)</td>
+<td>116 municípios acima de 250 mil habitantes; 67 respondentes em 2023</td>
+</tr>
+</tbody>
+</table>
+<p>A assimetria entre <strong>cerca de 30% dos municípios e cerca de 82% da população</strong> é o dado que estrutura o desenho: a pesquisa cobre uma fração pequena dos entes e uma fração grande das pessoas. Isso torna viável uma pesquisa nacional de custo administrável, o que não seria o caso se o universo fosse municipal.</p>
+<section id="consequência-para-o-iqtpc-e-não-apenas-para-a-pesquisa" class="level3">
+<h3 class="anchored" data-anchor-id="consequência-para-o-iqtpc-e-não-apenas-para-a-pesquisa">2.1 Consequência para o IQTPC, e não apenas para a pesquisa</h3>
+<p>Há aqui uma implicação que extrapola o desenho amostral e precisa ser incorporada ao <a href="./IQTPC_parametros_qualidade_transporte_publico.html">documento principal</a>:</p>
+<blockquote class="blockquote">
+<p><strong>O IQTPC não se aplica a município sem serviço de TPC.</strong> Município sem sistema não tem índice zero, tem índice <strong>não aplicável</strong>.</p>
+</blockquote>
+<p>Atribuir zero a quem não tem serviço confunde duas realidades distintas (serviço inexistente e serviço péssimo), destrói a distribuição do índice e produz ranking sem sentido. A ausência de serviço é objeto de indicador próprio, de cobertura nacional, e não do índice de qualidade.</p>
+<p>Propõe-se, portanto, uma classificação nacional em quatro situações:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>Descrição</th>
+<th>Tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>S1</strong></td>
+<td>Sistema de TPC urbano estruturado, com titularidade e contrato</td>
+<td>IQTPC-Completo ou IQTPC-Objetivo</td>
+</tr>
+<tr class="even">
+<td><strong>S2</strong></td>
+<td>Serviço urbano precário, informal ou de baixa escala</td>
+<td>IQTPC-Simplificado</td>
+</tr>
+<tr class="odd">
+<td><strong>S3</strong></td>
+<td>Sem serviço urbano, atendido apenas por linha intermunicipal de caráter urbano</td>
+<td>Indicador de cobertura, titularidade estadual</td>
+</tr>
+<tr class="even">
+<td><strong>S4</strong></td>
+<td>Sem qualquer serviço</td>
+<td>Fora do índice; entra no indicador nacional de cobertura</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="primeiro-entregável-o-cadastro-do-universo" class="level3">
+<h3 class="anchored" data-anchor-id="primeiro-entregável-o-cadastro-do-universo">2.2 Primeiro entregável: o cadastro do universo</h3>
+<p>Nenhum desenho amostral é possível antes de existir o cadastro. A base disponível hoje é declaratória, defasada e de definição instável, já que a própria MUNIC variou nos critérios entre edições.</p>
+<p>A construção não parte do zero. A PeMOB já constitui o embrião deste cadastro para o topo do universo, com série anual desde 2018 e base publicada no SIMU, e a PeMOB Metropolitana já cobre, desde 2019, os sistemas de titularidade estadual (<a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html">Anexo III</a>).</p>
+<p><strong>Entregável 1: Cadastro Nacional de Sistemas de Transporte Público Coletivo</strong>, contendo, por sistema: titular, modalidade de prestação, contratos vigentes, modos operados, frota, extensão da rede, população atendida, existência de GTFS e enquadramento em S1 a S4.</p>
+<p>O cadastro se constrói cruzando: dados do art. 13 (fornecimento obrigatório ao Simu), MUNIC, PeMOB, cadastro de frota validado no SENATRAN (<a href="./IQTPC_parametros_qualidade_transporte_publico.html#v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012">documento principal, 6.5</a>) e repositórios de GTFS. Ele serve simultaneamente como base amostral da pesquisa, denominador do índice e instrumento de verificação do gate do art. 21.</p>
+<hr>
+</section>
+</section>
+<section id="unidade-de-análise-o-sistema-não-o-município" class="level2">
+<h2 class="anchored" data-anchor-id="unidade-de-análise-o-sistema-não-o-município">3. Unidade de análise: o sistema, não o município</h2>
+<p>A pesquisa mede a qualidade percebida de <strong>redes de transporte</strong>, e redes não respeitam limites municipais. Em região metropolitana, o passageiro de um município periférico usa cotidianamente serviço de titularidade estadual, e perguntar a ele sobre “o transporte do seu município” produz resposta sem referente claro.</p>
+<p><strong>Decisão:</strong> a unidade amostral é o <strong>sistema ou rede de TPC</strong>, definida no cadastro. Nas regiões metropolitanas, a unidade é a rede integrada, com estimativas desagregáveis por município de residência.</p>
+<p>Isso se apoia no art. 6º, IV, que define a rede como conjunto único, integrado e intermodal, e no art. 6º, XVII, que institui a unidade regional de transporte público coletivo. O art. 8º, II, atribui aos Estados a titularidade do serviço intermunicipal de caráter urbano, o que significa que <strong>parte relevante do universo tem titularidade estadual e não municipal</strong>, fato que precisa estar refletido na governança da pesquisa.</p>
+<hr>
+</section>
+<section id="quem-deve-ser-entrevistado" class="level2">
+<h2 class="anchored" data-anchor-id="quem-deve-ser-entrevistado">4. Quem deve ser entrevistado</h2>
+<p>Esta é a decisão de maior consequência do desenho e a mais frequentemente errada.</p>
+<section id="o-problema-do-viés-de-sobrevivência" class="level3">
+<h3 class="anchored" data-anchor-id="o-problema-do-viés-de-sobrevivência">4.1 O problema do viés de sobrevivência</h3>
+<p>Uma pesquisa aplicada apenas a bordo entrevista quem está usando o serviço. Ela não alcança:</p>
+<ul>
+<li>quem <strong>abandonou</strong> o sistema por sua má qualidade;</li>
+<li>quem foi <strong>excluído pelo custo</strong> da tarifa;</li>
+<li>quem <strong>não consegue embarcar</strong> por falta de acessibilidade;</li>
+<li>quem <strong>deixou de fazer a viagem</strong> por insegurança, notadamente à noite;</li>
+<li>quem está em <strong>área sem cobertura</strong>.</li>
+</ul>
+<p>O paradoxo é direto: quanto pior o sistema, mais gente ele expulsa, e mais os remanescentes tendem a ser os que não têm alternativa e cujas expectativas se ajustaram para baixo. Pesquisa exclusivamente embarcada pode <strong>premiar o sistema ruim</strong>.</p>
+<p>Isso não é preciosismo metodológico. O art. 7º, III, fala em percepção da qualidade <strong>por todas as pessoas</strong>, não pelos passageiros presentes no veículo. O art. 5º, I e II, e o art. 3º, II, tratam de universalização e equidade no acesso, que só são mensuráveis se os não usuários estiverem na amostra.</p>
+</section>
+<section id="decisão" class="level3">
+<h3 class="anchored" data-anchor-id="decisão">4.2 Decisão</h3>
+<p>Duas populações, com instrumentos articulados:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>População</th>
+<th>Definição</th>
+<th>Método</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usuários</strong></td>
+<td>Quem realizou ao menos uma viagem no sistema nos últimos 30 dias</td>
+<td>Interceptação embarcada e domiciliar</td>
+<td>Qualidade percebida da experiência</td>
+</tr>
+<tr class="even">
+<td><strong>População geral residente</strong></td>
+<td>Moradores da área de abrangência do sistema, usuários ou não</td>
+<td>Domiciliar</td>
+<td>Acesso, barreiras, viagens suprimidas, abandono</td>
+</tr>
+</tbody>
+</table>
+<p>O módulo de não usuários é curto (cerca de 6 itens) e investiga o motivo da não utilização, distinguindo opção (tem automóvel e prefere) de exclusão (não alcança, não pode pagar, não consegue embarcar, tem medo). Essa distinção é o dado hoje mais ausente do debate brasileiro sobre TPC.</p>
+<hr>
+</section>
+</section>
+<section id="desenho-amostral-em-três-estratos" class="level2">
+<h2 class="anchored" data-anchor-id="desenho-amostral-em-três-estratos">5. Desenho amostral em três estratos</h2>
+<blockquote class="blockquote">
+<p><strong>Nota de leitura.</strong> Esta seção descreve o desenho tecnicamente ideal (Cenário 1). Diante da restrição orçamentária, o cenário <strong>recomendado</strong> é o mínimo viável, descrito na seção 12.6, que substitui a coleta domiciliar por embarcada mais módulo telefônico e reduz as amostras. As seções 5 e 14 permanecem como referência do horizonte a alcançar.</p>
+</blockquote>
+<p>Estratificação por porte e complexidade do sistema, definida sobre o cadastro (seção 2.2). Números de sistemas são estimativas preliminares, a confirmar.</p>
+<section id="estrato-a-sistemas-metropolitanos-e-de-grande-porte" class="level3">
+<h3 class="anchored" data-anchor-id="estrato-a-sistemas-metropolitanos-e-de-grande-porte">Estrato A, sistemas metropolitanos e de grande porte</h3>
+<p><strong>Critério:</strong> sistemas de regiões metropolitanas, capitais e municípios acima de 250 mil habitantes, mais sistemas com modo de média ou alta capacidade. <strong>Ordem de grandeza:</strong> 50 a 60 sistemas. <strong>Método:</strong> domiciliar presencial, com módulo embarcado complementar. <strong>Amostra por sistema:</strong> 1.500 a 2.000 domicílios. <strong>Justificativa do tamanho:</strong> permite estimativa com margem em torno de 2,5 pontos percentuais e, sobretudo, <strong>desagregação por quintil de renda e por recorte territorial</strong>, que é condição para o IQTPC-Equidade. Amostra de 400, suficiente para a média do sistema, não sustenta o indicador de equidade.</p>
+</section>
+<section id="estrato-b-sistemas-de-médio-porte" class="level3">
+<h3 class="anchored" data-anchor-id="estrato-b-sistemas-de-médio-porte">Estrato B, sistemas de médio porte</h3>
+<p><strong>Critério:</strong> municípios entre 100 mil e 250 mil habitantes com sistema estruturado (S1). <strong>Ordem de grandeza:</strong> 180 a 220 sistemas. <strong>Método:</strong> interceptação embarcada, com subamostra domiciliar reduzida para correção do viés de sobrevivência. <strong>Amostra por sistema:</strong> 600 a 800 entrevistas embarcadas, mais 250 domiciliares.</p>
+</section>
+<section id="estrato-c-sistemas-de-pequeno-porte" class="level3">
+<h3 class="anchored" data-anchor-id="estrato-c-sistemas-de-pequeno-porte">Estrato C, sistemas de pequeno porte</h3>
+<p><strong>Critério:</strong> demais municípios com sistema estruturado ou serviço precário (S1 e S2), tipicamente abaixo de 100 mil habitantes. <strong>Ordem de grandeza:</strong> 1.400 a 1.500 sistemas. <strong>Método:</strong> amostragem <strong>de sistemas</strong>, e não censo de sistemas. Sorteio rotativo de 15% a 20% dos sistemas por ciclo, com representatividade por região e faixa populacional. <strong>Amostra por sistema sorteado:</strong> 300 a 400 entrevistas.</p>
+<p><strong>Consequência importante:</strong> no Estrato C, o subíndice P <strong>não é calculável para todo sistema em todo ciclo</strong>. Sistemas não sorteados têm o IQTPC calculado sem P, como IQTPC-Objetivo, e a rotação garante que cada sistema seja alcançado a cada dois ou três ciclos.</p>
+<p>Essa é uma limitação assumida, e a alternativa (censo de 1.700 sistemas) elevaria o custo em ordem de grandeza sem ganho proporcional de política pública.</p>
+</section>
+<section id="estrato-d-municípios-sem-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="estrato-d-municípios-sem-serviço">Estrato D, municípios sem serviço</h3>
+<p>Não integram a pesquisa de satisfação. São objeto do módulo de cobertura, apurado por via administrativa no cadastro, sem coleta primária.</p>
+<hr>
+</section>
+</section>
+<section id="métodos-de-coleta-e-uso-do-gtfs-como-base-amostral" class="level2">
+<h2 class="anchored" data-anchor-id="métodos-de-coleta-e-uso-do-gtfs-como-base-amostral">6. Métodos de coleta e uso do GTFS como base amostral</h2>
+<section id="coleta-domiciliar" class="level3">
+<h3 class="anchored" data-anchor-id="coleta-domiciliar">6.1 Coleta domiciliar</h3>
+<p>Base amostral: setores censitários do IBGE, com sorteio em dois estágios (setor, domicílio) e seleção do morador por critério objetivo. Estratificação interna por faixa de renda do setor, para garantir a desagregação exigida pelo IQTPC-Equidade.</p>
+<p>É o método de maior custo e de maior validade. Alcança usuários e não usuários e permite ancorar a amostra em características socioeconômicas conhecidas.</p>
+</section>
+<section id="coleta-embarcada" class="level3">
+<h3 class="anchored" data-anchor-id="coleta-embarcada">6.2 Coleta embarcada</h3>
+<p>Base amostral: <strong>o próprio GTFS do sistema</strong>. Esta é a solução mais elegante disponível e vale explicitá-la.</p>
+<p>O GTFS estático fornece o universo completo de viagens programadas, com linha, sentido, horário e dia da semana. Ele é, portanto, uma base amostral pronta de <strong>viagens</strong>, permitindo sorteio probabilístico de trios (linha, horário, sentido) com probabilidade proporcional à oferta, sem depender de informação prestada pelo operador.</p>
+<p>Isso amarra a pesquisa ao mesmo insumo que alimenta os subíndices C e F, e cria um incentivo virtuoso adicional para a publicação do GTFS: sistema sem GTFS não tem base amostral confiável, e sistema sem GTFS já é sistema que não cumpre o art. 13.</p>
+<p>Ressalva: a coleta embarcada precisa cobrir pico e entrepico, dias úteis e fim de semana, e período noturno. Restringir ao pico da manhã em dia útil é o erro clássico e produz retrato sistematicamente mais favorável.</p>
+</section>
+<section id="métodos-descartados" class="level3">
+<h3 class="anchored" data-anchor-id="métodos-descartados">6.3 Métodos descartados</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Método</th>
+<th>Razão do descarte</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicativo do operador ou totem em terminal</td>
+<td>Autosseleção severa; captura extremos de satisfação; capturável pelo operador</td>
+</tr>
+<tr class="even">
+<td>Pesquisa telefônica <strong>como método principal</strong></td>
+<td>Cobertura desigual e taxa de resposta baixa nos estratos de menor renda, exatamente os mais dependentes do TPC. <strong>Admitida apenas como módulo de não usuário no cenário mínimo viável (12.6), com calibração contra o Censo</strong></td>
+</tr>
+<tr class="odd">
+<td>Painel online</td>
+<td>Exclui sistematicamente o público de menor renda e menor letramento digital</td>
+</tr>
+<tr class="even">
+<td>Avaliação por estrelas em aplicativo de viagem</td>
+<td>Não probabilístico e manipulável</td>
+</tr>
+</tbody>
+</table>
+<p>Métodos digitais podem compor <strong>módulo complementar não probabilístico</strong>, publicado à parte e jamais integrado ao cálculo do subíndice P.</p>
+<hr>
+</section>
+</section>
+<section id="ponderação" class="level2">
+<h2 class="anchored" data-anchor-id="ponderação">7. Ponderação</h2>
+<p>Dois ajustes são indispensáveis e costumam ser omitidos.</p>
+<p><strong>Ponderação por frequência de viagem.</strong> Na coleta embarcada, quem viaja mais tem maior probabilidade de ser sorteado. Sem correção, a amostra representa <strong>viagens</strong>, não <strong>pessoas</strong>. Ambos os recortes são legítimos, mas medem coisas distintas, e para o IQTPC, que é índice de qualidade de serviço prestado à população, o recorte de pessoa é o correto. Exige item sobre número de viagens no período de referência e peso proporcional ao inverso da frequência.</p>
+<p><strong>Calibração sociodemográfica.</strong> Pós-estratificação por sexo, faixa etária, renda e localização, contra parâmetros do Censo ou da PNAD Contínua, para corrigir não resposta diferencial.</p>
+<p>Recomenda-se ainda publicar as estimativas <strong>desagregadas por quintil de renda, por sexo e por recorte territorial</strong>, e não apenas a média do sistema, sob pena de reproduzir no subíndice P o problema que o IQTPC-Equidade foi criado para corrigir.</p>
+<hr>
+</section>
+<section id="instrumento" class="level2">
+<h2 class="anchored" data-anchor-id="instrumento">8. Instrumento</h2>
+<section id="estrutura" class="level3">
+<h3 class="anchored" data-anchor-id="estrutura">8.1 Estrutura</h3>
+<p>Três blocos:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bloco</th>
+<th>Conteúdo</th>
+<th>Aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Núcleo comum</strong></td>
+<td>18 a 22 itens fechados, idênticos em todo o país, imutáveis entre ciclos</td>
+<td>Obrigatório</td>
+</tr>
+<tr class="even">
+<td><strong>Módulo de não usuário</strong></td>
+<td>6 a 8 itens sobre barreiras e viagens suprimidas</td>
+<td>Domiciliar</td>
+</tr>
+<tr class="odd">
+<td><strong>Módulo local</strong></td>
+<td>Até 10 itens de interesse do titular</td>
+<td>Facultativo</td>
+</tr>
+</tbody>
+</table>
+<p>A imutabilidade do núcleo é condição da série histórica. Alterar item do núcleo quebra a comparabilidade e deve exigir procedimento formal, com sobreposição de ciclo para calibração.</p>
+</section>
+<section id="itens-do-núcleo-comum-por-dimensão" class="level3">
+<h3 class="anchored" data-anchor-id="itens-do-núcleo-comum-por-dimensão">8.2 Itens do núcleo comum, por dimensão</h3>
+<p>Escala de 1 a 5 (muito ruim a muito bom), com item adicional de avaliação global.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimensão</th>
+<th>Itens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tempo e regularidade</td>
+<td>Tempo de espera; cumprimento do horário; tempo total da viagem</td>
+</tr>
+<tr class="even">
+<td>Lotação e conforto</td>
+<td>Lotação no horário em que costuma viajar; possibilidade de sentar; limpeza; conforto do veículo</td>
+</tr>
+<tr class="odd">
+<td>Frota</td>
+<td>Estado de conservação do veículo; climatização, quando aplicável</td>
+</tr>
+<tr class="even">
+<td>Segurança viária</td>
+<td>Modo de dirigir; sensação de segurança quanto a acidentes</td>
+</tr>
+<tr class="odd">
+<td>Segurança pessoal</td>
+<td>Sensação de segurança dentro do veículo; no ponto ou estação; à noite; ocorrência de importunação ou assédio nos últimos 12 meses</td>
+</tr>
+<tr class="even">
+<td>Acessibilidade</td>
+<td>Facilidade de embarque e desembarque; adequação para pessoa com deficiência, idosa, gestante ou com criança de colo</td>
+</tr>
+<tr class="odd">
+<td>Informação</td>
+<td>Facilidade de saber horários e itinerários; informação em caso de alteração</td>
+</tr>
+<tr class="even">
+<td>Tratamento</td>
+<td>Cortesia da equipe de operação; ocorrência de discriminação nos últimos 12 meses</td>
+</tr>
+<tr class="odd">
+<td>Custo</td>
+<td>Percepção do valor da tarifa frente ao serviço recebido</td>
+</tr>
+<tr class="even">
+<td>Avaliação global</td>
+<td>Nota geral ao serviço; disposição de recomendar; comparação com 12 meses atrás</td>
+</tr>
+</tbody>
+</table>
+<p>Os itens de segurança pessoal, importunação e discriminação decorrem diretamente dos incisos IX e X do art. 16 e são, provavelmente, a contribuição mais original que a pesquisa pode dar ao debate nacional, por não existir hoje fonte sistemática sobre o tema.</p>
+<p>O item de comparação com 12 meses atrás é a única medida de percepção de trajetória e é útil para leitura de série curta.</p>
+</section>
+<section id="cuidados-de-redação" class="level3">
+<h3 class="anchored" data-anchor-id="cuidados-de-redação">8.3 Cuidados de redação</h3>
+<ul>
+<li>Referência temporal explícita e curta (últimos 30 dias) para reduzir erro de recordação.</li>
+<li>Ancorar o item de lotação no horário em que a pessoa efetivamente viaja, e não no pico genérico.</li>
+<li>Evitar pergunta de satisfação global antes dos itens específicos, para não contaminar as respostas subsequentes.</li>
+<li>Aplicar o item sobre importunação e assédio com protocolo próprio de privacidade, preferencialmente autoaplicado, e com encaminhamento de informação sobre canais de denúncia (art. 16, X).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="periodicidade" class="level2">
+<h2 class="anchored" data-anchor-id="periodicidade">9. Periodicidade</h2>
+<p><strong>Bienal</strong>, com coleta em ano ímpar (piloto 2027, primeiro ciclo 2029, segundo 2031) e divulgação no ano seguinte.</p>
+<p>Justificativas: a satisfação com serviço público varia lentamente; ciclo bienal reduz custo em cerca de metade frente ao anual; alinha-se ao ciclo do IQTPC; e evita coleta em ano eleitoral municipal, o que reduz o risco de contaminação política das respostas e de instrumentalização dos resultados.</p>
+<p>O Estrato C opera em rotação, de modo que cada sistema é alcançado a cada dois ou três ciclos, ou seja, a cada quatro a seis anos.</p>
+<hr>
+</section>
+<section id="modelo-de-execução-e-governança" class="level2">
+<h2 class="anchored" data-anchor-id="modelo-de-execução-e-governança">10. Modelo de execução e governança</h2>
+<section id="alternativas" class="level3">
+<h3 class="anchored" data-anchor-id="alternativas">10.1 Alternativas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modelo</th>
+<th>Vantagem</th>
+<th>Desvantagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Suplemento à PNAD Contínua (IBGE)</td>
+<td>Máxima credibilidade; infraestrutura existente</td>
+<td>Amostra da PNAD não é dimensionada para estimativa por sistema em municípios médios; agenda do IBGE disputada</td>
+</tr>
+<tr class="even">
+<td>Pesquisa própria do IBGE, por TED</td>
+<td>Credibilidade e capacidade de campo nacional</td>
+<td>Custo e prazo de negociação</td>
+</tr>
+<tr class="odd">
+<td>Contratação de instituto por licitação</td>
+<td>Flexibilidade e prazo</td>
+<td>Descontinuidade entre ciclos; risco de variação metodológica</td>
+</tr>
+<tr class="even">
+<td>TED com instituição pública de pesquisa</td>
+<td>Continuidade metodológica; precedente já existente no âmbito do Simu</td>
+<td>Capacidade de campo nacional a verificar</td>
+</tr>
+<tr class="odd">
+<td>Aplicação descentralizada pelos titulares, com instrumento padronizado e auditoria federal amostral (modelo PMAQ-AB)</td>
+<td>Menor custo; envolvimento dos entes</td>
+<td>Risco de captura pelo avaliado; qualidade heterogênea de campo</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="recomendação" class="level3">
+<h3 class="anchored" data-anchor-id="recomendação">10.2 Recomendação</h3>
+<p><strong>Modelo híbrido, por estrato:</strong></p>
+<ul>
+<li><strong>Estratos A e B</strong>: execução centralizada, por TED com instituição pública de pesquisa ou contratação federal, com campo por terceiro independente. São os sistemas que concentram população e que terão consequência financeira pelo art. 28, III, e por isso exigem o padrão mais alto de independência.</li>
+<li><strong>Estrato C</strong>: aplicação descentralizada pelos titulares, com instrumento e manual padronizados pela União, mais <strong>auditoria amostral federal</strong> (10% dos sistemas sorteados no Cenário 1; 15 sistemas no Cenário 3), no modelo do PMAQ-AB. Divergência acima de limiar entre o resultado local e o auditado invalida o dado e aciona reaplicação.</li>
+</ul>
+<p><strong>Princípio inegociável:</strong> em nenhuma hipótese o campo é executado pelo operador do serviço ou por contratado seu. O art. 3º, IX, arrola integridade e autenticidade de dados entre os princípios fundamentais, e pesquisa de satisfação aplicada pelo avaliado não atende a esse padrão.</p>
+</section>
+<section id="governança-metodológica" class="level3">
+<h3 class="anchored" data-anchor-id="governança-metodológica">10.3 Governança metodológica</h3>
+<p>Comitê técnico permanente com participação do órgão gestor federal, do executor de campo, de instituição de estatística e de representação dos titulares, responsável por: aprovar alterações no núcleo comum; homologar o cadastro do universo a cada ciclo; e validar os relatórios de qualidade da coleta.</p>
+<p>O Fórum Nacional de Mobilidade Urbana, criado pelo art. 16-B da Lei nº 12.587/2012 na redação do art. 38 da Lei nº 15.432/2026, é a instância natural de consulta sobre o instrumento, sem prejuízo do comitê técnico.</p>
+<hr>
+</section>
+</section>
+<section id="base-legal-e-instrumento-normativo" class="level2">
+<h2 class="anchored" data-anchor-id="base-legal-e-instrumento-normativo">11. Base legal e instrumento normativo</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dispositivo</th>
+<th>Função na pesquisa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Art. 31, V</td>
+<td>Satisfação como requisito mínimo de qualidade</td>
+</tr>
+<tr class="even">
+<td>Art. 14, VII</td>
+<td>Obrigatoriedade de divulgação da pesquisa de satisfação</td>
+</tr>
+<tr class="odd">
+<td>Art. 4º, IX</td>
+<td>Avaliação periódica incluindo satisfação</td>
+</tr>
+<tr class="even">
+<td>Art. 7º, III</td>
+<td>Percepção da qualidade por todas as pessoas</td>
+</tr>
+<tr class="odd">
+<td>Art. 13</td>
+<td>Metodologia e periodicidade definidas pela União; base para exigir a coleta</td>
+</tr>
+<tr class="even">
+<td>Art. 28, III</td>
+<td>Metas de satisfação como contrapartida de apoio federal ao custeio</td>
+</tr>
+<tr class="odd">
+<td>Art. 16, IX, Lei nº 12.587/2012</td>
+<td>Competência da União para normas de referência de qualidade</td>
+</tr>
+<tr class="even">
+<td>Art. 16, X, Lei nº 12.587/2012</td>
+<td>Monitoramento nacional dos sistemas</td>
+</tr>
+<tr class="odd">
+<td>Art. 3º, IX</td>
+<td>Integridade e autenticidade dos dados</td>
+</tr>
+<tr class="even">
+<td>Lei nº 13.709/2018</td>
+<td>Tratamento de dados pessoais dos respondentes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Instrumento normativo proposto:</strong> portaria ministerial instituindo a PeMOB Usuário, com anexos contendo o instrumento do núcleo comum, o manual de campo, o desenho amostral e os critérios de estratificação. A ancoragem no art. 13 permite tratar a pesquisa como parte da metodologia de fornecimento de dados ao Simu, o que a conecta ao gate do art. 21 sem necessidade de norma de hierarquia superior.</p>
+<p><strong>Ponto de atenção jurídica:</strong> exigir do titular de Estrato C a aplicação da pesquisa impõe custo a ente subnacional. A construção mais segura é vincular a exigência ao acesso a recursos federais, pela via do art. 21, e não estabelecê-la como obrigação autônoma, evitando discussão sobre repartição de encargos federativos.</p>
+<hr>
+</section>
+<section id="estimativa-de-custo" class="level2">
+<h2 class="anchored" data-anchor-id="estimativa-de-custo">12. Estimativa de custo</h2>
+<section id="ancoragem-em-contratos-reais" class="level3">
+<h3 class="anchored" data-anchor-id="ancoragem-em-contratos-reais">12.1 Ancoragem em contratos reais</h3>
+<p>A estimativa se ancora em contratos públicos recentes de pesquisa domiciliar de mobilidade.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Referência</th>
+<th>Escopo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pesquisa OD da Região Metropolitana de Jundiaí, STM/SP e Fundação Seade, contrato assinado em dez/2025</td>
+<td>6.000 domicílios, coleta domiciliar mais dados de telefonia móvel, base do PITU</td>
+<td>R$ 15,3 milhões</td>
+</tr>
+<tr class="even">
+<td>Revisão do PDTU-DF, SEMOB-DF e UFSC, 2024</td>
+<td>Pesquisa domiciliar de origem e destino no DF, dentro da revisão do plano</td>
+<td>R$ 7,85 milhões</td>
+</tr>
+<tr class="odd">
+<td>Pesquisa OD 2027, Metrô de São Paulo</td>
+<td>Apenas a plataforma tecnológica de gerenciamento e coleta, sem o campo</td>
+<td>R$ 2,81 milhões</td>
+</tr>
+<tr class="even">
+<td>Pesquisa OD 2023, Metrô de São Paulo</td>
+<td>32.000 domicílios, 527 zonas, 39 municípios, oito meses de campo</td>
+<td>Contratação por lotes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ressalva metodológica indispensável.</strong> Esses valores <strong>não são transponíveis diretamente</strong>. Uma entrevista de origem e destino entrevista todos os moradores do domicílio, levanta o diário completo de viagens do dia e exige georreferenciamento de cada origem e destino, com duração típica acima de uma hora. A PeMOB Usuário aplica instrumento de 18 a 22 itens a um respondente, com duração estimada de 15 a 20 minutos e sem codificação espacial de viagens. O custo unitário de uma OD é, portanto, <strong>limite superior</strong> e não parâmetro.</p>
+<p>O contrato de Jundiaí ilustra bem: R$ 15,3 milhões para 6.000 domicílios equivalem a cerca de R$ 2.550 por domicílio, mas o valor inclui aquisição de dados de telefonia, produto analítico e ausência de escala. Serve para dimensionar a diferença entre um levantamento de planejamento e uma pesquisa de percepção, não para precificá-la.</p>
+<p>Os custos unitários adotados a seguir consideram contratação pública com supervisão, controle de qualidade e recontato.</p>
+</section>
+<section id="custos-unitários-adotados" class="level3">
+<h3 class="anchored" data-anchor-id="custos-unitários-adotados">12.2 Custos unitários adotados</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Modalidade</th>
+<th>Duração estimada</th>
+<th>Custo por entrevista completa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Domiciliar presencial</td>
+<td>15 a 20 min</td>
+<td>R$ 160 a R$ 300</td>
+</tr>
+<tr class="even">
+<td>Interceptação embarcada</td>
+<td>5 a 8 min</td>
+<td>R$ 40 a R$ 80</td>
+</tr>
+</tbody>
+</table>
+<p>Os valores incluem campo, supervisão, deslocamento, controle de qualidade e encargos, e excluem desenho, processamento e divulgação, tratados adiante.</p>
+</section>
+<section id="estimativa-por-estrato" class="level3">
+<h3 class="anchored" data-anchor-id="estimativa-por-estrato">12.3 Estimativa por estrato</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estrato</th>
+<th>Sistemas por ciclo</th>
+<th>Entrevistas por sistema</th>
+<th>Entrevistas totais</th>
+<th>Mínimo</th>
+<th>Máximo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A, domiciliar</td>
+<td>55</td>
+<td>1.700</td>
+<td>93.500</td>
+<td>R$ 15,0 mi</td>
+<td>R$ 28,1 mi</td>
+</tr>
+<tr class="even">
+<td>A, embarcada</td>
+<td>55</td>
+<td>500</td>
+<td>27.500</td>
+<td>R$ 1,1 mi</td>
+<td>R$ 2,2 mi</td>
+</tr>
+<tr class="odd">
+<td>B, embarcada</td>
+<td>200</td>
+<td>700</td>
+<td>140.000</td>
+<td>R$ 5,6 mi</td>
+<td>R$ 11,2 mi</td>
+</tr>
+<tr class="even">
+<td>B, domiciliar reduzida</td>
+<td>200</td>
+<td>250</td>
+<td>50.000</td>
+<td>R$ 8,0 mi</td>
+<td>R$ 15,0 mi</td>
+</tr>
+<tr class="odd">
+<td>C, rotação de 18%</td>
+<td>260</td>
+<td>350</td>
+<td>91.000</td>
+<td>R$ 3,6 mi</td>
+<td>R$ 7,3 mi</td>
+</tr>
+<tr class="even">
+<td>Auditoria do Estrato C</td>
+<td>26</td>
+<td>200</td>
+<td>5.200</td>
+<td>R$ 0,8 mi</td>
+<td>R$ 1,6 mi</td>
+</tr>
+<tr class="odd">
+<td><strong>Campo, total</strong></td>
+<td></td>
+<td></td>
+<td><strong>407.200</strong></td>
+<td><strong>R$ 34,1 mi</strong></td>
+<td><strong>R$ 65,3 mi</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Acrescentam-se desenho e pré-teste, treinamento, plataforma de coleta, supervisão central, processamento e ponderação, sistema de divulgação e gestão contratual, tipicamente entre 25% e 40% do custo de campo. O contrato de plataforma do Metrô de São Paulo, de R$ 2,81 milhões apenas para o sistema de gerenciamento, confirma que essa rubrica não é residual.</p>
+</section>
+<section id="resultado" class="level3">
+<h3 class="anchored" data-anchor-id="resultado">12.4 Resultado</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Recorte</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ciclo bienal completo</strong></td>
+<td><strong>R$ 43 a R$ 91 milhões</strong></td>
+</tr>
+<tr class="even">
+<td><em>Ver 12.6: este é o cenário ideal, não o recomendado. A escada de cenários reduz o valor a até R$ 2 a 4 milhões por ano</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ponto médio do ciclo</td>
+<td>cerca de R$ 67 milhões</td>
+</tr>
+<tr class="even">
+<td><strong>Equivalente anual</strong></td>
+<td><strong>R$ 21 a R$ 46 milhões</strong></td>
+</tr>
+<tr class="odd">
+<td>Piloto restrito a 15 sistemas do Estrato A</td>
+<td>R$ 5,5 a R$ 11,5 milhões</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="métricas-de-escala" class="level3">
+<h3 class="anchored" data-anchor-id="métricas-de-escala">12.5 Métricas de escala</h3>
+<p>Referências úteis para a defesa orçamentária, calculadas sobre o ponto médio:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Métrica</th>
+<th>Valor aproximado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Custo por habitante coberto, por ano (Cenário 1)</td>
+<td>R$ 0,28 a R$ 0,34</td>
+</tr>
+<tr class="even">
+<td>Custo por habitante coberto, por ano (Cenário 3, recomendado)</td>
+<td>cerca de R$ 0,03</td>
+</tr>
+<tr class="odd">
+<td>Custo por viagem de TPC realizada no país, por ano</td>
+<td>menos de R$ 0,01 em qualquer cenário</td>
+</tr>
+<tr class="even">
+<td>Custo anual frente ao valor de um único contrato de OD metropolitana</td>
+<td>Cenário 1: 2 a 4 vezes. <strong>Cenário 3: inferior ao de uma única OD</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A comparação mais eloquente é a última linha: <strong>o custo anual de medir a satisfação com o transporte público em todo o país equivale a poucas pesquisas de origem e destino metropolitanas</strong>, instrumentos que cada região realiza isoladamente a cada dez anos. A diferença é que a PeMOB Usuário produz série nacional comparável e bienal sobre a experiência do usuário, que nenhuma OD entrega.</p>
+</section>
+<section id="escada-de-cenários" class="level3">
+<h3 class="anchored" data-anchor-id="escada-de-cenários">12.6 Escada de cenários</h3>
+<p>O desenho da seção 5 é o tecnicamente ideal, não o financeiramente viável. Como a restrição orçamentária é real, propõe-se uma escada de quatro cenários, com registro explícito do que se perde em cada degrau.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cenário</th>
+<th>Descrição</th>
+<th>Ciclo bienal</th>
+<th>Por ano</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Completo</strong></td>
+<td>Desenho da seção 5, com domiciliar em A e B</td>
+<td>R$ 43 a 91 mi</td>
+<td>R$ 21 a 46 mi</td>
+</tr>
+<tr class="even">
+<td><strong>2. Intermediário</strong></td>
+<td>Domiciliar reduzida só em A, via universidades; B com rotação de metade</td>
+<td>R$ 8 a 17 mi</td>
+<td>R$ 4 a 9 mi</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Mínimo viável</strong></td>
+<td>Sem domiciliar; embarcada mais módulo telefônico de não usuário</td>
+<td>R$ 4 a 8 mi</td>
+<td>R$ 2 a 4 mi</td>
+</tr>
+<tr class="even">
+<td><strong>0. Piloto de partida</strong></td>
+<td>12 sistemas, com validação de escala</td>
+<td>R$ 0,9 a 2,0 mi</td>
+<td>R$ 0,5 a 1,0 mi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recomendação: iniciar pelo Cenário 0 e operar no Cenário 3, com migração ao 2 conforme houver dotação.</strong> O Cenário 1 fica registrado como horizonte, não como proposta de curto prazo.</p>
+<section id="cenário-3-mínimo-viável-detalhado" class="level4">
+<h4 class="anchored" data-anchor-id="cenário-3-mínimo-viável-detalhado">Cenário 3, mínimo viável, detalhado</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Entrevistas</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Estrato A, embarcada, 600 por sistema</td>
+<td>33.000</td>
+<td>R$ 1,3 a 2,6 mi</td>
+</tr>
+<tr class="even">
+<td>Estrato A, módulo de não usuário por telefone, 300 por sistema</td>
+<td>16.500</td>
+<td>R$ 0,4 a 0,7 mi</td>
+</tr>
+<tr class="odd">
+<td>Estrato B, embarcada, rotação de um terço, 400 por sistema</td>
+<td>26.800</td>
+<td>R$ 1,1 a 2,1 mi</td>
+</tr>
+<tr class="even">
+<td>Estrato C, aplicação descentralizada pelos titulares, com auditoria federal em 15 sistemas</td>
+<td>3.000</td>
+<td>R$ 0,2 a 0,4 mi</td>
+</tr>
+<tr class="odd">
+<td><strong>Campo</strong></td>
+<td><strong>79.300</strong></td>
+<td><strong>R$ 3,0 a 5,9 mi</strong></td>
+</tr>
+<tr class="even">
+<td>Com estrutura</td>
+<td></td>
+<td><strong>R$ 3,7 a 8,2 mi por ciclo</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="as-cinco-alavancas-que-produzem-a-redução" class="level3">
+<h3 class="anchored" data-anchor-id="as-cinco-alavancas-que-produzem-a-redução">12.7 As cinco alavancas que produzem a redução</h3>
+<p><strong>Alavanca 1: substituir a coleta domiciliar por embarcada mais módulo telefônico.</strong> É a de maior efeito, responsável por quase toda a diferença entre os Cenários 1 e 3. A entrevista domiciliar custa de quatro a sete vezes a embarcada. O módulo telefônico de não usuário, com amostragem por telefonia móvel e calibração contra o Censo, recupera parte da população que a coleta embarcada não alcança, a custo de R$ 25 a 45 por entrevista.</p>
+<p><em>O que se perde:</em> precisão na estimativa de não usuários e cobertura dos segmentos com menor acesso telefônico. É perda real, mas muito menor que abandonar completamente a medição de quem foi excluído do sistema, que era o risco do desenho embarcado puro.</p>
+<p><strong>Alavanca 2: execução por universidades federais, via TED.</strong> Há precedente direto e recente no setor: a revisão do PDTU-DF foi contratada pela Semob-DF junto à UFSC por R$ 7,85 milhões. O custo unitário da entrevista domiciliar cai da faixa comercial de R$ 160 a 300 para algo entre R$ 60 e 120, com o ganho adicional de formação de capacidade técnica local e continuidade metodológica entre ciclos.</p>
+<p><em>O que se perde:</em> homogeneidade de campo e previsibilidade de prazo. Mitigável por manual único, treinamento centralizado e supervisão federal.</p>
+<p><strong>Alavanca 3: rotação também nos Estratos A e B.</strong> O desenho original previa rotação apenas no Estrato C. Estendê-la aos demais, cobrindo um terço ou metade dos sistemas por ciclo, reduz proporcionalmente o custo.</p>
+<p><em>O que se perde:</em> frequência. Cada sistema passa a ser medido a cada quatro ou seis anos, em vez de a cada dois. Para satisfação com serviço público, que varia lentamente, é perda tolerável.</p>
+<p><strong>Alavanca 4: redução da amostra por sistema.</strong> A amostra de 1.700 domicílios foi dimensionada para permitir desagregação por quintil de renda e por recorte territorial, exigência do IQTPC-Equidade. Amostras de 400 a 600 sustentam a média do sistema com margem em torno de 4 pontos percentuais, mas não a desagregação.</p>
+<p><em>O que se perde:</em> o subíndice P deixa de alimentar o IQTPC-Equidade, que passa a ser calculado apenas com os componentes objetivos (A, C, F, V). É a perda mais séria da escada e deve ser declarada em toda divulgação.</p>
+<p><strong>Alavanca 5: suplemento a pesquisa domiciliar existente.</strong> A alternativa de maior retorno potencial e maior incerteza. A PNAD Contínua já visita domicílios em todas as unidades da federação, capitais e regiões metropolitanas, com estrutura de campo permanente. O custo marginal de um suplemento é uma fração do custo de uma pesquisa autônoma, porque o deslocamento, o cadastro e a abordagem já estão pagos.</p>
+<p><em>Limitação conhecida:</em> o desenho amostral da PNAD sustenta estimativas para regiões metropolitanas e capitais, o que cobre boa parte do Estrato A, mas não produz estimativa por sistema nos municípios médios do Estrato B.</p>
+<p><em>Encaminhamento:</em> consulta formal ao IBGE sobre viabilidade, custo marginal e prazo de inclusão de suplemento de mobilidade. Mesmo que resolva apenas o Estrato A, libera integralmente o orçamento para os Estratos B e C.</p>
+</section>
+<section id="consequências-para-o-iqtpc" class="level3">
+<h3 class="anchored" data-anchor-id="consequências-para-o-iqtpc">12.8 Consequências para o IQTPC</h3>
+<p>Operar no Cenário 3 tem três consequências que precisam estar registradas no <a href="./IQTPC_parametros_qualidade_transporte_publico.html">documento principal</a>:</p>
+<ol type="1">
+<li><strong>O subíndice P deve entrar com peso reduzido</strong>, na faixa de 0,08 a 0,10 em vez de 0,17, enquanto a medição não tiver precisão para desagregação. Peso alto sobre medida imprecisa transfere ruído para o índice.</li>
+<li><strong>O IQTPC-Equidade é calculado sem P</strong>, apenas com os componentes objetivos territorializáveis.</li>
+<li><strong>A ponderação por frequência de viagem torna-se ainda mais crítica</strong>, porque sem componente domiciliar a amostra embarcada representa viagens, e não pessoas, de forma mais acentuada.</li>
+</ol>
+<p>Nenhuma dessas consequências inviabiliza o índice. Todas devem ser declaradas na divulgação, sob pena de o número aparentar precisão que não possui.</p>
+</section>
+<section id="o-que-não-se-deve-cortar" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-não-se-deve-cortar">12.9 O que não se deve cortar</h3>
+<p>Três itens devem sobreviver a qualquer restrição orçamentária, porque sua remoção descaracteriza o instrumento:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Razão</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alguma forma de alcance ao não usuário</td>
+<td>Sem ela, o sistema que expulsa passageiros é premiado. Se o custo for proibitivo, reduzir a amostra, nunca eliminar o módulo</td>
+</tr>
+<tr class="even">
+<td>Independência do executor de campo</td>
+<td>Pesquisa aplicada pelo operador ou por contratado seu não tem valor probatório, e economiza pouco</td>
+</tr>
+<tr class="odd">
+<td>Imutabilidade do núcleo do questionário</td>
+<td>Custo zero e valor decisivo. É o que transforma edições isoladas em série histórica</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advertência" class="level3">
+<h3 class="anchored" data-anchor-id="advertência">12.10 Advertência</h3>
+<p>Os valores permanecem estimativas de dimensionamento e <strong>não substituem pesquisa de preços</strong> nos termos do art. 23 da Lei nº 14.133/2021. Recomenda-se consulta formal ao IBGE, à Fundação Seade e a institutos com contratos federais recentes de pesquisa domiciliar antes de qualquer uso em documento de planejamento da contratação.</p>
+<hr>
+</section>
+</section>
+<section id="integração-com-o-iqtpc" class="level2">
+<h2 class="anchored" data-anchor-id="integração-com-o-iqtpc">13. Integração com o IQTPC</h2>
+<section id="regra-de-composição" class="level3">
+<h3 class="anchored" data-anchor-id="regra-de-composição">13.1 Regra de composição</h3>
+<p>O subíndice P <strong>só compõe</strong> o IQTPC quando o sistema tiver sido pesquisado no ciclo corrente ou no imediatamente anterior. Fora disso, o índice é calculado sem P, com renormalização dos pesos dos demais subíndices, e publicado como IQTPC-Objetivo (<a href="./IQTPC_Manual_de_calculo.html#iqtpc-objetivo-sem-p">Manual, seção 7.3</a>).</p>
+<p>Vedação expressa: imputar valor de P por sistema similar, por média do estrato ou por qualquer método de modelagem. Imputação em índice com consequência financeira é convite a litígio.</p>
+</section>
+<section id="do-questionário-ao-subíndice" class="level3">
+<h3 class="anchored" data-anchor-id="do-questionário-ao-subíndice">13.2 Do questionário ao subíndice</h3>
+<p>Cada dimensão do núcleo comum é agregada em escore de 1 a 10 e as dimensões são combinadas de forma coerente com a estrutura do fator D. Recomenda-se que o subíndice P <strong>não seja a nota global declarada</strong>, e sim a composição dos itens específicos, por três razões: a nota global sofre efeito de halo; ela é mais sensível a fatores conjunturais externos ao serviço, como uma greve recente ou o noticiário; e a composição por itens permite diagnóstico acionável pelo gestor.</p>
+<p>A nota global é publicada, mas como indicador de acompanhamento, não como insumo do índice.</p>
+</section>
+<section id="uso-independente" class="level3">
+<h3 class="anchored" data-anchor-id="uso-independente">13.3 Uso independente</h3>
+<p>Alguns produtos da pesquisa não alimentam o IQTPC e têm valor próprio:</p>
+<ul>
+<li><strong>Taxa de viagens suprimidas</strong> por insegurança, custo ou inacessibilidade, notadamente no recorte noturno e por sexo.</li>
+<li><strong>Motivo declarado de abandono</strong> do sistema.</li>
+<li><strong>Prevalência de importunação, assédio e discriminação</strong>, hoje sem fonte sistemática no país.</li>
+<li><strong>Percepção de trajetória</strong>, comparação com o ano anterior.</li>
+</ul>
+<p>Recomenda-se publicá-los como boletim autônomo, com microdados abertos após anonimização, atendendo ao art. 4º, XII (gestão pública dos dados e política de dados abertos) e ao art. 14, §1º.</p>
+<hr>
+</section>
+</section>
+<section id="cronograma" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma">14. Cronograma</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Período</th>
+<th>Marco</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2026, segundo semestre</td>
+<td>Construção do Cadastro Nacional de Sistemas de TPC; definição do modelo de execução</td>
+</tr>
+<tr class="even">
+<td>2027, primeiro semestre</td>
+<td>Desenho do instrumento; pré-teste em dois ou três sistemas; portaria instituidora</td>
+</tr>
+<tr class="odd">
+<td>14/06/2027</td>
+<td>Entrada em vigor da Lei nº 15.432/2026 (art. 44)</td>
+</tr>
+<tr class="even">
+<td>2027, segundo semestre</td>
+<td>Piloto de campo em 12 sistemas do Estrato A (Cenário 0), com validação de escala e análise de consistência interna</td>
+</tr>
+<tr class="odd">
+<td>2028</td>
+<td>Ano de eleição municipal: <strong>sem coleta</strong>. Análise do piloto, ajuste do instrumento, contratação do primeiro ciclo</td>
+</tr>
+<tr class="even">
+<td>2029</td>
+<td><strong>Primeiro ciclo</strong>, Estratos A e B, no Cenário 3</td>
+</tr>
+<tr class="odd">
+<td>2030</td>
+<td>Divulgação do primeiro ciclo; incorporação de P ao IQTPC nos sistemas pesquisados</td>
+</tr>
+<tr class="even">
+<td>2031</td>
+<td>Segundo ciclo, com entrada do Estrato C em rotação</td>
+</tr>
+<tr class="odd">
+<td>2032</td>
+<td>Primeira leitura de série histórica, com dois pontos comparáveis</td>
+</tr>
+</tbody>
+</table>
+<p>O piloto de 2027 não é etapa dispensável. Escalas de satisfação exigem validação empírica de consistência interna e de estrutura fatorial antes de gerar número com consequência.</p>
+<hr>
+</section>
+<section id="riscos" class="level2">
+<h2 class="anchored" data-anchor-id="riscos">15. Riscos</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Risco</th>
+<th>Efeito</th>
+<th>Mitigação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Captura pelo operador ou pelo titular</td>
+<td>Resultado inflado</td>
+<td>Campo por terceiro independente; auditoria amostral; vedação expressa</td>
+</tr>
+<tr class="even">
+<td>Viés de sobrevivência</td>
+<td>Sistema ruim premiado</td>
+<td>Módulo de não usuários em todos os estratos, domiciliar nos Cenários 1 e 2 e telefônico no Cenário 3</td>
+</tr>
+<tr class="odd">
+<td>Coleta restrita ao pico matinal em dia útil</td>
+<td>Retrato favorável artificial</td>
+<td>Base amostral de viagens sorteada do GTFS, com cobertura de noite e fim de semana</td>
+</tr>
+<tr class="even">
+<td>Superponderação de viajantes frequentes</td>
+<td>Amostra representa viagens, não pessoas</td>
+<td>Ponderação pelo inverso da frequência declarada</td>
+</tr>
+<tr class="odd">
+<td>Alteração do núcleo entre ciclos</td>
+<td>Perda da série histórica</td>
+<td>Núcleo imutável; alteração apenas com ciclo de sobreposição</td>
+</tr>
+<tr class="even">
+<td>Descontinuidade orçamentária</td>
+<td>Pesquisa de edição única</td>
+<td>Instituição por portaria com periodicidade fixa; vinculação ao art. 28, III</td>
+</tr>
+<tr class="odd">
+<td>Instrumentalização política dos resultados</td>
+<td>Perda de legitimidade</td>
+<td>Coleta fora de ano eleitoral municipal; divulgação por instância técnica</td>
+</tr>
+<tr class="even">
+<td>Comparação indevida entre estratos</td>
+<td>Ranking sem sentido</td>
+<td>Publicação estratificada; vedação de ranqueamento nacional único</td>
+</tr>
+<tr class="odd">
+<td>Não resposta diferencial por renda</td>
+<td>Subrepresentação do público mais dependente</td>
+<td>Calibração por pós-estratificação; supervisão reforçada em setores de baixa renda</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="decisões-pendentes" class="level2">
+<h2 class="anchored" data-anchor-id="decisões-pendentes">16. Decisões pendentes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nº</th>
+<th>Questão</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Q01</td>
+<td>Modelo de execução definitivo, entre TED com instituição pública, contratação federal ou suplemento em pesquisa domiciliar existente</td>
+</tr>
+<tr class="even">
+<td>Q02</td>
+<td>Critério exato de estratificação, entre porte populacional, tamanho da frota, demanda transportada ou combinação</td>
+</tr>
+<tr class="odd">
+<td>Q03</td>
+<td>Definição operacional de sistema precário (S2), que separa Estrato C de ausência de serviço</td>
+</tr>
+<tr class="even">
+<td>Q04</td>
+<td>Tratamento das redes metropolitanas de titularidade estadual na governança da pesquisa e na atribuição do resultado</td>
+</tr>
+<tr class="odd">
+<td>Q05</td>
+<td>Fração de rotação do Estrato C, que arbitra entre custo e frequência de cobertura</td>
+</tr>
+<tr class="even">
+<td>Q06</td>
+<td>Forma de agregação dos itens no subíndice P, a definir após análise fatorial do piloto</td>
+</tr>
+<tr class="odd">
+<td>Q07</td>
+<td>Protocolo de tratamento e proteção dos itens sobre importunação, assédio e discriminação, sob a LGPD</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Proposta técnica da CGDI/DEREG/SEMOB/MCID. Números de sistemas, tamanhos de amostra e valores de custo são estimativas de dimensionamento e não substituem pesquisa de preços.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./IQTPC_Anexo_I_matriz_origem_dados.html" class="pagination-link" aria-label="Anexo I, Matriz de origem dos dados por métrica">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Anexo I, Matriz de origem dos dados por métrica</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html" class="pagination-link" aria-label="Anexo III, Arquitetura de coleta e desidratação da PeMOB">
+        <span class="nav-page-text"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>CGDI/DEREG/SEMOB/MCID</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Proposta técnica, setembro de 2026</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

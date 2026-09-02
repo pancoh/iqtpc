@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Parâmetros nacionais de qualidade do transporte público coletivo – IQTPC, Índice de Qualidade do Transporte Público Coletivo</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./IQTPC_Manual_de_calculo.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8a84cfd26a81cac07cced63adb3cfe4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./IQTPC_parametros_qualidade_transporte_publico.html"><span class="chapter-title">Parâmetros nacionais de qualidade do transporte público coletivo</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IQTPC, Índice de Qualidade do Transporte Público Coletivo</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IQTPC, Índice de Qualidade do Transporte Público Coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_parametros_qualidade_transporte_publico.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Parâmetros nacionais de qualidade do transporte público coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Manual_de_calculo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manual de cálculo do IQTPC</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_I_matriz_origem_dados.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo I, Matriz de origem dos dados por métrica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_II_pesquisa_nacional.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#proposta-de-índice-de-qualidade-do-transporte-público-coletivo-iqtpc" id="toc-proposta-de-índice-de-qualidade-do-transporte-público-coletivo-iqtpc" class="nav-link active" data-scroll-target="#proposta-de-índice-de-qualidade-do-transporte-público-coletivo-iqtpc">Proposta de Índice de Qualidade do Transporte Público Coletivo (IQTPC)</a></li>
+  <li><a href="#sumário" id="toc-sumário" class="nav-link" data-scroll-target="#sumário">Sumário</a></li>
+  <li><a href="#premissa-o-índice-já-está-esboçado-na-lei" id="toc-premissa-o-índice-já-está-esboçado-na-lei" class="nav-link" data-scroll-target="#premissa-o-índice-já-está-esboçado-na-lei">1. Premissa: o índice já está esboçado na lei</a></li>
+  <li><a href="#competência-normativa-da-união" id="toc-competência-normativa-da-união" class="nav-link" data-scroll-target="#competência-normativa-da-união">2. Competência normativa da União</a></li>
+  <li><a href="#o-que-se-aprende-com-ideb-idsus-e-previne-brasil" id="toc-o-que-se-aprende-com-ideb-idsus-e-previne-brasil" class="nav-link" data-scroll-target="#o-que-se-aprende-com-ideb-idsus-e-previne-brasil">3. O que se aprende com IDEB, IDSUS e Previne Brasil</a>
+  <ul>
+  <li><a href="#ideb-o-modelo-a-copiar" id="toc-ideb-o-modelo-a-copiar" class="nav-link" data-scroll-target="#ideb-o-modelo-a-copiar">3.1 IDEB: o modelo a copiar</a></li>
+  <li><a href="#idsus-o-modelo-a-evitar" id="toc-idsus-o-modelo-a-evitar" class="nav-link" data-scroll-target="#idsus-o-modelo-a-evitar">3.2 IDSUS: o modelo a evitar</a></li>
+  <li><a href="#previne-brasil-consequência-financeira-como-âncora" id="toc-previne-brasil-consequência-financeira-como-âncora" class="nav-link" data-scroll-target="#previne-brasil-consequência-financeira-como-âncora">3.3 Previne Brasil: consequência financeira como âncora</a></li>
+  <li><a href="#pmaq-ab-auditoria-externa-amostral" id="toc-pmaq-ab-auditoria-externa-amostral" class="nav-link" data-scroll-target="#pmaq-ab-auditoria-externa-amostral">3.4 PMAQ-AB: auditoria externa amostral</a></li>
+  <li><a href="#idss-da-ans-o-regulador-pontuando-o-operador" id="toc-idss-da-ans-o-regulador-pontuando-o-operador" class="nav-link" data-scroll-target="#idss-da-ans-o-regulador-pontuando-o-operador">3.5 IDSS da ANS: o regulador pontuando o operador</a></li>
+  <li><a href="#precedentes-internos-ao-ministério-das-cidades" id="toc-precedentes-internos-ao-ministério-das-cidades" class="nav-link" data-scroll-target="#precedentes-internos-ao-ministério-das-cidades">3.6 Precedentes internos ao Ministério das Cidades</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">3.7 Síntese</a></li>
+  </ul></li>
+  <li><a href="#arquitetura-em-três-camadas" id="toc-arquitetura-em-três-camadas" class="nav-link" data-scroll-target="#arquitetura-em-três-camadas">4. Arquitetura em três camadas</a></li>
+  <li><a href="#fórmula-do-iqtpc" id="toc-fórmula-do-iqtpc" class="nav-link" data-scroll-target="#fórmula-do-iqtpc">5. Fórmula do IQTPC</a>
+  <ul>
+  <li><a href="#fator-a-acesso-e-disponibilidade" id="toc-fator-a-acesso-e-disponibilidade" class="nav-link" data-scroll-target="#fator-a-acesso-e-disponibilidade">5.1 Fator A (acesso e disponibilidade)</a></li>
+  <li><a href="#fator-d-desempenho" id="toc-fator-d-desempenho" class="nav-link" data-scroll-target="#fator-d-desempenho">5.2 Fator D (desempenho)</a></li>
+  <li><a href="#por-que-média-geométrica" id="toc-por-que-média-geométrica" class="nav-link" data-scroll-target="#por-que-média-geométrica">5.3 Por que média geométrica</a></li>
+  <li><a href="#sobre-as-escalas-diferentes-de-a-e-d" id="toc-sobre-as-escalas-diferentes-de-a-e-d" class="nav-link" data-scroll-target="#sobre-as-escalas-diferentes-de-a-e-d">5.3.1 Sobre as escalas diferentes de A e D</a>
+  <ul class="collapse">
+  <li><a href="#alternativas-e-sensibilidade" id="toc-alternativas-e-sensibilidade" class="nav-link" data-scroll-target="#alternativas-e-sensibilidade">Alternativas e sensibilidade</a></li>
+  <li><a href="#decisão" id="toc-decisão" class="nav-link" data-scroll-target="#decisão">Decisão</a></li>
+  </ul></li>
+  <li><a href="#decisão-de-escopo-produtividade-fica-fora-adequação-da-oferta-fica-dentro" id="toc-decisão-de-escopo-produtividade-fica-fora-adequação-da-oferta-fica-dentro" class="nav-link" data-scroll-target="#decisão-de-escopo-produtividade-fica-fora-adequação-da-oferta-fica-dentro">5.4 Decisão de escopo: produtividade fica fora, adequação da oferta fica dentro</a></li>
+  </ul></li>
+  <li><a href="#detalhamento-dos-subíndices" id="toc-detalhamento-dos-subíndices" class="nav-link" data-scroll-target="#detalhamento-dos-subíndices">6. Detalhamento dos subíndices</a>
+  <ul>
+  <li><a href="#c-confiabilidade-peso-022" id="toc-c-confiabilidade-peso-022" class="nav-link" data-scroll-target="#c-confiabilidade-peso-022">6.1 C, Confiabilidade (peso 0,22)</a></li>
+  <li><a href="#s-segurança-peso-018" id="toc-s-segurança-peso-018" class="nav-link" data-scroll-target="#s-segurança-peso-018">6.2 S, Segurança (peso 0,18)</a></li>
+  <li><a href="#p-percepção-e-satisfação-peso-017" id="toc-p-percepção-e-satisfação-peso-017" class="nav-link" data-scroll-target="#p-percepção-e-satisfação-peso-017">6.3 P, Percepção e satisfação (peso 0,17)</a></li>
+  <li><a href="#f-conveniência-e-conforto-peso-013" id="toc-f-conveniência-e-conforto-peso-013" class="nav-link" data-scroll-target="#f-conveniência-e-conforto-peso-013">6.4 F, Conveniência e conforto (peso 0,13)</a>
+  <ul class="collapse">
+  <li><a href="#indicador-bilateral-de-ocupação" id="toc-indicador-bilateral-de-ocupação" class="nav-link" data-scroll-target="#indicador-bilateral-de-ocupação">6.4.1 Indicador bilateral de ocupação</a></li>
+  </ul></li>
+  <li><a href="#v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012" id="toc-v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012" class="nav-link" data-scroll-target="#v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012">6.5 V, Frota: atualidade, disponibilidade e acessibilidade (peso 0,12)</a></li>
+  <li><a href="#e-desempenho-ambiental-e-eletrificação-peso-010" id="toc-e-desempenho-ambiental-e-eletrificação-peso-010" class="nav-link" data-scroll-target="#e-desempenho-ambiental-e-eletrificação-peso-010">6.6 E, Desempenho ambiental e eletrificação (peso 0,10)</a></li>
+  <li><a href="#m-acessibilidade-econômica-e-modicidade-peso-008" id="toc-m-acessibilidade-econômica-e-modicidade-peso-008" class="nav-link" data-scroll-target="#m-acessibilidade-econômica-e-modicidade-peso-008">6.7 M, Acessibilidade econômica e modicidade (peso 0,08)</a></li>
+  </ul></li>
+  <li><a href="#normalização-e-valores-de-referência" id="toc-normalização-e-valores-de-referência" class="nav-link" data-scroll-target="#normalização-e-valores-de-referência">7. Normalização e valores de referência</a>
+  <ul>
+  <li><a href="#universo-de-aplicação-do-índice" id="toc-universo-de-aplicação-do-índice" class="nav-link" data-scroll-target="#universo-de-aplicação-do-índice">7.0 Universo de aplicação do índice</a></li>
+  <li><a href="#forma-de-normalização" id="toc-forma-de-normalização" class="nav-link" data-scroll-target="#forma-de-normalização">7.1 Forma de normalização</a></li>
+  </ul></li>
+  <li><a href="#equidade-territorial" id="toc-equidade-territorial" class="nav-link" data-scroll-target="#equidade-territorial">8. Equidade territorial</a>
+  <ul>
+  <li><a href="#déficit-de-acesso-ao-transporte-público-coletivo" id="toc-déficit-de-acesso-ao-transporte-público-coletivo" class="nav-link" data-scroll-target="#déficit-de-acesso-ao-transporte-público-coletivo">8.1 Déficit de Acesso ao Transporte Público Coletivo</a></li>
+  <li><a href="#painel-satélite-de-produtividade" id="toc-painel-satélite-de-produtividade" class="nav-link" data-scroll-target="#painel-satélite-de-produtividade">8.2 Painel satélite de produtividade</a></li>
+  </ul></li>
+  <li><a href="#consequências-institucionais-previstas-em-lei" id="toc-consequências-institucionais-previstas-em-lei" class="nav-link" data-scroll-target="#consequências-institucionais-previstas-em-lei">9. Consequências institucionais previstas em lei</a>
+  <ul>
+  <li><a href="#condicionalidade-de-investimento-art.-21" id="toc-condicionalidade-de-investimento-art.-21" class="nav-link" data-scroll-target="#condicionalidade-de-investimento-art.-21">9.1 Condicionalidade de investimento (art. 21)</a></li>
+  <li><a href="#contrapartida-ao-desempenho-no-custeio-art.-28-iii" id="toc-contrapartida-ao-desempenho-no-custeio-art.-28-iii" class="nav-link" data-scroll-target="#contrapartida-ao-desempenho-no-custeio-art.-28-iii">9.2 Contrapartida ao desempenho no custeio (art. 28, III)</a></li>
+  <li><a href="#remuneração-do-operador-art.-31-2º-e-art.-6º-xii" id="toc-remuneração-do-operador-art.-31-2º-e-art.-6º-xii" class="nav-link" data-scroll-target="#remuneração-do-operador-art.-31-2º-e-art.-6º-xii">9.3 Remuneração do operador (art. 31, §2º, e art. 6º, XII)</a></li>
+  <li><a href="#transparência-como-consequência-autônoma" id="toc-transparência-como-consequência-autônoma" class="nav-link" data-scroll-target="#transparência-como-consequência-autônoma">9.4 Transparência como consequência autônoma</a></li>
+  </ul></li>
+  <li><a href="#riscos-de-manipulação-e-travas" id="toc-riscos-de-manipulação-e-travas" class="nav-link" data-scroll-target="#riscos-de-manipulação-e-travas">10. Riscos de manipulação e travas</a></li>
+  <li><a href="#fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade" id="toc-fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade" class="nav-link" data-scroll-target="#fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade">11. Fontes de dados e a lacuna do “SAEB da mobilidade”</a></li>
+  <li><a href="#sequenciamento-de-implantação" id="toc-sequenciamento-de-implantação" class="nav-link" data-scroll-target="#sequenciamento-de-implantação">12. Sequenciamento de implantação</a>
+  <ul>
+  <li><a href="#fase-0-até-junho-de-2027-base-normativa-e-infraestrutura" id="toc-fase-0-até-junho-de-2027-base-normativa-e-infraestrutura" class="nav-link" data-scroll-target="#fase-0-até-junho-de-2027-base-normativa-e-infraestrutura">Fase 0, até junho de 2027: base normativa e infraestrutura</a></li>
+  <li><a href="#fase-1-2027-a-2028-piloto-com-sistemas-aptos" id="toc-fase-1-2027-a-2028-piloto-com-sistemas-aptos" class="nav-link" data-scroll-target="#fase-1-2027-a-2028-piloto-com-sistemas-aptos">Fase 1, 2027 a 2028: piloto com sistemas aptos</a></li>
+  <li><a href="#fase-2-2028-a-2030-universalização-progressiva" id="toc-fase-2-2028-a-2030-universalização-progressiva" class="nav-link" data-scroll-target="#fase-2-2028-a-2030-universalização-progressiva">Fase 2, 2028 a 2030: universalização progressiva</a></li>
+  <li><a href="#fase-3-a-partir-de-2030-metas-e-consequência" id="toc-fase-3-a-partir-de-2030-metas-e-consequência" class="nav-link" data-scroll-target="#fase-3-a-partir-de-2030-metas-e-consequência">Fase 3, a partir de 2030: metas e consequência</a></li>
+  <li><a href="#princípio-de-sequenciamento" id="toc-princípio-de-sequenciamento" class="nav-link" data-scroll-target="#princípio-de-sequenciamento">Princípio de sequenciamento</a></li>
+  </ul></li>
+  <li><a href="#quadro-comparativo-com-outros-índices-setoriais" id="toc-quadro-comparativo-com-outros-índices-setoriais" class="nav-link" data-scroll-target="#quadro-comparativo-com-outros-índices-setoriais">13. Quadro comparativo com outros índices setoriais</a></li>
+  <li><a href="#questões-em-aberto-e-plano-de-enfrentamento" id="toc-questões-em-aberto-e-plano-de-enfrentamento" class="nav-link" data-scroll-target="#questões-em-aberto-e-plano-de-enfrentamento">14. Questões em aberto e plano de enfrentamento</a>
+  <ul>
+  <li><a href="#antes-da-consulta-pública" id="toc-antes-da-consulta-pública" class="nav-link" data-scroll-target="#antes-da-consulta-pública">14.1 Antes da consulta pública</a></li>
+  <li><a href="#antes-do-decreto" id="toc-antes-do-decreto" class="nav-link" data-scroll-target="#antes-do-decreto">14.2 Antes do decreto</a></li>
+  <li><a href="#antes-do-dicionário-de-dados" id="toc-antes-do-dicionário-de-dados" class="nav-link" data-scroll-target="#antes-do-dicionário-de-dados">14.3 Antes do dicionário de dados</a></li>
+  <li><a href="#antes-do-piloto" id="toc-antes-do-piloto" class="nav-link" data-scroll-target="#antes-do-piloto">14.4 Antes do piloto</a></li>
+  <li><a href="#após-o-piloto" id="toc-após-o-piloto" class="nav-link" data-scroll-target="#após-o-piloto">14.5 Após o piloto</a></li>
+  <li><a href="#regra-de-permanência-das-métricas" id="toc-regra-de-permanência-das-métricas" class="nav-link" data-scroll-target="#regra-de-permanência-das-métricas">14.6 Regra de permanência das métricas</a></li>
+  <li><a href="#pontos-de-atenção" id="toc-pontos-de-atenção" class="nav-link" data-scroll-target="#pontos-de-atenção">14.7 Pontos de atenção</a></li>
+  </ul></li>
+  <li><a href="#referências-normativas" id="toc-referências-normativas" class="nav-link" data-scroll-target="#referências-normativas">Referências normativas</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Parâmetros nacionais de qualidade do transporte público coletivo</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="proposta-de-índice-de-qualidade-do-transporte-público-coletivo-iqtpc" class="level2">
+<h2 class="anchored" data-anchor-id="proposta-de-índice-de-qualidade-do-transporte-público-coletivo-iqtpc">Proposta de Índice de Qualidade do Transporte Público Coletivo (IQTPC)</h2>
+<p><strong>Base normativa:</strong> Lei nº 15.432, de 13 de junho de 2026 (Marco Legal do Transporte Público Coletivo Urbano) <strong>Vigência da Lei:</strong> 14 de junho de 2027 (art. 44, um ano após a publicação no DOU de 14/06/2026) <strong>Unidade:</strong> CGDI/DEREG/SEMOB/MCID <strong>Natureza:</strong> proposta técnica consolidada, acompanhada do <a href="./IQTPC_Manual_de_calculo.html">Manual de cálculo</a> e de quatro anexos</p>
+<hr>
+</section>
+<section id="sumário" class="level2">
+<h2 class="anchored" data-anchor-id="sumário">Sumário</h2>
+<ol type="1">
+<li><a href="#premissa-o-índice-já-está-esboçado-na-lei">Premissa: o índice já está esboçado na lei</a></li>
+<li><a href="#competência-normativa-da-união">Competência normativa da União</a></li>
+<li><a href="#o-que-se-aprende-com-ideb-idsus-e-previne-brasil">O que se aprende com IDEB, IDSUS e Previne Brasil</a></li>
+<li><a href="#arquitetura-em-três-camadas">Arquitetura em três camadas</a></li>
+<li><a href="#fórmula-do-iqtpc">Fórmula do IQTPC</a></li>
+<li><a href="#detalhamento-dos-subíndices">Detalhamento dos subíndices</a></li>
+<li><a href="#normalização-e-valores-de-referência">Normalização e valores de referência</a></li>
+<li><a href="#equidade-territorial">Equidade territorial</a></li>
+<li><a href="#consequências-institucionais-previstas-em-lei">Consequências institucionais previstas em lei</a></li>
+<li><a href="#riscos-de-manipulação-e-travas">Riscos de manipulação e travas</a></li>
+<li><a href="#fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade">Fontes de dados e a lacuna do “SAEB da mobilidade”</a></li>
+<li><a href="#sequenciamento-de-implantação">Sequenciamento de implantação</a></li>
+<li><a href="#quadro-comparativo-com-outros-índices-setoriais">Quadro comparativo com outros índices setoriais</a></li>
+<li><a href="#questões-em-aberto-e-plano-de-enfrentamento">Questões em aberto e plano de enfrentamento</a></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong><a href="./IQTPC_Manual_de_calculo.html">Manual de cálculo</a></strong> (documento apartado): metodologia consolidada em cinco níveis, fórmulas de normalização e agregação, origem de cada uma das 30 métricas objetivas e do bloco de percepção, classificada em fonte consolidada, PNDTPC automatizado, PNDTPC cadastral ou pesquisa, e exemplo numérico completo. <strong>Para efeito de cálculo, prevalece sobre este documento.</strong></p>
+<p><strong><a href="./IQTPC_Anexo_I_matriz_origem_dados.html">Anexo I, Matriz de origem dos dados por métrica</a></strong> (documento apartado): origem de cada variável das métricas, classificação de viabilidade em cinco classes, modelo de ficha técnica e três fichas de exemplo.</p>
+<p><strong><a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II, PeMOB Usuário</a></strong> (documento apartado): universo, desenho amostral, instrumento, modelo de execução, custo e cronograma da pesquisa de percepção destinada a suprir o subíndice P.</p>
+<p><strong><a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html">Anexo III, Arquitetura de coleta e desidratação da PeMOB</a></strong> (documento apartado): divisão de trabalho entre PNDTPC, SIMU e família PeMOB, com o princípio de não perguntar ao ente aquilo que a plataforma calcula.</p>
+<p><strong><a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html">Anexo IV, Aproveitamento de instrumentos das demais políticas do MCID</a></strong> (documento apartado): o que se transfere do saneamento (SINISA, certificado de adimplência, metodologia ACERTAR, normas de referência da ANA) e da habitação (PBQP-H, SiAC, SiNAT, PLHIS Simplificado), e o que não se transfere.</p>
+</blockquote>
+<hr>
+</section>
+<section id="premissa-o-índice-já-está-esboçado-na-lei" class="level2">
+<h2 class="anchored" data-anchor-id="premissa-o-índice-já-está-esboçado-na-lei">1. Premissa: o índice já está esboçado na lei</h2>
+<p>O ponto de partida não é uma folha em branco. O art. 31 da Lei nº 15.432/2026 estabelece que a operação dos serviços deverá atender a requisitos mínimos de qualidade, e enumera sete:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Inciso</th>
+<th>Requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I</td>
+<td>disponibilidade, conectividade e continuidade</td>
+</tr>
+<tr class="even">
+<td>II</td>
+<td>regularidade e pontualidade</td>
+</tr>
+<tr class="odd">
+<td>III</td>
+<td>segurança viária e segurança dos passageiros</td>
+</tr>
+<tr class="even">
+<td>IV</td>
+<td>conveniência, acessibilidade e conforto</td>
+</tr>
+<tr class="odd">
+<td>V</td>
+<td>satisfação dos passageiros</td>
+</tr>
+<tr class="even">
+<td>VI</td>
+<td>aspectos ambientais</td>
+</tr>
+<tr class="odd">
+<td>VII</td>
+<td>integração com outros modos de transporte</td>
+</tr>
+</tbody>
+</table>
+<p>Isso tem uma consequência de desenho importante: <strong>as dimensões do índice não devem ser inventadas, devem ser derivadas do art. 31</strong>. Um índice cujas dimensões coincidem com os incisos de um dispositivo legal deixa de ser criação administrativa discricionária e passa a ser instrumento de aferição de um padrão normativo preexistente. Isso muda inteiramente a discussão com procuradorias, com os entes federados e com o controle externo.</p>
+<p>Reforços na mesma direção, dentro da própria Lei:</p>
+<ul>
+<li><strong>Art. 3º, IV</strong>: princípio fundamental da qualidade do serviço, com cortesia, salubridade, conforto, segurança, eficiência, regularidade, atualidade e continuidade.</li>
+<li><strong>Art. 3º, III</strong>: acessibilidade física e econômica.</li>
+<li><strong>Art. 4º, IX</strong>: diretriz de avaliação periódica do planejamento e da operação, incluindo nível de cobertura, demanda atendida e não atendida e satisfação dos passageiros.</li>
+<li><strong>Art. 7º, III</strong>: prestação de serviço adequado conforme parâmetros de qualidade, eficiência e eficácia, com foco no passageiro e na percepção da qualidade.</li>
+<li><strong>Art. 9º, VI e VII</strong>: o titular deve estabelecer metas e indicadores de qualidade, desempenho operacional e satisfação, bem como mecanismos de aferição de resultados, e definir parâmetros e níveis de serviço.</li>
+<li><strong>Art. 14, VII</strong>: dever de divulgação sistemática dos indicadores de eficiência, produtividade e qualidade, incluída a pesquisa de satisfação.</li>
+<li><strong>Art. 16, I</strong>: direito do passageiro ao serviço adequado, nos termos do art. 6º da Lei nº 8.987/1995, conforme indicadores e parâmetros definidos em regulamento, edital e contrato.</li>
+</ul>
+<p>Ou seja: a lei já obriga cada titular a ter indicadores. O que ela não faz, e o que cabe à União fazer, é <strong>garantir comparabilidade nacional</strong>. Sem metodologia comum, teremos 5.570 sistemas de indicadores incomparáveis entre si.</p>
+<hr>
+</section>
+<section id="competência-normativa-da-união" class="level2">
+<h2 class="anchored" data-anchor-id="competência-normativa-da-união">2. Competência normativa da União</h2>
+<p>Três dispositivos sustentam a edição do índice pela União:</p>
+<ol type="1">
+<li><strong>Art. 12 da Lei nº 15.432/2026</strong>: a regulação dos serviços deve observar parâmetros de referência estabelecidos por ato do Poder Executivo federal.</li>
+<li><strong>Art. 31, §1º</strong>: o regulamento do poder concedente que estabelece padrões e indicadores de qualidade, desempenho e atendimento deve ser elaborado com base nas normas de referência expedidas pela União.</li>
+<li><strong>Art. 11, I</strong>: é atribuição do titular estabelecer padrões e normas em observância às normas de referência editadas pela União.</li>
+</ol>
+<p>Somam-se as alterações que a Lei nº 15.432/2026 promoveu no art. 16 da Lei nº 12.587/2012, que passou a atribuir à União:</p>
+<ul>
+<li><strong>inciso IX</strong>: estabelecer normas de referência nacionais de qualidade e produtividade para os sistemas de TPC urbano e de caráter urbano;</li>
+<li><strong>inciso X</strong>: realizar o monitoramento nacional dos sistemas e fomentar seu enquadramento nas normas de referência nacionais;</li>
+<li><strong>inciso XI</strong>: monitorar a efetivação dos princípios, diretrizes e objetivos da PNMU pelos entes subnacionais.</li>
+</ul>
+<p>O IQTPC é, tecnicamente, o instrumento de operacionalização dos incisos IX e X. O veículo normativo natural é decreto (parâmetros de referência do art. 12) complementado por portaria ministerial (metodologia de cálculo, dicionário de dados, periodicidade), na mesma lógica de repartição que vem sendo adotada para o Simu.</p>
+<hr>
+</section>
+<section id="o-que-se-aprende-com-ideb-idsus-e-previne-brasil" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-se-aprende-com-ideb-idsus-e-previne-brasil">3. O que se aprende com IDEB, IDSUS e Previne Brasil</h2>
+<section id="ideb-o-modelo-a-copiar" class="level3">
+<h3 class="anchored" data-anchor-id="ideb-o-modelo-a-copiar">3.1 IDEB: o modelo a copiar</h3>
+<p>O que faz o IDEB funcionar não é a fórmula, é a arquitetura:</p>
+<p><strong>a) Fórmula multiplicativa de dois fatores independentes.</strong> IDEB = N × P (taxa de aprovação × proficiência padronizada). Isso trava as duas fraudes óbvias: aprovar todo mundo derruba P; reprovar ou excluir os alunos fracos derruba N. Nenhuma das duas estratégias oportunistas melhora o índice.</p>
+<p><strong>b) Duas fontes de naturezas distintas.</strong> Uma censitária e administrativa (Censo Escolar) e outra amostral, externa e padronizada (SAEB). O operador não produz sozinho o próprio resultado.</p>
+<p><strong>c) Escala 0 a 10, com meta individualizada e âncora externa.</strong> Cada escola compete contra a própria trajetória, com ancoragem numa meta nacional derivada de referência internacional.</p>
+<p><strong>d) Divulgação por unidade, com efeito reputacional.</strong> No IDEB, o efeito reputacional se mostrou mais potente que qualquer sanção formal.</p>
+</section>
+<section id="idsus-o-modelo-a-evitar" class="level3">
+<h3 class="anchored" data-anchor-id="idsus-o-modelo-a-evitar">3.2 IDSUS: o modelo a evitar</h3>
+<p>O Índice de Desempenho do SUS (2012) tinha 24 indicadores, ponderação de difícil comunicação, agrupamento por “grupos homogêneos” fortemente contestado pelos municípios e, decisivamente, <strong>nenhuma consequência prática</strong>. Não sobreviveu a duas edições.</p>
+<p>É o principal risco desta proposta. Regra prática derivada: poucos indicadores, fórmula que caiba em uma linha, consequência definida desde o primeiro dia.</p>
+</section>
+<section id="previne-brasil-consequência-financeira-como-âncora" class="level3">
+<h3 class="anchored" data-anchor-id="previne-brasil-consequência-financeira-como-âncora">3.3 Previne Brasil: consequência financeira como âncora</h3>
+<p>Sete indicadores apenas, vinculados diretamente ao repasse federal de custeio da Atenção Primária. Institucionalmente robusto justamente pela vinculação financeira. A crítica pertinente é o estreitamento do foco gerencial para aquilo que é medido, o que se mitiga com revisão periódica do conjunto de indicadores.</p>
+</section>
+<section id="pmaq-ab-auditoria-externa-amostral" class="level3">
+<h3 class="anchored" data-anchor-id="pmaq-ab-auditoria-externa-amostral">3.4 PMAQ-AB: auditoria externa amostral</h3>
+<p>Avaliação externa com certificação, aplicada por instituições de ensino e pesquisa. É o modelo adequado para o componente de verificação em campo do IQTPC, que não pode depender apenas de dado declarado.</p>
+</section>
+<section id="idss-da-ans-o-regulador-pontuando-o-operador" class="level3">
+<h3 class="anchored" data-anchor-id="idss-da-ans-o-regulador-pontuando-o-operador">3.5 IDSS da ANS: o regulador pontuando o operador</h3>
+<p>O Índice de Desempenho da Saúde Suplementar pontua operadoras (não entes federados) em quatro dimensões, com faixas de desempenho. É a referência direta para a camada contratual do IQTPC, prevista no art. 31, §2º, da Lei nº 15.432/2026.</p>
+</section>
+<section id="precedentes-internos-ao-ministério-das-cidades" class="level3">
+<h3 class="anchored" data-anchor-id="precedentes-internos-ao-ministério-das-cidades">3.6 Precedentes internos ao Ministério das Cidades</h3>
+<p>Nenhuma política do MCID publica índice composto de qualidade. O saneamento publica indicadores (SINISA) e os rankings são de terceiros; a habitação encomenda o déficit à Fundação João Pinheiro. Na mobilidade, o antecedente direto é o relatório do GT da Portaria MCID nº 536/2015, com 12 indicadores de efetividade da PNMU, descontinuado após 2016. A decisão sobre quem publica o composto e a relação com o GT de 2015 estão entre as questões em aberto (seção 14). Detalhamento no <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#verificação-existe-índice-composto-em-alguma-política-do-mcid">Anexo IV, seção 3.6</a>.</p>
+</section>
+<section id="síntese" class="level3">
+<h3 class="anchored" data-anchor-id="síntese">3.7 Síntese</h3>
+<blockquote class="blockquote">
+<p><strong>Índice sem consequência vira relatório.</strong> A diferença entre o IDEB e o IDSUS não foi técnica, foi institucional.</p>
+</blockquote>
+<p>No caso do TPC, ao contrário do que ocorreu na saúde e na educação, <strong>as consequências já estão na lei</strong> (arts. 21, 28 e 31, §2º). Isso é uma vantagem inicial relevante.</p>
+<hr>
+</section>
+</section>
+<section id="arquitetura-em-três-camadas" class="level2">
+<h2 class="anchored" data-anchor-id="arquitetura-em-três-camadas">4. Arquitetura em três camadas</h2>
+<p>A Lei nº 15.432/2026 implica três produtos distintos, que não devem ser confundidos:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Camada</th>
+<th>Objeto</th>
+<th>Base legal</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Normas de referência</strong></td>
+<td>Padrões e parâmetros mínimos</td>
+<td>art. 12; art. 31, §1º; art. 11, I; art. 16, IX, da Lei nº 12.587/2012</td>
+<td>Definir o que é serviço adequado</td>
+</tr>
+<tr class="even">
+<td><strong>IQTPC-Sistema</strong></td>
+<td>Sistema de TPC de um titular ou unidade regional</td>
+<td>art. 16, X, da Lei nº 12.587/2012; arts. 13 e 21</td>
+<td>Monitoramento nacional, transparência, condicionalidade de recursos</td>
+</tr>
+<tr class="odd">
+<td><strong>IQTPC-Operador</strong></td>
+<td>Contrato de operação individual</td>
+<td>art. 6º, XII; art. 31, §2º; art. 35, parágrafo único</td>
+<td>Vincular remuneração ao desempenho</td>
+</tr>
+</tbody>
+</table>
+<p>Este documento trata prioritariamente do <strong>IQTPC-Sistema</strong>. A camada de operador usa as mesmas dimensões, mas apenas os subíndices sob governabilidade do contratado (não faz sentido penalizar operador por cobertura territorial definida pelo poder público). A governabilidade de cada subíndice pelo operador é a seguinte:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subíndice</th>
+<th>Governabilidade do operador</th>
+<th>Tratamento no IQTPC-Operador</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C</td>
+<td>Alta</td>
+<td>Integral</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>Parcial: condução e manutenção são do operador; iluminação e policiamento não</td>
+<td>Sinistros e conduta; exclui segurança pessoal em pontos e terminais. No índice de operador, a responsabilidade pelo sinistro importa, ao contrário do índice de sistema</td>
+</tr>
+<tr class="odd">
+<td>P</td>
+<td>Parcial</td>
+<td>Itens do questionário sobre veículo, tripulação e pontualidade; exclui itens sobre rede, tarifa e infraestrutura</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Parcial: ocupação depende da programação, que pode ser do titular</td>
+<td>Salubridade veicular e atendimento a manifestações; ocupação apenas se a programação for do operador</td>
+</tr>
+<tr class="odd">
+<td>V</td>
+<td>Alta, exceto quando o titular especifica a frota</td>
+<td>Integral, com ressalva contratual</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>Parcial: a tecnologia é frequentemente exigência do edital</td>
+<td>Cumprimento do cronograma de renovação contratado</td>
+</tr>
+<tr class="odd">
+<td>M</td>
+<td>Nula</td>
+<td>Excluído</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>Nula</td>
+<td>Excluído</td>
+</tr>
+</tbody>
+</table>
+<p>Em sistemas com múltiplos operadores, a agregação é por passageiros-quilômetro de cada contrato. A conversão em remuneração é por faixas, no modelo do SiAC (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html">Anexo IV</a>), e não por nota contínua, para reduzir litígio. O desenho completo do IQTPC-Operador é objeto de documento próprio (seção 14).</p>
+<hr>
+</section>
+<section id="fórmula-do-iqtpc" class="level2">
+<h2 class="anchored" data-anchor-id="fórmula-do-iqtpc">5. Fórmula do IQTPC</h2>
+<p>Adotando a arquitetura do IDEB, com dois fatores independentes:</p>
+<pre><code>IQTPC = A × D</code></pre>
+<p>Onde:</p>
+<ul>
+<li><strong>A</strong> = fator de acesso e disponibilidade, variando de 0 a 1</li>
+<li><strong>D</strong> = fator de desempenho do serviço, variando de 1 a 10 (piso 1 em cada subíndice; ver 5.2)</li>
+</ul>
+<p>Resultado na escala <strong>0 a 10</strong>, diretamente comunicável e comparável com IDEB. A diferença de escalas entre A e D é escolha de unidade, não de peso (ver 5.3.1).</p>
+<section id="fator-a-acesso-e-disponibilidade" class="level3">
+<h3 class="anchored" data-anchor-id="fator-a-acesso-e-disponibilidade">5.1 Fator A (acesso e disponibilidade)</h3>
+<p>Ancorado no art. 31, I e VII (disponibilidade, conectividade, continuidade e integração) e nos arts. 3º, I, e 5º, I e II (universalização e acesso a oportunidades).</p>
+<p>Versão inicial, calculável apenas com GTFS e grade estatística do IBGE:</p>
+<pre><code>A = população urbana atendida ÷ população urbana total</code></pre>
+<p>Considera-se atendida a população residente a até 500 m, <strong>medidos pela rede de pedestres e não em linha reta</strong>, de ponto de parada com intervalo médio no pico igual ou inferior a 20 minutos, ou a até 1.000 m de estação de sistema de média ou alta capacidade. Cobertura noturna e de fim de semana é objeto de indicador complementar (seção 14), ainda não incorporado a A.</p>
+<p>Versão madura, com dois termos em média geométrica:</p>
+<pre><code>A = (A_cobertura × A_oportunidades)^0,5</code></pre>
+<p>Onde <code>A_oportunidades</code> é o percentual de empregos formais alcançáveis em até 60 minutos por TPC, metodologia já consolidada pelo IPEA no Projeto Acesso a Oportunidades.</p>
+</section>
+<section id="fator-d-desempenho" class="level3">
+<h3 class="anchored" data-anchor-id="fator-d-desempenho">5.2 Fator D (desempenho)</h3>
+<p>Média geométrica ponderada de sete subíndices, cada um de 1 a 10:</p>
+<pre><code>D = C^0,22 × S^0,18 × P^0,17 × F^0,13 × V^0,12 × E^0,10 × M^0,08</code></pre>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Subíndice</th>
+<th>Peso</th>
+<th>Base legal (Lei nº 15.432/2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>C</strong></td>
+<td>Confiabilidade (regularidade e pontualidade)</td>
+<td>0,22</td>
+<td>art. 31, II</td>
+</tr>
+<tr class="even">
+<td><strong>S</strong></td>
+<td>Segurança viária e pessoal</td>
+<td>0,18</td>
+<td>art. 31, III</td>
+</tr>
+<tr class="odd">
+<td><strong>P</strong></td>
+<td>Percepção e satisfação do passageiro</td>
+<td>0,17</td>
+<td>art. 31, V; art. 7º, III</td>
+</tr>
+<tr class="even">
+<td><strong>F</strong></td>
+<td>Conveniência e conforto (inclui adequação da oferta)</td>
+<td>0,13</td>
+<td>art. 31, IV</td>
+</tr>
+<tr class="odd">
+<td><strong>V</strong></td>
+<td>Frota: atualidade, disponibilidade e acessibilidade</td>
+<td>0,12</td>
+<td>art. 31, IV e §1º; art. 3º, IV</td>
+</tr>
+<tr class="even">
+<td><strong>E</strong></td>
+<td>Desempenho ambiental e eletrificação</td>
+<td>0,10</td>
+<td>art. 31, VI; art. 9º, §1º</td>
+</tr>
+<tr class="odd">
+<td><strong>M</strong></td>
+<td>Acessibilidade econômica e modicidade</td>
+<td>0,08</td>
+<td>art. 3º, III e VI; art. 25, II</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cálculo na ausência do subíndice P.</strong> Enquanto não houver pesquisa de percepção aplicada ao sistema no ciclo corrente ou no anterior, D é calculado sobre os seis subíndices objetivos, com os pesos <strong>renormalizados proporcionalmente</strong> para somar 1 (cada peso dividido por 0,83). O resultado recebe a denominação <strong>IQTPC-Objetivo</strong>; com P, <strong>IQTPC-Completo</strong>. As duas versões são publicadas com identificação explícita e não são comparáveis entre si.</p>
+<p><strong>Peso de P conforme o cenário de coleta.</strong> O peso de 0,17 pressupõe pesquisa com amostra suficiente para desagregação (Cenário 1 ou 2 do <a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II</a>). No Cenário 3, mínimo viável, em que a amostra sustenta apenas a média do sistema, P entra com peso reduzido, entre 0,08 e 0,10, conforme <a href="./IQTPC_Anexo_II_pesquisa_nacional.html#consequências-para-o-iqtpc">Anexo II, seção 12.8</a>, com renormalização dos demais pela regra do <a href="./IQTPC_Manual_de_calculo.html#iqtpc-completo-com-p-em-peso-reduzido">Manual, seção 7.2</a>.</p>
+<p><strong>Piso dos subíndices.</strong> Cada subíndice é normalizado de <strong>1 a 10</strong>, e não de 0 a 10, para evitar que um único subíndice nulo anule o conjunto (<a href="./IQTPC_Manual_de_calculo.html#por-que-o-piso-é-1-e-não-0">Manual, seção 4.4</a>). O resultado final permanece na escala de 0 a 10 porque A varia de 0 a 1.</p>
+</section>
+<section id="por-que-média-geométrica" class="level3">
+<h3 class="anchored" data-anchor-id="por-que-média-geométrica">5.3 Por que média geométrica</h3>
+<p>A média geométrica impede compensação entre dimensões. Em média aritmética, tarifa baixa neutraliza letalidade alta, o que é inaceitável para um serviço de caráter essencial (art. 2º). Na média geométrica, qualquer subíndice próximo de zero derruba o conjunto, forçando desempenho equilibrado.</p>
+<p>A multiplicação de A por D cumpre a mesma função entre cobertura e qualidade: não é possível melhorar o índice cortando as linhas piores, porque a redução de cobertura derruba A.</p>
+</section>
+<section id="sobre-as-escalas-diferentes-de-a-e-d" class="level3">
+<h3 class="anchored" data-anchor-id="sobre-as-escalas-diferentes-de-a-e-d">5.3.1 Sobre as escalas diferentes de A e D</h3>
+<p>É comum, ao ver a fórmula pela primeira vez, supor que um fator que varia de 0 a 1 pese menos que outro que varia de 0 a 10. A impressão é falsa. Em um produto, o que determina o peso de cada fator não é a amplitude da sua escala, e sim a sua <strong>elasticidade</strong>, ou seja, o efeito de uma variação proporcional.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Alteração</th>
+<th>Novo valor</th>
+<th>IQTPC</th>
+<th>Variação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nenhuma</td>
+<td>A = 0,80; D = 6,00</td>
+<td>4,80</td>
+<td>referência</td>
+</tr>
+<tr class="even">
+<td>A melhora 10%</td>
+<td>A = 0,88; D = 6,00</td>
+<td>5,28</td>
+<td><strong>+10%</strong></td>
+</tr>
+<tr class="odd">
+<td>D melhora 10%</td>
+<td>A = 0,80; D = 6,60</td>
+<td>5,28</td>
+<td><strong>+10%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Os dois fatores produzem exatamente o mesmo efeito. Se A fosse reexpresso de 0 a 10, bastaria dividir o produto por 10 para obter o mesmo resultado: a constante não muda ordenação, sensibilidade nem distribuição relativa dos sistemas. As escalas foram fixadas apenas para que o produto caia na faixa de 0 a 10 sem constante de ajuste, e a estrutura é herdada do IDEB, em que a taxa de aprovação também varia de 0 a 1 e a proficiência padronizada de 0 a 10.</p>
+<p>Dito isso, existe um desbalanceamento real, e ele não está na escala:</p>
+<p><strong>Primeiro ponto: um fator isolado pesa tanto quanto sete subíndices somados.</strong> A cobertura entra sozinha com o mesmo peso que todo o bloco de qualidade. É decisão deliberada, coerente com o diagnóstico de que a exclusão do acesso é o problema central do TPC brasileiro, mas precisa ser assumida como tal e não como consequência automática da forma multiplicativa.</p>
+<p><strong>Segundo ponto, mais relevante: a distribuição empírica de A no TPC é muito mais larga do que a de N na educação.</strong> No IDEB, a taxa de aprovação se concentra entre 0,85 e 0,98, o que faz de N, na prática, um desconto suave aplicado sobre a proficiência. Em transporte, A pode variar de 0,3 a 0,95 entre sistemas. Nessa faixa, a cobertura deixa de descontar e passa a <strong>dominar</strong> o índice.</p>
+<p><strong>Terceiro ponto: a forma multiplicativa é severa.</strong> Um sistema com metade da cobertura e metade da qualidade obtém 2,5, e não 5,0. Isso é intencional (falhar nas duas dimensões é pior que a média sugere), mas amplia o efeito dos dois pontos anteriores.</p>
+<section id="alternativas-e-sensibilidade" class="level4">
+<h4 class="anchored" data-anchor-id="alternativas-e-sensibilidade">Alternativas e sensibilidade</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Caso ilustrativo</th>
+<th>A</th>
+<th>D</th>
+<th>A × D (adotado)</th>
+<th>A^0,5 × D</th>
+<th>Média geométrica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grande, compacto, serviço bom</td>
+<td>0,90</td>
+<td>7,0</td>
+<td><strong>6,30</strong></td>
+<td>6,64</td>
+<td>7,94</td>
+</tr>
+<tr class="even">
+<td>Grande, espraiado, serviço bom</td>
+<td>0,60</td>
+<td>7,0</td>
+<td><strong>4,20</strong></td>
+<td>5,42</td>
+<td>6,48</td>
+</tr>
+<tr class="odd">
+<td>Compacto, serviço medíocre</td>
+<td>0,90</td>
+<td>4,0</td>
+<td><strong>3,60</strong></td>
+<td>3,79</td>
+<td>6,00</td>
+</tr>
+<tr class="even">
+<td>Cobertura baixa, serviço ótimo</td>
+<td>0,45</td>
+<td>8,5</td>
+<td><strong>3,83</strong></td>
+<td>5,70</td>
+<td>6,18</td>
+</tr>
+<tr class="odd">
+<td>Meio termo em tudo</td>
+<td>0,50</td>
+<td>5,0</td>
+<td><strong>2,50</strong></td>
+<td>3,54</td>
+<td>5,00</td>
+</tr>
+</tbody>
+</table>
+<p>A coluna de média geométrica corresponde a expressar ambos os fatores de 0 a 10 e extrair a raiz do produto. Ela reduz a elasticidade de cada fator para 0,5, achata a distribuição e torna o índice muito mais indulgente: o sistema medíocre em tudo passa de 2,5 para 5,0. É a forma que aparenta corrigir o suposto desequilíbrio de escala e que, na prática, <strong>elimina justamente o poder discriminante que se buscava</strong>.</p>
+<p>A forma intermediária é introduzir expoente em A:</p>
+<pre><code>IQTPC = A^α × D</code></pre>
+<p>Com α = 1 tem-se a versão adotada, de elasticidades iguais. Com α &lt; 1 a cobertura passa a pesar menos que o conjunto da qualidade. O parâmetro α é, portanto, <strong>o instrumento explícito de calibração do peso relativo entre acesso e qualidade</strong>, e é preferível a manipular escalas, porque torna a decisão visível e discutível.</p>
+</section>
+<section id="decisão" class="level4">
+<h4 class="anchored" data-anchor-id="decisão">Decisão</h4>
+<p>Mantém-se α = 1 na versão inicial, por três razões: é a forma do IDEB, cuja legitimidade se pretende herdar; é a que melhor expressa a prioridade do acesso; e é a mais simples de comunicar. O parâmetro fica registrado como ponto de calibração após o piloto: se a distribuição empírica de A mostrar que a cobertura suprime o sinal de qualidade, reduz-se α, sem alterar a arquitetura.</p>
+<p>Na divulgação, o fator A é apresentado em percentual (por exemplo, cobertura de 82%) e não como decimal, o que elimina a impressão visual de que ele seria um componente menor.</p>
+</section>
+</section>
+<section id="decisão-de-escopo-produtividade-fica-fora-adequação-da-oferta-fica-dentro" class="level3">
+<h3 class="anchored" data-anchor-id="decisão-de-escopo-produtividade-fica-fora-adequação-da-oferta-fica-dentro">5.4 Decisão de escopo: produtividade fica fora, adequação da oferta fica dentro</h3>
+<p>A Lei nº 15.432/2026 e a nova redação do art. 16, IX, da Lei nº 12.587/2012 tratam de <strong>qualidade e produtividade</strong> como pares. Ainda assim, os dois conceitos não devem compor o mesmo número.</p>
+<p>Razão: produtividade medida por lotação premia o sistema superlotado. Um índice que soma qualidade e produtividade cria o incentivo de rodar menos veículos com mais gente dentro, que é exatamente o resultado que se quer evitar. Qualidade é direito do passageiro; produtividade é eficiência do gasto público. São objetos distintos, com destinatários distintos.</p>
+<p><strong>Decisão adotada:</strong></p>
+<ol type="1">
+<li>O IQTPC mede apenas qualidade. Indicadores clássicos de produtividade (IPK, custo por quilômetro, quilometragem por veículo, passageiros por veículo por dia) <strong>não compõem</strong> o índice.</li>
+<li>Esses indicadores são publicados em painel satélite, o <strong>IQTPC-Produtividade</strong>, sem agregação em nota única, atendendo ao art. 14, VII, e ao art. 16, IX, da PNMU.</li>
+<li><strong>Uma única fronteira é atravessada</strong>: a adequação do dimensionamento da oferta entra no índice, dentro de F, por meio de indicador bilateral de ocupação, que penaliza tanto a superlotação quanto a ociosidade.</li>
+</ol>
+<p>A justificativa para o item 3 é que ônibus vazio não é apenas ineficiência, é <strong>defeito de qualidade do serviço</strong>. Veículo rodando ocioso representa oferta mal alocada, e o recurso imobilizado ali é recurso subtraído de área desatendida ou de linha saturada. Isso viola diretamente o art. 4º, III (planejamento da operação em intervalos e frequência adequados às necessidades da população), o art. 9º, I, “c” (planejamento baseado em estudos de demanda atual e projetada) e o art. 5º, II (redução de desigualdades socioespaciais). Ociosidade e superlotação são as duas faces do mesmo erro de dimensionamento.</p>
+<hr>
+</section>
+</section>
+<section id="detalhamento-dos-subíndices" class="level2">
+<h2 class="anchored" data-anchor-id="detalhamento-dos-subíndices">6. Detalhamento dos subíndices</h2>
+<section id="c-confiabilidade-peso-022" class="level3">
+<h3 class="anchored" data-anchor-id="c-confiabilidade-peso-022">6.1 C, Confiabilidade (peso 0,22)</h3>
+<p>Art. 31, II (regularidade e pontualidade) e art. 3º, IV.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cumprimento de viagens</td>
+<td>Viagens realizadas ÷ viagens programadas no GTFS estático</td>
+<td>0,40</td>
+</tr>
+<tr class="even">
+<td>Pontualidade</td>
+<td>% de partidas com desvio entre menos 1 e mais 3 minutos do horário programado</td>
+<td>0,25</td>
+</tr>
+<tr class="odd">
+<td><strong>Continuidade</strong></td>
+<td>Horas-passageiro perdidas em interrupções não programadas ÷ horas-passageiro ofertadas, por mil</td>
+<td>0,20</td>
+</tr>
+<tr class="even">
+<td>Regularidade de intervalo</td>
+<td>Coeficiente de variação do headway observado em linhas de alta frequência</td>
+<td>0,15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sobre o componente de continuidade.</strong> Transposto do saneamento. O SNIS e o SINISA medem há décadas a intermitência do abastecimento pela duração das interrupções e pelo número de economias atingidas, e não apenas pelo atendimento médio. A distinção é pertinente ao TPC: o cumprimento diário de viagens não capta o evento sistêmico (paralisação, falta de combustível, colapso de garagem, suspensão de linha), que é justamente o que mais marca a relação do usuário com o serviço. Continuidade é atributo expresso no art. 31, I, e no art. 3º, IV, e exige medida própria.</p>
+<p>Fonte: GTFS estático versionado versus GTFS-RT ou dados de AVL. É o subíndice de maior peso porque é o que mais afeta a experiência real e o que melhor se automatiza.</p>
+</section>
+<section id="s-segurança-peso-018" class="level3">
+<h3 class="anchored" data-anchor-id="s-segurança-peso-018">6.2 S, Segurança (peso 0,18)</h3>
+<p>Art. 31, III, abrangendo expressamente segurança viária <strong>e</strong> segurança dos passageiros.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno (provisório)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Segurança viária</td>
+<td>Óbitos e lesões graves envolvendo veículos de TPC por milhão de quilômetros rodados (versão inicial) ou por 100 milhões de passageiros-quilômetro (versão madura, com inferência de desembarque)</td>
+<td>0,45</td>
+</tr>
+<tr class="even">
+<td>Segurança pessoal</td>
+<td>Ocorrências registradas por milhão de embarques, com atenção a importunação e assédio sexual, injúria e discriminação racial (art. 16, X)</td>
+<td>0,40</td>
+</tr>
+<tr class="odd">
+<td>Canais de denúncia</td>
+<td>Existência e tempo médio de resposta dos canais exigidos pelo art. 16, X</td>
+<td>0,15</td>
+</tr>
+</tbody>
+</table>
+<p>A inclusão explícita de segurança pessoal decorre do art. 16, IX e X, e é uma inovação relevante da Lei nº 15.432/2026 frente ao arcabouço anterior. Recomenda-se publicar o componente de segurança pessoal desagregado por gênero.</p>
+</section>
+<section id="p-percepção-e-satisfação-peso-017" class="level3">
+<h3 class="anchored" data-anchor-id="p-percepção-e-satisfação-peso-017">6.3 P, Percepção e satisfação (peso 0,17)</h3>
+<p>Art. 31, V; art. 4º, IX; art. 7º, III (foco na percepção da qualidade por todas as pessoas); art. 14, VII (pesquisa de satisfação como item de divulgação obrigatória).</p>
+<p>Este é o subíndice que <strong>hoje não tem fonte nacional padronizada</strong>. É o equivalente ao SAEB na arquitetura do IDEB e sua ausência é a principal lacuna metodológica (ver seção 11).</p>
+<p>Instrumento: a <strong>PeMOB Usuário</strong> (<a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II</a>), pesquisa nacional padronizada, amostral, aplicada por terceiro independente, com núcleo comum de itens em escala de 1 a 5 sobre tempo e regularidade, lotação e conforto, frota, segurança viária, segurança pessoal, acessibilidade, informação, tratamento e custo, mais módulo de não usuário e módulo local facultativo.</p>
+<p>Enquanto o sistema não tiver sido pesquisado, o índice é calculado sem P e publicado como <strong>IQTPC-Objetivo</strong> (5.2). Pesquisas locais de instrumento diverso não compõem o índice, sob pena de introduzir ruído incomparável entre sistemas.</p>
+</section>
+<section id="f-conveniência-e-conforto-peso-013" class="level3">
+<h3 class="anchored" data-anchor-id="f-conveniência-e-conforto-peso-013">6.4 F, Conveniência e conforto (peso 0,13)</h3>
+<p>Art. 31, IV; art. 16, VI e XIV; art. 7º, IX; art. 4º, III.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Adequação da oferta</strong></td>
+<td>Dois lados: superlotação no pico (monotônico) e aproveitamento no dia típico (bilateral), ver 6.4.1</td>
+<td>0,28</td>
+</tr>
+<tr class="even">
+<td><strong>Salubridade e condições sanitárias</strong></td>
+<td>Limpeza e higienização dos veículos; % de terminais e estações com sanitário em funcionamento e água potável disponível</td>
+<td>0,18</td>
+</tr>
+<tr class="odd">
+<td>Tempo de viagem</td>
+<td>Razão entre tempo porta a porta por TPC e por automóvel</td>
+<td>0,17</td>
+</tr>
+<tr class="even">
+<td>Condições de espera</td>
+<td>% de pontos de parada com abrigo, assento e iluminação</td>
+<td>0,15</td>
+</tr>
+<tr class="odd">
+<td>Informação ao passageiro</td>
+<td>Cumprimento do art. 16, IV: informação em pontos de embarque, aplicativos ou sítio, de forma gratuita e acessível</td>
+<td>0,13</td>
+</tr>
+<tr class="even">
+<td><strong>Atendimento a manifestações</strong></td>
+<td>Tempo médio de resposta e taxa de resolução das manifestações do usuário</td>
+<td>0,09</td>
+</tr>
+</tbody>
+</table>
+<p><em>Conforto térmico e acústico não integra o índice objetivo, por não haver fonte objetiva viável (<a href="./IQTPC_Anexo_I_matriz_origem_dados.html">Anexo I</a>). É medido exclusivamente pela dimensão “lotação e conforto” da PeMOB Usuário.</em></p>
+<p><strong>Sobre salubridade.</strong> O art. 3º, IV, arrola expressamente a <strong>salubridade</strong> entre os atributos da qualidade do serviço, ao lado de cortesia, conforto, segurança, eficiência, regularidade, atualidade e continuidade. Sem este componente, seria o único dos oito atributos sem parâmetro objetivo; a medida é transposta do saneamento (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html">Anexo IV</a>). A dimensão inclui a higienização dos veículos e, sobretudo, as condições sanitárias de terminais e estações, onde o passageiro permanece por tempo prolongado. Sanitário em funcionamento e água potável em terminal são parâmetro de qualidade de transporte, e não apenas de saneamento, e sua ausência afeta de forma desproporcional mulheres, idosos, gestantes e pessoas com condições de saúde específicas.</p>
+<p><strong>Sobre atendimento a manifestações.</strong> O art. 16 assegura ao passageiro canais de recebimento de reclamações, e a Lei nº 13.460/2017 disciplina prazos de resposta. O SNIS mede há anos o tempo de atendimento a solicitações. O subíndice S mede o tempo de resposta dos canais específicos de segurança pessoal; este componente generaliza a medida para o conjunto das manifestações.</p>
+<p><em>Nota de alocação:</em> a alocação do atendimento a manifestações em F, pela via da conveniência (art. 31, IV), é discutível. Alternativas seriam vinculá-lo à cortesia (art. 3º, IV) ou criar dimensão própria de relação com o usuário. Registrado como questão em aberto (seção 14).</p>
+<p>O componente de tempo de viagem responde ao art. 16, VI (direito à prioridade de circulação para redução dos tempos de viagem) e ao art. 5º, VI.</p>
+<section id="indicador-bilateral-de-ocupação" class="level4">
+<h4 class="anchored" data-anchor-id="indicador-bilateral-de-ocupação">6.4.1 Indicador bilateral de ocupação</h4>
+<p>Este é o componente que traduz a exigência de que o serviço não seja nem superlotado nem ocioso. É medido em dois momentos distintos do dia, por <strong>duas métricas separadas</strong>, cuja média simples compõe o componente: uma monotônica para a superlotação no pico e uma bilateral para o aproveitamento no dia típico. A forma consolidada está no <a href="./IQTPC_Manual_de_calculo.html">Manual de cálculo</a>, item F-01; a descrição abaixo é a fundamentação.</p>
+<p><strong>Lado da superlotação, medido no pico:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Faixa de densidade (passageiros em pé por m²)</th>
+<th>Leitura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>até 4,0</td>
+<td>conforto adequado</td>
+</tr>
+<tr class="even">
+<td>4,0 a 5,0</td>
+<td>limite tolerável</td>
+</tr>
+<tr class="odd">
+<td>5,0 a 6,0</td>
+<td>desconforto severo</td>
+</tr>
+<tr class="even">
+<td>acima de 6,0</td>
+<td>condição inaceitável, pontuação mínima</td>
+</tr>
+</tbody>
+</table>
+<p>Métrica: percentual de viagens no pico com densidade superior a 5,0 pass/m².</p>
+<p><strong>Lado da ociosidade, medido no dia típico:</strong></p>
+<p>Métrica: taxa de aproveitamento, definida como passageiros-quilômetro transportados dividido por lugares-quilômetro ofertados.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Faixa de aproveitamento</th>
+<th>Leitura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>abaixo de 0,15</td>
+<td>oferta ociosa, recurso mal alocado</td>
+</tr>
+<tr class="even">
+<td>0,15 a 0,20</td>
+<td>subaproveitamento</td>
+</tr>
+<tr class="odd">
+<td>0,20 a 0,45</td>
+<td><strong>faixa ótima</strong></td>
+</tr>
+<tr class="even">
+<td>acima de 0,45</td>
+<td>indício de saturação sistêmica</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Forma funcional:</strong></p>
+<pre><code>p_inf = k_inf × (x_inf − x) ÷ (x_inf − x_min)      se x &lt; x_inf, senão 0
+p_sup = k_sup × (x − x_sup) ÷ (x_max − x_sup)      se x &gt; x_sup, senão 0
+Pontuação = 1 + 9 × [1 − min(1, max(p_inf, p_sup))]</code></pre>
+<p>Dentro da faixa ótima [x_inf, x_sup] a pontuação vale 10. Fora dela, a penalização cresce linearmente até o piso 1 nos extremos <code>x_min</code> e <code>x_max</code>, fixados em 0,10 e 0,60 (<a href="./IQTPC_Manual_de_calculo.html">Manual, F-01</a>). Os fatores <code>k_inf</code> e <code>k_sup</code> calibram a assimetria: <code>k_inf</code> atua abaixo da faixa (ociosidade) e <code>k_sup</code> acima dela (saturação sistêmica).</p>
+<p><strong>A assimetria a favor de penalizar mais a superlotação é obtida de duas formas:</strong> a superlotação no pico tem métrica própria, monotônica e com escala plena de 1 a 10, enquanto a ociosidade entra com fator de atenuação k_inf = 0,7 (e k_sup = 1,0 para a saturação acima da faixa). Razão: a superlotação é dano direto e imediato ao passageiro, com implicações de salubridade (art. 3º, IV), de dignidade e integridade física (art. 16, IX) e de exposição a importunação e assédio (art. 16, X). A ociosidade é falha de alocação, mais grave para o erário e para a área desatendida do que para quem está dentro do veículo.</p>
+<p>Os valores de faixa acima são indicativos e devem ser calibrados sobre a distribuição empírica observada no piloto, estratificada por porte do sistema e por modo. Sistemas de média e alta capacidade e linhas de baixa demanda em área periférica exigirão faixas próprias, sob pena de o indicador penalizar exatamente o serviço socialmente necessário e economicamente deficitário que o art. 25, VIII, manda sustentar por subsídio cruzado.</p>
+<p><strong>Ressalva relevante:</strong> linhas de atendimento a áreas de difícil acesso e serviços complementares (art. 6º, IV, “b”) devem ser excluídas do lado da ociosidade ou receber faixa própria. Sem essa ressalva, o indicador induz corte justamente das linhas de menor demanda e maior função social.</p>
+</section>
+</section>
+<section id="v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012" class="level3">
+<h3 class="anchored" data-anchor-id="v-frota-atualidade-disponibilidade-e-acessibilidade-peso-012">6.5 V, Frota: atualidade, disponibilidade e acessibilidade (peso 0,12)</h3>
+<p>Subíndice novo, com fundamento no art. 31, IV, e sobretudo no art. 31, §1º, que manda o regulamento estabelecer os requisitos operacionais <strong>e de manutenção</strong> dos veículos e sistemas utilizados na prestação. Reforça-se no art. 3º, IV, que arrola <strong>atualidade</strong> entre os atributos da qualidade, e no art. 4º, VIII (atualização e modernização contínua das técnicas, dos equipamentos e das instalações).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Idade média da frota</strong></td>
+<td>Idade média ponderada por veículo em operação</td>
+<td>0,30</td>
+</tr>
+<tr class="even">
+<td><strong>Cauda de frota envelhecida</strong></td>
+<td>% de veículos com idade superior ao limite regulamentar</td>
+<td>0,20</td>
+</tr>
+<tr class="odd">
+<td>Disponibilidade operacional</td>
+<td>Frota operante no pico ÷ frota cadastrada</td>
+<td>0,20</td>
+</tr>
+<tr class="even">
+<td>Frota reserva</td>
+<td>Frota reserva ÷ frota operante no pico</td>
+<td>0,10</td>
+</tr>
+<tr class="odd">
+<td>Acessibilidade universal do material rodante</td>
+<td>% da frota com acessibilidade plena (art. 16, XIV)</td>
+<td>0,20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sobre a idade média.</strong> É medida com dois componentes, e não um, porque a média isolada esconde composição perversa: uma frota metade nova e metade sucateada exibe a mesma média de uma frota inteiramente intermediária, com experiência de usuário radicalmente distinta. O componente de cauda corrige isso. Referências indicativas para calibração: idade média de 5 anos como valor de excelência, 7 anos como aceitável e 10 anos ou mais como piso, com o limite regulamentar de cada sistema servindo de parâmetro para a cauda.</p>
+<p><strong>Sobre disponibilidade e reserva.</strong> Este é o componente que explica causalmente boa parte do subíndice C. Sistema sem frota reserva cancela viagem quando um veículo quebra. Medir apenas a viagem não realizada é medir o sintoma; medir a disponibilidade da frota é medir a condição que o produz. A distinção importa para a ação regulatória, porque as duas situações demandam intervenções diferentes.</p>
+<p><strong>Sobre a validação do dado.</strong> Frota é dado declaratório e inflá-la melhora simultaneamente disponibilidade aparente, conforto aparente e capacidade instalada declarada. A trava é o cruzamento do cadastro com a base de licenciamento do SENATRAN por placa e chassi, o que valida existência, idade e situação do veículo sem depender do operador. Isso implica que o dicionário de dados de cadastro de frota deve trazer <strong>placa, chassi e data do primeiro emplacamento como campos obrigatórios</strong>, e não apenas quantitativos agregados por tipologia.</p>
+</section>
+<section id="e-desempenho-ambiental-e-eletrificação-peso-010" class="level3">
+<h3 class="anchored" data-anchor-id="e-desempenho-ambiental-e-eletrificação-peso-010">6.6 E, Desempenho ambiental e eletrificação (peso 0,10)</h3>
+<p>Art. 31, VI; art. 4º, V (transição energética sustentável, mantida a modicidade tarifária); art. 9º, §1º (obrigatoriedade de meta de redução de emissões no planejamento); art. 5º, IV; art. 16, VII (direito do passageiro a serviço com tecnologias de menor impacto ambiental).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Eletrificação e frota zero emissão local</strong></td>
+<td>% da frota com tração elétrica ou célula a combustível</td>
+<td>0,30</td>
+</tr>
+<tr class="even">
+<td>Combustíveis renováveis</td>
+<td>% da frota com combustível renovável</td>
+<td>0,15</td>
+</tr>
+<tr class="odd">
+<td>Emissões locais</td>
+<td>Material particulado e NOx por passageiro-quilômetro</td>
+<td>0,20</td>
+</tr>
+<tr class="even">
+<td>Emissões de GEE</td>
+<td>CO2e por passageiro-quilômetro</td>
+<td>0,20</td>
+</tr>
+<tr class="odd">
+<td>Cumprimento de meta própria</td>
+<td>Aderência à meta de redução de emissões estabelecida no planejamento (art. 9º, §1º)</td>
+<td>0,15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sobre a separação entre eletrificação e renováveis.</strong> A tração elétrica recebe peso maior porque elimina a emissão local no ponto de uso, com efeito direto sobre a saúde da população exposta ao corredor, enquanto o combustível renovável reduz emissão de GEE sem eliminar poluentes locais. São benefícios de natureza distinta e não devem ser somados em um único percentual.</p>
+<p><strong>Sobre o cumprimento de meta própria.</strong> Componente regulatoriamente elegante: mede o cumprimento da meta que o próprio ente estabeleceu por obrigação legal, sem que a União precise arbitrar patamar absoluto de eletrificação entre realidades de capacidade fiscal e disponibilidade de rede elétrica muito distintas.</p>
+<p><strong>Nota sobre dupla contagem.</strong> A renovação da frota por veículos elétricos melhora V (idade) e E (eletrificação) simultaneamente. Isso é intencional e delimitado: são atributos juridicamente distintos, atualidade no art. 3º, IV, e aspectos ambientais no art. 31, VI. O efeito combinado é atenuado pela média geométrica e pelos pesos de 0,12 e 0,10. Ainda assim, é ponto a monitorar na calibração, para que a substituição de frota não vire o único caminho de melhoria do índice, em detrimento de ganhos operacionais de custo muito menor.</p>
+<p><strong>Ressalva do art. 4º, V.</strong> A transição energética deve ocorrer sem que o aumento de custos recaia sobre os passageiros. Recomenda-se, portanto, que o componente de eletrificação seja lido conjuntamente com o subíndice M: eletrificação financiada por elevação tarifária não representa ganho líquido de qualidade.</p>
+</section>
+<section id="m-acessibilidade-econômica-e-modicidade-peso-008" class="level3">
+<h3 class="anchored" data-anchor-id="m-acessibilidade-econômica-e-modicidade-peso-008">6.7 M, Acessibilidade econômica e modicidade (peso 0,08)</h3>
+<p>Art. 3º, III e VI; art. 11, III; art. 25, II (capacidade de pagamento, inclusive em comparação aos custos do transporte individual).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Métrica</th>
+<th>Peso interno (provisório)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Esforço tarifário</td>
+<td>% da renda domiciliar per capita do primeiro quintil comprometido com 44 viagens mensais</td>
+<td>0,35</td>
+</tr>
+<tr class="even">
+<td>Comparação intermodal</td>
+<td>Razão entre custo mensal do TPC e custo mensal do automóvel para viagem equivalente (art. 25, II)</td>
+<td>0,15</td>
+</tr>
+<tr class="odd">
+<td>Integração tarifária</td>
+<td>Existência de integração temporal e tarifária entre modos e redes (art. 25, V)</td>
+<td>0,20</td>
+</tr>
+<tr class="even">
+<td>Sustentação extratarifária</td>
+<td>% da receita contratual do operador proveniente de fontes extratarifárias e subsídio público (arts. 23 e 29)</td>
+<td>0,30</td>
+</tr>
+</tbody>
+</table>
+<p><em>Sistemas com tarifa zero:</em> esforço tarifário e comparação intermodal recebem pontuação máxima; o componente de sustentação extratarifária passa a medir a estabilidade da fonte de custeio (<a href="./IQTPC_Manual_de_calculo.html#subíndice-m-modicidade-peso-008-em-d">Manual, seção 6.7</a>).</p>
+<p>O último componente merece destaque: <strong>ele mede diretamente o principal objetivo declarado do Marco Legal</strong>, que é reduzir a dependência da tarifa paga pelo passageiro. É também o componente que dialoga com o art. 4º, XI (ampliação da participação das fontes não tarifárias).</p>
+<p>Observação metodológica: peso baixo é proposital. Tarifa artificialmente baixa com serviço colapsado não pode gerar índice alto, e a média geométrica já impede compensação.</p>
+<hr>
+</section>
+</section>
+<section id="normalização-e-valores-de-referência" class="level2">
+<h2 class="anchored" data-anchor-id="normalização-e-valores-de-referência">7. Normalização e valores de referência</h2>
+<section id="universo-de-aplicação-do-índice" class="level3">
+<h3 class="anchored" data-anchor-id="universo-de-aplicação-do-índice">7.0 Universo de aplicação do índice</h3>
+<p>Antes de qualquer normalização, é preciso delimitar a quem o índice se aplica. Segundo a MUNIC/IBGE, apenas cerca de 30% dos municípios brasileiros dispõem de serviço de ônibus municipal, embora cerca de 82% da população resida em municípios com algum serviço, intramunicipal ou intermunicipal.</p>
+<p><strong>Município sem sistema de TPC não recebe índice zero: recebe a marcação de não aplicável.</strong> Atribuir zero confundiria duas realidades distintas, serviço inexistente e serviço péssimo, destruiria a distribuição do índice e produziria ranking sem significado. A ausência de serviço é objeto de indicador próprio de cobertura nacional.</p>
+<p>Classificação proposta, detalhada no <a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II</a>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>Descrição</th>
+<th>Tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S1</td>
+<td>Sistema urbano estruturado, com titularidade e contrato</td>
+<td>IQTPC-Completo ou IQTPC-Objetivo</td>
+</tr>
+<tr class="even">
+<td>S2</td>
+<td>Serviço urbano precário, informal ou de baixa escala</td>
+<td>IQTPC-Simplificado</td>
+</tr>
+<tr class="odd">
+<td>S3</td>
+<td>Sem serviço urbano, atendido apenas por linha intermunicipal de caráter urbano</td>
+<td>Indicador de cobertura, titularidade estadual</td>
+</tr>
+<tr class="even">
+<td>S4</td>
+<td>Sem qualquer serviço</td>
+<td>Fora do índice; entra no indicador de cobertura</td>
+</tr>
+</tbody>
+</table>
+<p>O enquadramento depende do Cadastro Nacional de Sistemas de Transporte Público Coletivo, que é pré-requisito tanto do índice quanto da pesquisa nacional.</p>
+<hr>
+</section>
+<section id="forma-de-normalização" class="level3">
+<h3 class="anchored" data-anchor-id="forma-de-normalização">7.1 Forma de normalização</h3>
+<p>Cada métrica deve ser normalizada de 1 a 10 <strong>contra valores normativos absolutos</strong>, jamais contra a distribuição observada na amostra.</p>
+<p>Normalizar contra a média da amostra tem dois defeitos fatais: a meta anda junto com o resultado (se todos pioram, ninguém perde pontos) e impede a leitura de série histórica.</p>
+<p>Forma funcional sugerida, para indicador em que valores maiores são melhores:</p>
+<pre><code>Pontuação = 1 + 9 × min(1, max(0, (x − x_piso) ÷ (x_referência − x_piso)))</code></pre>
+<p>Onde <code>x_piso</code> é o patamar a partir do qual se atribui a pontuação mínima (1) e <code>x_referência</code> é o valor correspondente a serviço adequado pleno.</p>
+<p>Para indicadores com faixa ótima, em que tanto o excesso quanto a falta são defeitos (caso da ocupação, item 6.4.1), aplica-se a forma bilateral de dois lados com platô, descrita naquele item. A regra geral é: <strong>sempre que o desvio em ambas as direções representar perda de qualidade, o indicador é bilateral com platô, e não monotônico</strong>.</p>
+<p>Além da ocupação, dois outros indicadores merecem exame quanto a esse tratamento na fase de calibração: a frota reserva, cujo excesso indica imobilização improdutiva de capital, e o intervalo entre partidas, cuja frequência excessiva em corredor saturado gera comboiamento e degrada a regularidade.</p>
+<p><strong>Os valores de <code>x_piso</code> e <code>x_referência</code> constituem, materialmente, as normas de referência nacionais de qualidade previstas no art. 16, IX, da Lei nº 12.587/2012.</strong> Definir a tabela de referência é, portanto, exercício de competência legal expressa, e não escolha técnica livre. A tabela é fixada em portaria, com revisão bienal dos valores e quadrienal dos pesos e componentes, sempre com consulta pública prévia (<a href="./IQTPC_Manual_de_calculo.html#período-de-referência-periodicidade-e-publicação">Manual, seção 9</a>).</p>
+<p>Recomenda-se ainda estratificação por porte populacional e estrutura modal para efeito de <strong>metas</strong>, mantendo a <strong>escala única</strong> para efeito de cálculo. O IDSUS errou ao estratificar o próprio índice, o que inviabilizou a comparação pública e alimentou contestação permanente.</p>
+<hr>
+</section>
+</section>
+<section id="equidade-territorial" class="level2">
+<h2 class="anchored" data-anchor-id="equidade-territorial">8. Equidade territorial</h2>
+<p>A crítica mais consistente ao IDEB é que a média municipal esconde desigualdade interna. O IQTPC pode nascer já resolvendo isso, e há base legal robusta para tanto: art. 3º, II (equidade no acesso), art. 5º, II (redução das desigualdades socioespaciais), art. 9º, I, “d”, e art. 20, VI.</p>
+<p>Propõe-se um indicador satélite:</p>
+<pre><code>IQTPC-Equidade = IQTPC do quintil de menor renda ÷ IQTPC do quintil de maior renda</code></pre>
+<p>Calculado com base em setores censitários agregados por renda domiciliar per capita. Valor 1,0 indica serviço equivalente entre extremos de renda; valores abaixo de 0,7 devem acionar sinalização específica.</p>
+<p>Recomenda-se publicação obrigatória conjunta: o IQTPC nunca deve ser divulgado sem o IQTPC-Equidade ao lado.</p>
+<section id="déficit-de-acesso-ao-transporte-público-coletivo" class="level3">
+<h3 class="anchored" data-anchor-id="déficit-de-acesso-ao-transporte-público-coletivo">8.1 Déficit de Acesso ao Transporte Público Coletivo</h3>
+<p>Indicador satélite transposto da política habitacional. O <strong>déficit habitacional</strong>, calculado pela Fundação João Pinheiro para o Ministério das Cidades, é provavelmente o indicador de política urbana de maior penetração no debate público brasileiro, e sua força não está na metodologia, e sim na forma: <strong>um número absoluto de pessoas ou domicílios em situação inadequada</strong>, não uma taxa.</p>
+<p>O fator A do IQTPC é uma razão, e razões comunicam mal. Propõe-se, em complemento, a publicação do <strong>Déficit de Acesso ao TPC</strong>: número absoluto de pessoas residentes em área urbana sem acesso a serviço de transporte público coletivo em condições adequadas, decomposto por natureza da inadequação.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente do déficit</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ausência de cobertura</td>
+<td>Reside fora do raio de atendimento de qualquer serviço</td>
+</tr>
+<tr class="even">
+<td>Insuficiência de oferta</td>
+<td>Reside na área de cobertura, mas com intervalo médio no pico acima do limite de referência</td>
+</tr>
+<tr class="odd">
+<td>Inacessibilidade física</td>
+<td>Não consegue utilizar o serviço disponível por barreira de acessibilidade</td>
+</tr>
+<tr class="even">
+<td>Inacessibilidade econômica</td>
+<td>Deixa de realizar viagens por incapacidade de pagamento</td>
+</tr>
+</tbody>
+</table>
+<p>Os dois primeiros componentes derivam de GTFS e grade estatística; os dois últimos dependem da pesquisa nacional (<a href="./IQTPC_Anexo_II_pesquisa_nacional.html#uso-independente">Anexo II, seção 13.3</a>), o que reforça a interdependência entre os instrumentos.</p>
+<p>A vantagem é de comunicação e de agenda: enquanto o IQTPC responde “quão bom é o serviço”, o déficit responde “quantas pessoas estão de fora”, que é a pergunta que mobiliza orçamento. A decomposição em quatro naturezas de inadequação segue a lógica do déficit habitacional, que separa reposição de incremento de estoque, e permite ação diferenciada.</p>
+</section>
+<section id="painel-satélite-de-produtividade" class="level3">
+<h3 class="anchored" data-anchor-id="painel-satélite-de-produtividade">8.2 Painel satélite de produtividade</h3>
+<p>Conforme a decisão registrada em 5.4, os indicadores de produtividade não compõem o IQTPC, mas são publicados em painel próprio, sem agregação em nota única, atendendo ao art. 14, VII, da Lei nº 15.432/2026 e ao art. 16, IX, da Lei nº 12.587/2012.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IPK</td>
+<td>Passageiros transportados por quilômetro percorrido</td>
+</tr>
+<tr class="even">
+<td>Quilometragem por veículo</td>
+<td>Quilômetros percorridos por veículo da frota operante por dia útil</td>
+</tr>
+<tr class="odd">
+<td>Passageiros por veículo</td>
+<td>Passageiros transportados por veículo operante por dia útil</td>
+</tr>
+<tr class="even">
+<td>Custo por quilômetro</td>
+<td>Custo operacional total dividido pela quilometragem produzida</td>
+</tr>
+<tr class="odd">
+<td>Subsídio por passageiro</td>
+<td>Subsídio público total dividido por passageiros transportados</td>
+</tr>
+<tr class="even">
+<td>Lugares-quilômetro por unidade de subsídio</td>
+<td>Capacidade ofertada por real de subsídio aplicado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regra de leitura obrigatória:</strong> o painel de produtividade deve ser publicado com advertência expressa de que IPK elevado pode indicar superlotação, e não eficiência, e que sua interpretação exige leitura conjunta com o componente de adequação da oferta (6.4.1). Sem essa advertência, o painel produz exatamente o incentivo que o desenho do índice procurou evitar.</p>
+<p>O componente de custo por quilômetro e de subsídio por passageiro dá base de aferição ao art. 35, que permite ao poder concedente estabelecer em contrato meta de redução percentual dos custos de operação com base em fatores de produtividade. O art. 35, parágrafo único, condiciona a apropriação desses ganhos pelo operador à manutenção dos padrões de qualidade, o que na prática significa: <strong>ganho de produtividade só é reconhecido se o IQTPC não cair</strong>. É a articulação correta entre os dois instrumentos, e ela dispensa fundi-los em um número só.</p>
+<hr>
+</section>
+</section>
+<section id="consequências-institucionais-previstas-em-lei" class="level2">
+<h2 class="anchored" data-anchor-id="consequências-institucionais-previstas-em-lei">9. Consequências institucionais previstas em lei</h2>
+<p>Este é o ponto em que a Lei nº 15.432/2026 resolve, previamente, o problema que matou o IDSUS.</p>
+<section id="condicionalidade-de-investimento-art.-21" class="level3">
+<h3 class="anchored" data-anchor-id="condicionalidade-de-investimento-art.-21">9.1 Condicionalidade de investimento (art. 21)</h3>
+<blockquote class="blockquote">
+<p>Art. 21. Sem prejuízo das regras gerais definidas na Lei nº 12.587/2012, e das normas específicas dos programas e das ações da União, a contratação de projetos de transporte público coletivo com recursos federais é condicionada ao atendimento do art. 13 desta Lei.</p>
+</blockquote>
+<p>E o art. 13 obriga o titular a fornecer ao Simu os dados e informações necessários, <strong>observadas a metodologia e a periodicidade estabelecidas pela União</strong>.</p>
+<p>A leitura operacional é direta: a União define a metodologia; o envio dos dados nessa metodologia é condição de acesso a recursos federais para projetos. O IQTPC é o produto dessa metodologia. O gate, portanto, é sobre <strong>envio do dado</strong>, não sobre resultado do índice, o que é juridicamente mais seguro e evita punir o município pobre pelo resultado ruim que ele não pode resolver sozinho.</p>
+</section>
+<section id="contrapartida-ao-desempenho-no-custeio-art.-28-iii" class="level3">
+<h3 class="anchored" data-anchor-id="contrapartida-ao-desempenho-no-custeio-art.-28-iii">9.2 Contrapartida ao desempenho no custeio (art. 28, III)</h3>
+<blockquote class="blockquote">
+<p>Art. 28. A União poderá participar, mediante leis específicas, de apoio ao custeio dos serviços […]: III, como contrapartida ao alcance de metas de desempenho operacional, de satisfação e ambientais previamente estabelecidas nas normas de referência para a regulação da prestação dos serviços de transporte público coletivo expedidas pela União.</p>
+</blockquote>
+<p>Aqui sim o <strong>resultado</strong> importa, e a redação é notável: as três categorias de metas citadas (desempenho operacional, satisfação e ambientais) correspondem exatamente aos subíndices C/F, P e E da proposta. O art. 28, III, é o análogo do Previne Brasil no TPC, com a diferença de já ter previsão legal expressa.</p>
+<p>Ressalva: <em>“mediante leis específicas”</em>. O apoio federal ao custeio depende de lei própria; o IQTPC prepara o instrumento de aferição para quando ela existir.</p>
+</section>
+<section id="remuneração-do-operador-art.-31-2º-e-art.-6º-xii" class="level3">
+<h3 class="anchored" data-anchor-id="remuneração-do-operador-art.-31-2º-e-art.-6º-xii">9.3 Remuneração do operador (art. 31, §2º, e art. 6º, XII)</h3>
+<blockquote class="blockquote">
+<p>Art. 31, §2º. No caso de serviços prestados de forma indireta, a remuneração do operador deverá ser estabelecida com base no atendimento aos requisitos mínimos estabelecidos nas normas regulamentares e contratuais.</p>
+</blockquote>
+<p>Combinado com o art. 6º, XII, que define a receita contratual do operador como vinculada a metas e padrões de desempenho, qualidade e disponibilidade, e com o art. 35, parágrafo único, que só permite ao operador apropriar ganhos de eficiência se mantidos os padrões de qualidade.</p>
+<p>Isso significa que o IQTPC-Operador tem função contratual direta e que a norma de referência da União produz efeito prático imediato sobre editais e contratos novos.</p>
+<p>Observação de transição: o art. 31, §3º, ressalva os contratos celebrados antes da vigência da Lei, exceto em renovações, prorrogações não previstas ou revisões acordadas. A adoção será, portanto, progressiva conforme o ciclo contratual.</p>
+</section>
+<section id="transparência-como-consequência-autônoma" class="level3">
+<h3 class="anchored" data-anchor-id="transparência-como-consequência-autônoma">9.4 Transparência como consequência autônoma</h3>
+<p>O art. 14, VII, já obriga a divulgação dos indicadores de eficiência, produtividade e qualidade, incluída a pesquisa de satisfação, em sítio de acesso direto ao cidadão (art. 14, §1º). O efeito reputacional, que no IDEB se mostrou mais eficaz que qualquer sanção, tem base legal própria e independe de qualquer condicionalidade financeira.</p>
+<hr>
+</section>
+</section>
+<section id="riscos-de-manipulação-e-travas" class="level2">
+<h2 class="anchored" data-anchor-id="riscos-de-manipulação-e-travas">10. Riscos de manipulação e travas</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Risco</th>
+<th>Vetor</th>
+<th>Trava de desenho</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reduzir oferta programada para inflar cumprimento</td>
+<td>Republicar GTFS com menos viagens</td>
+<td>GTFS versionado com <strong>baseline de referência atualizável por regra</strong>: oferta programada vigente há ao menos seis meses; reduções acima de 5% dos lugares-km do sistema ou 20% de qualquer região exigem justificativa registrada na plataforma e recalculam A; reduções não justificadas contam como viagens não realizadas no período. A entra multiplicando, de modo que corte de linha derruba o índice</td>
+</tr>
+<tr class="even">
+<td>Viagens fantasma na declaração</td>
+<td>Dado autodeclarado</td>
+<td>Coleta automatizada direta de AVL ou GTFS-RT; auditoria amostral em campo no modelo PMAQ</td>
+</tr>
+<tr class="odd">
+<td><strong>Inflar a frota cadastrada</strong></td>
+<td>Declarar veículos inexistentes, sucateados ou de terceiros</td>
+<td>Cruzamento obrigatório com a base de licenciamento do SENATRAN por placa e chassi; cadastro com identificação individual, não agregada</td>
+</tr>
+<tr class="even">
+<td><strong>Maquiar idade média</strong></td>
+<td>Declarar por tipologia, diluindo veículos antigos</td>
+<td>Componente autônomo de cauda de frota envelhecida (% acima do limite regulamentar), além da média</td>
+</tr>
+<tr class="odd">
+<td><strong>Cortar linhas de baixa demanda</strong> para melhorar a taxa de aproveitamento</td>
+<td>Reação ao lado de ociosidade do indicador bilateral</td>
+<td>Exclusão ou faixa própria para serviços complementares e áreas de difícil acesso (art. 6º, IV, “b”); A entra multiplicando, de modo que o corte derruba a cobertura</td>
+</tr>
+<tr class="even">
+<td><strong>Superlotar para elevar produtividade aparente</strong></td>
+<td>IPK como proxy de eficiência</td>
+<td>Produtividade fora do índice (5.4); ocupação bilateral com penalização assimétrica; advertência obrigatória no painel satélite</td>
+</tr>
+<tr class="odd">
+<td>Eletrificação financiada por aumento tarifário</td>
+<td>Melhorar E às custas de M</td>
+<td>Leitura conjunta de E e M; ressalva do art. 4º, V, incorporada à norma de referência</td>
+</tr>
+<tr class="even">
+<td>Subnotificação de ocorrências de segurança</td>
+<td>Registro pelo próprio operador</td>
+<td>Cruzamento com bases externas (DATASUS/SIM, boletins de ocorrência, ouvidorias)</td>
+</tr>
+<tr class="odd">
+<td>Concentração de melhoria em corredores visíveis</td>
+<td>Otimizar o que é medido</td>
+<td>Publicação obrigatória do IQTPC-Equidade e desagregação territorial</td>
+</tr>
+<tr class="even">
+<td>Captura da pesquisa de satisfação</td>
+<td>Aplicação pelo próprio operador</td>
+<td>Aplicação por terceiro independente, amostragem definida centralmente</td>
+</tr>
+<tr class="odd">
+<td>Comparação indevida entre versões do índice</td>
+<td>Sistemas em fases distintas de maturidade</td>
+<td>Vedação expressa de ranqueamento entre sistemas calculados por metodologias distintas</td>
+</tr>
+<tr class="even">
+<td><strong>Falsificação deliberada de dado</strong></td>
+<td>Registro cadastral ou operacional adulterado</td>
+<td>Graduação: inconsistência por erro gera devolução para correção; falsificação comprovada em auditoria gera inadimplência por dois ciclos e comunicação aos órgãos de controle, com fundamento no art. 3º, IX</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade" class="level2">
+<h2 class="anchored" data-anchor-id="fontes-de-dados-e-a-lacuna-do-saeb-da-mobilidade">11. Fontes de dados e a lacuna do “SAEB da mobilidade”</h2>
+<p>Mapeamento das fontes por subíndice:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subíndice</th>
+<th>Fonte primária</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>GTFS estático + grade estatística IBGE</td>
+<td>Calculável hoje onde há GTFS</td>
+</tr>
+<tr class="even">
+<td>C</td>
+<td>GTFS-RT / AVL; <strong>continuidade exige registro novo</strong></td>
+<td>Exige plataforma</td>
+</tr>
+<tr class="odd">
+<td>S</td>
+<td><strong>Registro padronizado de sinistros e de ocorrências, a criar</strong>; SIM/DATASUS só para validação amostral</td>
+<td><strong>Exige criação de registro em dois de três componentes</strong></td>
+</tr>
+<tr class="even">
+<td>P</td>
+<td>PeMOB Usuário</td>
+<td>Inexistente</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>Bilhetagem com inferência de desembarque, cadastros de infraestrutura a criar, roteamento central</td>
+<td>Misto; conforto térmico sem fonte viável</td>
+</tr>
+<tr class="even">
+<td>V</td>
+<td>Cadastro de frota individualizado + RENAVAM/SENATRAN</td>
+<td>Calculável após acordo com SENATRAN</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>Cadastro de frota + fatores de emissão + AVL</td>
+<td>Calculável, com denominador problemático</td>
+</tr>
+<tr class="even">
+<td>M</td>
+<td>Cadastro tarifário + Censo 2022 + dados contratuais</td>
+<td>Calculável hoje</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Esta tabela é resumo por subíndice e é insuficiente para o cálculo.</strong> A origem de cada variável de cada métrica, com classificação de viabilidade em cinco classes, está no <strong><a href="./IQTPC_Anexo_I_matriz_origem_dados.html">Anexo I</a></strong>. Três conclusões daquele anexo: sete das nove métricas calculáveis hoje dependem do GTFS ou do cadastro de frota validado; quatro métricas em três subíndices, além das agregações por passageiros-quilômetro, dependem de inferência de desembarque, que precisa ser método padronizado do PNDTPC; e o bloco C e S, que soma 0,40 do fator D, depende de registros que hoje não existem em forma padronizada.</p>
+<p>Na analogia com a educação: <strong>a plataforma nacional de dados do TPC faz o papel do Censo Escolar; o SAEB da mobilidade não existe.</strong></p>
+<p>Sem ele, o subíndice P (peso 0,17) não é calculável de forma comparável. Como o art. 31, V, e o art. 14, VII, tornam a satisfação do passageiro item obrigatório, essa lacuna não é apenas metodológica, é de conformidade legal.</p>
+<p>O desenho da pesquisa, seu custo e sua articulação com a PeMOB estão no <a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II</a> e no <a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html">Anexo III</a>. A denominação adotada é <strong>PeMOB Usuário</strong>, e o cenário recomendado é o mínimo viável (<a href="./IQTPC_Anexo_II_pesquisa_nacional.html#escada-de-cenários">Anexo II, seção 12.6</a>), com migração progressiva conforme disponibilidade orçamentária.</p>
+<hr>
+</section>
+<section id="sequenciamento-de-implantação" class="level2">
+<h2 class="anchored" data-anchor-id="sequenciamento-de-implantação">12. Sequenciamento de implantação</h2>
+<p>O calendário é dado pelo art. 44: a Lei entra em vigor em <strong>14 de junho de 2027</strong>. Isso define uma janela de preparação até lá.</p>
+<section id="fase-0-até-junho-de-2027-base-normativa-e-infraestrutura" class="level3">
+<h3 class="anchored" data-anchor-id="fase-0-até-junho-de-2027-base-normativa-e-infraestrutura">Fase 0, até junho de 2027: base normativa e infraestrutura</h3>
+<ul>
+<li>Edição do ato do Poder Executivo federal com os parâmetros de referência (art. 12).</li>
+<li>Edição das normas de referência nacionais de qualidade e produtividade (art. 16, IX, da Lei nº 12.587/2012), incluindo a tabela de valores de piso e referência.</li>
+<li>Definição da metodologia e periodicidade de fornecimento de dados ao Simu (art. 13), com dicionário de dados publicado.</li>
+<li>Estruturação da infraestrutura de ingestão e processamento automatizado de dados operacionais.</li>
+<li><strong>Publicação do dicionário de dados de cadastro de frota com identificação individual</strong> (placa, chassi, data do primeiro emplacamento, tipologia, motorização, acessibilidade), condição necessária para os subíndices V e E.</li>
+<li><strong>Acordo de cooperação com o SENATRAN</strong> para cruzamento e validação do cadastro de frota, com tratamento adequado sob a LGPD.</li>
+<li><strong>Especificação técnica do método padronizado de inferência de desembarque</strong> e do esquema mínimo de dados de bilhetagem e AVL, como entregável do PNDTPC (<a href="./IQTPC_Manual_de_calculo.html#pré-requisitos-de-implantação">Manual, seção 12</a>).</li>
+<li>Definição dos quatro registros a criar no módulo cadastral: interrupções, sinistros com vítima, ocorrências de segurança pessoal e infraestrutura de pontos e terminais.</li>
+<li>Consulta pública sobre a metodologia do IQTPC, precedida de análise de impacto regulatório e de revisão cruzada com as Secretarias de Saneamento e Habitação.</li>
+<li>Cláusula de transição no decreto, no modelo do Decreto nº 11.599/2023: as condicionantes só se tornam exigíveis após a publicação das normas de referência e dos prazos de adequação, o que torna eventual atraso desta fase sobrevivível (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#a-arquitetura-jurídica-é-quase-idêntica">Anexo IV, 2.1</a>).</li>
+</ul>
+</section>
+<section id="fase-1-2027-a-2028-piloto-com-sistemas-aptos" class="level3">
+<h3 class="anchored" data-anchor-id="fase-1-2027-a-2028-piloto-com-sistemas-aptos">Fase 1, 2027 a 2028: piloto com sistemas aptos</h3>
+<ul>
+<li>Cálculo do <strong>IQTPC-Objetivo</strong> (sem P) apenas para sistemas com GTFS e GTFS-RT publicados.</li>
+<li>Divulgação identificada como piloto, sem ranqueamento e sem consequência financeira, precedida de versão preliminar ao titular com 30 dias para manifestação (<a href="./IQTPC_Manual_de_calculo.html#período-de-referência-periodicidade-e-publicação">Manual, seção 9</a>).</li>
+<li>Publicação simultânea do IQTPC-Equidade.</li>
+<li>Ativação do gate do art. 21 (envio de dados como condição para contratação de projetos com recursos federais).</li>
+</ul>
+</section>
+<section id="fase-2-2028-a-2030-universalização-progressiva" class="level3">
+<h3 class="anchored" data-anchor-id="fase-2-2028-a-2030-universalização-progressiva">Fase 2, 2028 a 2030: universalização progressiva</h3>
+<ul>
+<li>IQTPC-Simplificado (cobertura de traçado, frota e modicidade) para sistemas sem dados operacionais automatizados, a partir de cadastro verificável (<a href="./IQTPC_Manual_de_calculo.html#iqtpc-simplificado">Manual, seção 8.3</a>).</li>
+<li>Vedação expressa de comparação entre versões completa e simplificada.</li>
+<li>Primeiro ciclo da PeMOB Usuário em 2029 (anos ímpares, fora de eleição municipal), no cenário mínimo viável, após piloto em 2027.</li>
+<li>Incorporação do IQTPC-Operador em editais e contratos novos ou renovados (art. 31, §§ 2º e 3º).</li>
+</ul>
+</section>
+<section id="fase-3-a-partir-de-2030-metas-e-consequência" class="level3">
+<h3 class="anchored" data-anchor-id="fase-3-a-partir-de-2030-metas-e-consequência">Fase 3, a partir de 2030: metas e consequência</h3>
+<ul>
+<li>Incorporação do subíndice P ao cálculo a partir da divulgação do primeiro ciclo (2030), nos sistemas pesquisados, com peso conforme o cenário de coleta.</li>
+<li>Definição de metas individualizadas por sistema, com trajetória própria e âncora nacional derivada dos valores de referência da norma (método a definir, seção 14).</li>
+<li>Vinculação a eventual apoio federal ao custeio, condicionada à lei específica exigida pelo art. 28.</li>
+</ul>
+</section>
+<section id="princípio-de-sequenciamento" class="level3">
+<h3 class="anchored" data-anchor-id="princípio-de-sequenciamento">Princípio de sequenciamento</h3>
+<blockquote class="blockquote">
+<p><strong>O índice é derivado da infraestrutura de dados, não o contrário.</strong> O Censo Escolar levou anos até se tornar base confiável; o SIM e o SINASC, décadas. Publicar índice composto antes de o dado ser auditável é o caminho mais curto para o destino do IDSUS.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="quadro-comparativo-com-outros-índices-setoriais" class="level2">
+<h2 class="anchored" data-anchor-id="quadro-comparativo-com-outros-índices-setoriais">13. Quadro comparativo com outros índices setoriais</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Atributo</th>
+<th>IDEB</th>
+<th>IDSUS</th>
+<th>Previne Brasil</th>
+<th>IDSS (ANS)</th>
+<th><strong>IQTPC (proposto)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Setor</td>
+<td>Educação</td>
+<td>Saúde</td>
+<td>Atenção primária</td>
+<td>Saúde suplementar</td>
+<td>Mobilidade urbana</td>
+</tr>
+<tr class="even">
+<td>Unidade avaliada</td>
+<td>Escola / rede</td>
+<td>Município</td>
+<td>Município</td>
+<td>Operadora</td>
+<td>Sistema (titular) e operador</td>
+</tr>
+<tr class="odd">
+<td>Nº de indicadores</td>
+<td>2 fatores</td>
+<td>24</td>
+<td>7</td>
+<td>4 dimensões</td>
+<td>1 fator + 7 subíndices</td>
+</tr>
+<tr class="even">
+<td>Forma de agregação</td>
+<td>Multiplicativa</td>
+<td>Ponderação complexa</td>
+<td>Soma ponderada</td>
+<td>Ponderação por dimensão</td>
+<td>Multiplicativa + média geométrica</td>
+</tr>
+<tr class="odd">
+<td>Escala</td>
+<td>0 a 10</td>
+<td>0 a 10</td>
+<td>0 a 10</td>
+<td>0 a 1</td>
+<td>0 a 10</td>
+</tr>
+<tr class="even">
+<td>Fonte externa independente</td>
+<td>Sim (SAEB)</td>
+<td>Não</td>
+<td>Não</td>
+<td>Parcial</td>
+<td>Prevista (a construir)</td>
+</tr>
+<tr class="odd">
+<td>Consequência financeira</td>
+<td>Indireta</td>
+<td>Nenhuma</td>
+<td>Direta</td>
+<td>Indireta</td>
+<td>Prevista em lei (arts. 21 e 28)</td>
+</tr>
+<tr class="even">
+<td>Base legal específica do índice</td>
+<td>Decreto</td>
+<td>Portaria</td>
+<td>Portaria</td>
+<td>Resolução normativa</td>
+<td>Lei nº 15.432/2026, arts. 12 e 31</td>
+</tr>
+<tr class="odd">
+<td>Sobrevivência institucional</td>
+<td>Alta</td>
+<td>Nula</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>A construir</td>
+</tr>
+</tbody>
+</table>
+<p>Leitura: o IQTPC nasce com a <strong>melhor ancoragem legal</strong> de todos os índices comparados, porque suas dimensões e suas consequências estão em lei ordinária, e não apenas em ato infralegal. Nasce com a <strong>pior situação de dados</strong>, porque não dispõe de fonte externa independente equivalente ao SAEB. As duas assimetrias definem a estratégia: aproveitar a força normativa para construir a infraestrutura de dados, e não antecipar a divulgação com consequência antes que o dado sustente.</p>
+<hr>
+</section>
+<section id="questões-em-aberto-e-plano-de-enfrentamento" class="level2">
+<h2 class="anchored" data-anchor-id="questões-em-aberto-e-plano-de-enfrentamento">14. Questões em aberto e plano de enfrentamento</h2>
+<p>Nenhuma das questões abaixo impede a consulta pública sobre a arquitetura. Várias impedem o decreto, o dicionário de dados ou o piloto, e a coluna de etapa indica quando cada uma precisa estar resolvida.</p>
+<section id="antes-da-consulta-pública" class="level3">
+<h3 class="anchored" data-anchor-id="antes-da-consulta-pública">14.1 Antes da consulta pública</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Natureza</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tabelas de valores de referência por modo</td>
+<td>Produto técnico</td>
+<td>Os parâmetros indicativos foram desenhados para ônibus. A regra (valores por modo; cálculo por modo em sistemas multimodais, agregado por passageiros-quilômetro) está no Manual, seções <a href="./IQTPC_Manual_de_calculo.html#valores-de-referência-por-modo">4.5</a> e <a href="./IQTPC_Manual_de_calculo.html#período-de-referência-periodicidade-e-publicação">9</a>, com fundamento no art. 6º, XXI. Faltam as tabelas, uma métrica de segurança operacional para sistemas segregados (colisões, descarrilamentos, incidentes em plataforma) e o registro de modo por linha no cadastro</td>
+</tr>
+<tr class="even">
+<td>Fichas técnicas das 27 métricas restantes e do bloco P</td>
+<td>Produto técnico</td>
+<td>Modelo e três fichas no <a href="./IQTPC_Anexo_I_matriz_origem_dados.html">Anexo I</a>. Sem elas, a primeira pergunta da consulta será “de onde vem esse número”</td>
+</tr>
+<tr class="odd">
+<td>Teto de métricas</td>
+<td>Decisão</td>
+<td>O instrumento tem 29 métricas objetivas em três níveis de ponderação. Sugere-se teto de 25, aplicado após o piloto pela regra de permanência (14.6). Candidatos a fusão: pontualidade e regularidade de intervalo em C; emissões locais e de GEE em E</td>
+</tr>
+<tr class="even">
+<td>Relação com o GT da Portaria MCID nº 536/2015</td>
+<td>Produto técnico</td>
+<td>Antecedente direto, com 12 indicadores de efetividade da PNMU. Explicitar o que o IQTPC absorve e o que descarta (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#verificação-existe-índice-composto-em-alguma-política-do-mcid">Anexo IV, 3.6</a>)</td>
+</tr>
+<tr class="odd">
+<td>Alocação do atendimento a manifestações</td>
+<td>Decisão</td>
+<td>Em F, pela conveniência (art. 31, IV); na cortesia (art. 3º, IV); ou em dimensão própria de relação com o usuário</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="antes-do-decreto" class="level3">
+<h3 class="anchored" data-anchor-id="antes-do-decreto">14.2 Antes do decreto</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Natureza</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Veículo normativo</td>
+<td>Decisão</td>
+<td>Decreto do art. 12 e portaria de metodologia, ou instrumento único. A separação é preferível pela estabilidade do primeiro e flexibilidade da segunda</td>
+</tr>
+<tr class="even">
+<td>Quem publica o número composto</td>
+<td>Decisão</td>
+<td>Nenhuma política do MCID publica índice composto (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#verificação-existe-índice-composto-em-alguma-política-do-mcid">Anexo IV, 3.6</a>). Opções: a SEMOB publica o composto (modelo IDEB, efeito reputacional máximo e custo político de ranquear municípios); a SEMOB publica os subíndices e terceiro compõe (modelo saneamento, blindagem política e perda de controle sobre o número que vira manchete); híbrido, com composto por faixas sem ranking ordinal. O híbrido é o mais aderente ao padrão do ministério e ao art. 28, III, que exige metas fixadas pela União</td>
+</tr>
+<tr class="odd">
+<td>Governança do índice</td>
+<td>Matéria de decreto</td>
+<td>Não há agência reguladora nacional no TPC. Propõe-se comitê técnico permanente com o órgão gestor federal, instituição de estatística e representação dos titulares; competência para decidir contestações, com decisão fundamentada e registro público; análise de impacto regulatório e consulta pública prévia a cada revisão de método. O calendário de revisão e a etapa de versão preliminar já estão no <a href="./IQTPC_Manual_de_calculo.html#período-de-referência-periodicidade-e-publicação">Manual, seção 9</a></td>
+</tr>
+<tr class="even">
+<td>Desenho completo do IQTPC-Operador</td>
+<td>Produto técnico</td>
+<td>Documento próprio, a partir da tabela de governabilidade da seção 4</td>
+</tr>
+<tr class="odd">
+<td>Veículo da graduação de sanções por dado falsificado</td>
+<td>Decisão</td>
+<td>A regra está na seção 10. Definir se cabe no decreto ou na portaria e articular com o certificado de adimplência (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#o-certificado-de-adimplência-do-sinisa">Anexo IV, 2.2</a>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="antes-do-dicionário-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="antes-do-dicionário-de-dados">14.3 Antes do dicionário de dados</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Natureza</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Esquema mínimo de dados de bilhetagem e AVL</td>
+<td>Produto técnico</td>
+<td>Não há padrão nacional, e cada fornecedor tem formato próprio. Documento técnico do PNDTPC, incorporado ou remetido pela norma de referência. É o item de maior efeito estruturante sobre a viabilidade do índice</td>
+</tr>
+<tr class="even">
+<td>Método padronizado de inferência de desembarque</td>
+<td>Produto técnico</td>
+<td>Pré-requisito de F-01, E-03, E-04, da versão madura de S-01 e de toda agregação por passageiros-quilômetro. Especificação com base em encadeamento de viagens por cartão</td>
+</tr>
+<tr class="odd">
+<td>Protocolo de proteção de dados para a bilhetagem</td>
+<td>Produto técnico</td>
+<td>Bilhetagem é dado pessoal em larga escala. Envio à plataforma apenas de dados agregados por viagem e trecho, com anonimização na origem, e parecer prévio da Autoridade Nacional de Proteção de Dados</td>
+</tr>
+<tr class="even">
+<td>Definições operacionais</td>
+<td>Produto técnico</td>
+<td>Viagem e passageiro, gratuidades, interrupção, frota operante e reserva, idade do veículo, terminal, ocorrência de segurança pessoal, sistema e serviço complementar (<a href="./IQTPC_Manual_de_calculo.html#definições-pendentes-do-dicionário-de-dados">Manual, seção 13</a>)</td>
+</tr>
+<tr class="odd">
+<td>Critério de enquadramento de serviço complementar</td>
+<td>Decisão</td>
+<td>Necessário para aplicar a faixa própria de ociosidade (6.4.1) sem abrir espaço a uso oportunista</td>
+</tr>
+<tr class="even">
+<td>Fronteira formal entre PNDTPC e SIMU</td>
+<td>Decisão</td>
+<td>O PNDTPC tem módulo automatizado e módulo cadastral (<a href="./IQTPC_Manual_de_calculo.html#origem-dos-dados-as-quatro-fontes">Manual, seção 3</a>); falta a fronteira formal no ato normativo</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="antes-do-piloto" class="level3">
+<h3 class="anchored" data-anchor-id="antes-do-piloto">14.4 Antes do piloto</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Natureza</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Custo da infraestrutura de dados</td>
+<td>Estimativa</td>
+<td>Ingestão de GTFS-RT e AVL, integração com SENATRAN e DATASUS, padronização de bilhetagem, plataforma de cálculo e publicação, apoio técnico aos entes. Provavelmente maior que o custo da pesquisa. Separar custo federal de custo do ente e verificar reúso de componentes do SINISA (<a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html#ganhos-transversais-de-integração">Anexo IV, 6.3</a>)</td>
+</tr>
+<tr class="even">
+<td>Cobertura temporal do fator A</td>
+<td>Método</td>
+<td>A cobertura é medida no pico e é cega ao horário. Testar segundo termo em A, ou componente em F, de cobertura noturna e de fim de semana, com limiar próprio (art. 4º, III)</td>
+</tr>
+<tr class="odd">
+<td>Método de definição de metas</td>
+<td>Método</td>
+<td>Meta nacional derivada dos valores de referência da norma e trajetórias individuais por convergência gradual, estratificadas por porte e modo, no modelo do IDEB</td>
+</tr>
+<tr class="even">
+<td>Territorialização de C, F e V para o IQTPC-Equidade</td>
+<td>Método</td>
+<td>A e F-03 são territorializáveis por construção; C e V exigem vincular linhas a territórios, ponderando por embarques por ponto. Enquanto não existir, o IQTPC-Equidade é calculado sobre A e os componentes territorializáveis de F, com declaração da limitação</td>
+</tr>
+<tr class="odd">
+<td>Transporte de caráter urbano intermunicipal e interestadual</td>
+<td>Decisão</td>
+<td>O art. 1º, parágrafo único, estende a aplicação da Lei, mas titularidades e recortes territoriais diferem (art. 8º, II e III)</td>
+</tr>
+<tr class="even">
+<td>Serviços acessórios e sob demanda</td>
+<td>Decisão</td>
+<td>Art. 6º, IV, “c”, e art. 30, §2º. Inclinação por incluí-los em A com ponderação distinta; exigem tratamento próprio ou exclusão explícita em C (não há viagem programada), F (ocupação não se aplica) e V</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="após-o-piloto" class="level3">
+<h3 class="anchored" data-anchor-id="após-o-piloto">14.5 Após o piloto</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Faixas de ocupação e fatores de assimetria</td>
+<td>Calibrar sobre a distribuição empírica, por porte e modo. É a decisão de maior impacto prático sobre o comportamento dos sistemas</td>
+</tr>
+<tr class="even">
+<td>Referências de idade de frota</td>
+<td>Confrontar os valores indicativos (5, 7 e 10 anos) com a distribuição real e com os limites regulamentares locais</td>
+</tr>
+<tr class="odd">
+<td>Expoente α</td>
+<td>Reduzir se a distribuição de A mostrar que a cobertura suprime o sinal de qualidade (5.3.1)</td>
+</tr>
+<tr class="even">
+<td>Piso 1,0 versus 0,5</td>
+<td>Testar por simulação</td>
+</tr>
+<tr class="odd">
+<td>Dupla contagem entre V e E</td>
+<td>Se a elasticidade do índice à renovação de frota for excessiva, reduzir o peso interno da idade em V, e não o de eletrificação em E</td>
+</tr>
+<tr class="even">
+<td>Peso de P no cenário mínimo viável</td>
+<td>Fixar o valor na faixa de 0,08 a 0,10 (<a href="./IQTPC_Manual_de_calculo.html#iqtpc-completo-com-p-em-peso-reduzido">Manual, seção 7.2</a>)</td>
+</tr>
+<tr class="odd">
+<td>Pesos do fator D e pesos internos</td>
+<td>Consulta pública e painel de especialistas com método estruturado de elicitação</td>
+</tr>
+<tr class="even">
+<td>Aplicação da regra de permanência</td>
+<td>Ver 14.6</td>
+</tr>
+</tbody>
+</table>
+<p>Acompanhamento contínuo: o veto ao art. 22 e ao parágrafo único do art. 23 afeta o desenho de financiamento; acompanhar eventual apreciação legislativa da Mensagem nº 529/2026.</p>
+</section>
+<section id="regra-de-permanência-das-métricas" class="level3">
+<h3 class="anchored" data-anchor-id="regra-de-permanência-das-métricas">14.6 Regra de permanência das métricas</h3>
+<p>Cada métrica precisa provar três coisas para permanecer no índice, na calibração após o piloto e em toda revisão quadrienal:</p>
+<ol type="1">
+<li><strong>Fonte viável</strong> nos próximos três anos (classes V1 a V4 do <a href="./IQTPC_Anexo_I_matriz_origem_dados.html">Anexo I</a>).</li>
+<li><strong>Poder discriminante</strong>: uma métrica em que todos os sistemas pontuam igual não serve.</li>
+<li><strong>Não redundância</strong> com outra métrica do mesmo subíndice.</li>
+</ol>
+<p>Métrica que falhe em qualquer dos três sai do índice e passa ao painel diagnóstico. O objetivo não é simplicidade por si. É que o instrumento seja compreensível por quem vai ser avaliado por ele, o que é condição de legitimidade, e calculável com o dado que existirá, o que é condição de existência.</p>
+</section>
+<section id="pontos-de-atenção" class="level3">
+<h3 class="anchored" data-anchor-id="pontos-de-atenção">14.7 Pontos de atenção</h3>
+<ul>
+<li><strong>Fator A e serviço suspenso.</strong> A é calculado sobre GTFS programado; linha suspensa por meses continua contando como cobertura. C-03 captura parcialmente. Avaliar, no piloto, o cálculo de A sobre oferta realizada.</li>
+<li><strong>Recorte de gênero além da segurança.</strong> S-01 e S-02 são desagregados por gênero, mas padrões de viagem (mobilidade do cuidado, viagens encadeadas, fora de pico) não são considerados em A nem em F. Candidato a indicador satélite alimentado pela PeMOB Usuário.</li>
+<li><strong>Contratos anteriores à Lei (art. 31, §3º).</strong> O titular envia dados mesmo sobre operadores sob contrato antigo, mas esses operadores não têm obrigação contratual de produzi-los. Pode haver lacuna de dado por vários anos em sistemas relevantes, e a regra do <a href="./IQTPC_Manual_de_calculo.html#ausência-de-subíndice-por-falta-de-dado">Manual, seção 7.4</a>, implica que esses sistemas ficam sem índice.</li>
+<li><strong>Interface com o PlanMob.</strong> O índice deve alimentar a revisão dos planos (art. 9º da Lei nº 15.432/2026 e art. 24 da PNMU). A articulação precisa constar da norma de referência.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="referências-normativas" class="level2">
+<h2 class="anchored" data-anchor-id="referências-normativas">Referências normativas</h2>
+<ul>
+<li>Constituição Federal, arts. 6º, 21, XII e XX, 22, XI, 175 e 241</li>
+<li>Lei nº 15.432, de 13 de junho de 2026 (Marco Legal do Transporte Público Coletivo Urbano)</li>
+<li>Lei nº 12.587, de 3 de janeiro de 2012 (Política Nacional de Mobilidade Urbana), com as alterações do art. 38 da Lei nº 15.432/2026</li>
+<li>Lei nº 10.257, de 10 de julho de 2001 (Estatuto da Cidade), com as alterações do art. 39 da Lei nº 15.432/2026</li>
+<li>Lei nº 8.987, de 13 de fevereiro de 1995, art. 6º (serviço adequado)</li>
+<li>Lei nº 13.460, de 26 de junho de 2017 (defesa do usuário de serviços públicos)</li>
+<li>Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação)</li>
+<li>Lei nº 13.089, de 12 de janeiro de 2015 (Estatuto da Metrópole)</li>
+<li>Lei nº 13.709, de 14 de agosto de 2018 (LGPD)</li>
+<li>Mensagem de veto nº 529, de 2026</li>
+</ul>
+<hr>
+<p><em>Proposta técnica da CGDI/DEREG/SEMOB/MCID. Pesos, pisos e valores de referência são indicativos até sua fixação por portaria, após consulta pública e calibração no piloto.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="IQTPC, Índice de Qualidade do Transporte Público Coletivo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">IQTPC, Índice de Qualidade do Transporte Público Coletivo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./IQTPC_Manual_de_calculo.html" class="pagination-link" aria-label="Manual de cálculo do IQTPC">
+        <span class="nav-page-text"><span class="chapter-title">Manual de cálculo do IQTPC</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>CGDI/DEREG/SEMOB/MCID</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Proposta técnica, setembro de 2026</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

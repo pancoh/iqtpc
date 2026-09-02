@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Anexo III, Arquitetura de coleta e desidratação da PeMOB – IQTPC, Índice de Qualidade do Transporte Público Coletivo</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html" rel="next">
+<link href="./IQTPC_Anexo_II_pesquisa_nacional.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8a84cfd26a81cac07cced63adb3cfe4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IQTPC, Índice de Qualidade do Transporte Público Coletivo</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IQTPC, Índice de Qualidade do Transporte Público Coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_parametros_qualidade_transporte_publico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Parâmetros nacionais de qualidade do transporte público coletivo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Manual_de_calculo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manual de cálculo do IQTPC</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_I_matriz_origem_dados.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo I, Matriz de origem dos dados por métrica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_II_pesquisa_nacional.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_III_arquitetura_coleta_pemob.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#divisão-de-trabalho-entre-pndtpc-simu-pemob-municipal-pemob-metropolitana-e-pemob-usuário" id="toc-divisão-de-trabalho-entre-pndtpc-simu-pemob-municipal-pemob-metropolitana-e-pemob-usuário" class="nav-link active" data-scroll-target="#divisão-de-trabalho-entre-pndtpc-simu-pemob-municipal-pemob-metropolitana-e-pemob-usuário">Divisão de trabalho entre PNDTPC, SIMU, PeMOB Municipal, PeMOB Metropolitana e PeMOB Usuário</a></li>
+  <li><a href="#sumário" id="toc-sumário" class="nav-link" data-scroll-target="#sumário">Sumário</a></li>
+  <li><a href="#o-que-a-pemob-é-hoje" id="toc-o-que-a-pemob-é-hoje" class="nav-link" data-scroll-target="#o-que-a-pemob-é-hoje">1. O que a PeMOB é hoje</a></li>
+  <li><a href="#o-princípio-não-perguntar-o-que-a-plataforma-calcula" id="toc-o-princípio-não-perguntar-o-que-a-plataforma-calcula" class="nav-link" data-scroll-target="#o-princípio-não-perguntar-o-que-a-plataforma-calcula">2. O princípio: não perguntar o que a plataforma calcula</a></li>
+  <li><a href="#critério-de-triagem-das-perguntas" id="toc-critério-de-triagem-das-perguntas" class="nav-link" data-scroll-target="#critério-de-triagem-das-perguntas">3. Critério de triagem das perguntas</a></li>
+  <li><a href="#aplicação-aos-temas-da-pemob" id="toc-aplicação-aos-temas-da-pemob" class="nav-link" data-scroll-target="#aplicação-aos-temas-da-pemob">4. Aplicação aos temas da PeMOB</a>
+  <ul>
+  <li><a href="#transporte-público-coletivo" id="toc-transporte-público-coletivo" class="nav-link" data-scroll-target="#transporte-público-coletivo">Transporte público coletivo</a></li>
+  <li><a href="#tarifas" id="toc-tarifas" class="nav-link" data-scroll-target="#tarifas">Tarifas</a></li>
+  <li><a href="#planejamento" id="toc-planejamento" class="nav-link" data-scroll-target="#planejamento">Planejamento</a></li>
+  <li><a href="#segurança-viária" id="toc-segurança-viária" class="nav-link" data-scroll-target="#segurança-viária">Segurança viária</a></li>
+  <li><a href="#fiscalização" id="toc-fiscalização" class="nav-link" data-scroll-target="#fiscalização">Fiscalização</a></li>
+  <li><a href="#financiamento" id="toc-financiamento" class="nav-link" data-scroll-target="#financiamento">Financiamento</a></li>
+  <li><a href="#infraestrutura" id="toc-infraestrutura" class="nav-link" data-scroll-target="#infraestrutura">Infraestrutura</a></li>
+  </ul></li>
+  <li><a href="#o-irredutível-o-que-sobra-na-pemob" id="toc-o-irredutível-o-que-sobra-na-pemob" class="nav-link" data-scroll-target="#o-irredutível-o-que-sobra-na-pemob">5. O irredutível: o que sobra na PeMOB</a></li>
+  <li><a href="#a-assimetria-por-porte" id="toc-a-assimetria-por-porte" class="nav-link" data-scroll-target="#a-assimetria-por-porte">6. A assimetria por porte</a></li>
+  <li><a href="#efeitos-colaterais-positivos" id="toc-efeitos-colaterais-positivos" class="nav-link" data-scroll-target="#efeitos-colaterais-positivos">7. Efeitos colaterais positivos</a></li>
+  <li><a href="#a-família-pemob" id="toc-a-família-pemob" class="nav-link" data-scroll-target="#a-família-pemob">8. A família PeMOB</a></li>
+  <li><a href="#cronograma-de-desidratação" id="toc-cronograma-de-desidratação" class="nav-link" data-scroll-target="#cronograma-de-desidratação">9. Cronograma de desidratação</a></li>
+  <li><a href="#riscos" id="toc-riscos" class="nav-link" data-scroll-target="#riscos">10. Riscos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Anexo III, Arquitetura de coleta e desidratação da PeMOB</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="divisão-de-trabalho-entre-pndtpc-simu-pemob-municipal-pemob-metropolitana-e-pemob-usuário" class="level2">
+<h2 class="anchored" data-anchor-id="divisão-de-trabalho-entre-pndtpc-simu-pemob-municipal-pemob-metropolitana-e-pemob-usuário">Divisão de trabalho entre PNDTPC, SIMU, PeMOB Municipal, PeMOB Metropolitana e PeMOB Usuário</h2>
+<p><strong>Documento principal:</strong> Parâmetros nacionais de qualidade do transporte público coletivo <strong>Natureza:</strong> proposta técnica de arquitetura de coleta</p>
+<hr>
+</section>
+<section id="sumário" class="level2">
+<h2 class="anchored" data-anchor-id="sumário">Sumário</h2>
+<ol type="1">
+<li><a href="#o-que-a-pemob-é-hoje">O que a PeMOB é hoje</a></li>
+<li><a href="#o-princípio-não-perguntar-o-que-a-plataforma-calcula">O princípio: não perguntar o que a plataforma calcula</a></li>
+<li><a href="#critério-de-triagem-das-perguntas">Critério de triagem das perguntas</a></li>
+<li><a href="#aplicação-aos-temas-da-pemob">Aplicação aos temas da PeMOB</a></li>
+<li><a href="#o-irredutível-o-que-sobra-na-pemob">O irredutível: o que sobra na PeMOB</a></li>
+<li><a href="#a-assimetria-por-porte">A assimetria por porte</a></li>
+<li><a href="#efeitos-colaterais-positivos">Efeitos colaterais positivos</a></li>
+<li><a href="#a-família-pemob">A família PeMOB</a></li>
+<li><a href="#cronograma-de-desidratação">Cronograma de desidratação</a></li>
+<li><a href="#riscos">Riscos</a></li>
+</ol>
+<hr>
+</section>
+<section id="o-que-a-pemob-é-hoje" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-pemob-é-hoje">1. O que a PeMOB é hoje</h2>
+<p>A PeMOB é o instrumento existente mais próximo daquilo que o IQTPC exige, dentro da própria SEMOB, e o desenho da coleta parte dela.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Atributo</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Início</td>
+<td>2018 (Municipal); 2019 (Metropolitana)</td>
+</tr>
+<tr class="even">
+<td>Periodicidade</td>
+<td>Anual</td>
+</tr>
+<tr class="odd">
+<td>Universo Municipal</td>
+<td>Municípios acima de 250 mil habitantes, recorte herdado do Grupo 2 do Programa Avançar Cidades</td>
+</tr>
+<tr class="even">
+<td>Universo Metropolitano</td>
+<td>Governos estaduais e operadores federais de transporte metropolitano</td>
+</tr>
+<tr class="odd">
+<td>Temas</td>
+<td>Transporte público coletivo, tarifas, planejamento, segurança viária, fiscalização, financiamento e infraestrutura</td>
+</tr>
+<tr class="even">
+<td>Natureza</td>
+<td>Declaratória, sob responsabilidade das prefeituras</td>
+</tr>
+<tr class="odd">
+<td>Adesão</td>
+<td>Voluntária</td>
+</tr>
+<tr class="even">
+<td>Taxa de resposta</td>
+<td>67 de 116 municípios em 2023, cerca de 58%</td>
+</tr>
+<tr class="odd">
+<td>Origem do questionário</td>
+<td>Formulário do GT instituído pela Portaria MCID nº 263/2013</td>
+</tr>
+<tr class="even">
+<td>Destinação</td>
+<td>Alimenta o SIMU</td>
+</tr>
+</tbody>
+</table>
+<p>Cinco observações relevantes para o desenho:</p>
+<ol type="1">
+<li><strong>A série de oito edições é um ativo subaproveitado.</strong> Qualquer componente do IQTPC que possa ser retrocalculado com base PeMOB nasce com série histórica, em vez de esperar dois ciclos para ter comparação. Isso altera favoravelmente o cronograma da Fase 1.</li>
+<li><strong>O recorte de 250 mil habitantes não é escolha metodológica</strong>, é herança de um programa de financiamento. Com o art. 13 da Lei nº 15.432/2026, o universo passa a ser o conjunto dos titulares que prestam o serviço, e o recorte perde fundamento.</li>
+<li><strong>O questionário tem origem em 2013</strong>, anterior ao Marco Legal. Sua revisão para refletir o art. 31 é necessária de todo modo, o que torna esta a janela natural para a reforma proposta neste anexo.</li>
+<li><strong>A PeMOB Metropolitana já acomoda a titularidade estadual</strong> desde 2019, junto a governos estaduais e a operadores como CBTU, Trensurb e ANTT. O desenho da PeMOB Usuário (<a href="./IQTPC_Anexo_II_pesquisa_nacional.html#unidade-de-análise-o-sistema-não-o-município">Anexo II, seção 3</a>) reaproveita essa solução em vez de criar outra.</li>
+<li><strong>A PeMOB é o embrião do Cadastro Nacional de Sistemas de TPC</strong> para o topo do universo, com série anual desde 2018 e base publicada no SIMU. O cadastro proposto no <a href="./IQTPC_Anexo_II_pesquisa_nacional.html#primeiro-entregável-o-cadastro-do-universo">Anexo II, seção 2.2</a>, parte dela.</li>
+</ol>
+<hr>
+</section>
+<section id="o-princípio-não-perguntar-o-que-a-plataforma-calcula" class="level2">
+<h2 class="anchored" data-anchor-id="o-princípio-não-perguntar-o-que-a-plataforma-calcula">2. O princípio: não perguntar o que a plataforma calcula</h2>
+<p>A diretriz é direta e tem consequências amplas:</p>
+<blockquote class="blockquote">
+<p><strong>Nenhuma pergunta deve permanecer na PeMOB se a resposta puder ser calculada a partir de dado que a plataforma nacional já recebe.</strong></p>
+</blockquote>
+<p>Hoje a lógica está invertida. Pede-se ao município que <strong>agregue</strong> (quantos passageiros, quantos quilômetros, qual a frota, quanto de subsídio) e se recebe o resultado da agregação, sem o insumo. Isso produz três problemas simultâneos:</p>
+<ul>
+<li><strong>Custo de conformidade alto</strong>, jogado sobre o ente, que é justamente o que explica 58% de resposta.</li>
+<li><strong>Dado inauditável.</strong> Agregado declarado não tem verificação possível. Não há como saber se os 4.200 quilômetros de ciclovia foram medidos ou estimados.</li>
+<li><strong>Rigidez analítica.</strong> Agregado responde só à pergunta que foi feita. Dado bruto responde a perguntas futuras, inclusive as que ainda não foram formuladas.</li>
+</ul>
+<p>Com a plataforma, a lógica se inverte: <strong>o ente envia o dado uma vez e a União calcula os indicadores</strong>. O município deixa de ser produtor de estatística e volta a ser fonte de dado, que é o papel adequado.</p>
+<p>Isso não é apenas eficiência administrativa. É a diferença entre um sistema que mede o que o gestor diz e um sistema que mede o que o serviço faz.</p>
+<hr>
+</section>
+<section id="critério-de-triagem-das-perguntas" class="level2">
+<h2 class="anchored" data-anchor-id="critério-de-triagem-das-perguntas">3. Critério de triagem das perguntas</h2>
+<p>Cada item do questionário atual é submetido a uma triagem com cinco destinos possíveis. A pergunta permanece na PeMOB apenas se não couber em nenhum dos quatro primeiros.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Destino</th>
+<th>Critério</th>
+<th>Natureza do dado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>D1. PNDTPC</strong></td>
+<td>Existe registro digital gerado pela operação</td>
+<td>Alta frequência, automatizável (GTFS, GTFS-RT, AVL, bilhetagem)</td>
+</tr>
+<tr class="even">
+<td><strong>D2. Cadastro</strong></td>
+<td>É estrutural e muda por evento, não por ano</td>
+<td>Atualização por fato gerador, não por survey (contratos, frota, tarifa, entidade reguladora)</td>
+</tr>
+<tr class="odd">
+<td><strong>D3. Cruzamento externo</strong></td>
+<td>Já existe em outra base federal</td>
+<td>SENATRAN, DATASUS/SIM, IBGE, RAIS, sistemas de transferência da União</td>
+</tr>
+<tr class="even">
+<td><strong>D4. PeMOB Usuário</strong></td>
+<td>Refere-se à experiência ou percepção de pessoas</td>
+<td>Pesquisa amostral junto a usuários e não usuários</td>
+</tr>
+<tr class="odd">
+<td><strong>D5. PeMOB residual</strong></td>
+<td>Não tem registro digital, não é estrutural, não está em outra base e não é percepção do usuário</td>
+<td>Declaratório irredutível</td>
+</tr>
+</tbody>
+</table>
+<p>Aplicada com rigor, esta triagem tende a esvaziar a maior parte do questionário atual. Não é efeito colateral, é o objetivo.</p>
+<p>Regra prática de decisão: <strong>se a resposta puder ser conferida contra um registro, ela não é pergunta de survey; é dado a ser recebido.</strong></p>
+<hr>
+</section>
+<section id="aplicação-aos-temas-da-pemob" class="level2">
+<h2 class="anchored" data-anchor-id="aplicação-aos-temas-da-pemob">4. Aplicação aos temas da PeMOB</h2>
+<p>Exercício indicativo sobre os sete temas atuais, a ser refeito item a item sobre o questionário real.</p>
+<section id="transporte-público-coletivo" class="level3">
+<h3 class="anchored" data-anchor-id="transporte-público-coletivo">Transporte público coletivo</h3>
+<p>Frota, linhas, extensão da rede, viagens, quilometragem, passageiros transportados, gratuidades, integração. <strong>Praticamente tudo migra para D1 e D2.</strong> Frota migra para D2 com validação D3 no SENATRAN. Restam em D5 apenas decisões institucionais, como a existência de política de gratuidade além do mínimo legal e sua fonte de custeio.</p>
+</section>
+<section id="tarifas" class="level3">
+<h3 class="anchored" data-anchor-id="tarifas">Tarifas</h3>
+<p>Valor da tarifa, política tarifária, integração tarifária. <strong>Migra para D2</strong>, com atualização por evento (cada reajuste é um fato gerador, e perguntar anualmente o valor vigente é perder a série intra-anual). Restam em D5 os critérios de reajuste e o processo decisório.</p>
+</section>
+<section id="planejamento" class="level3">
+<h3 class="anchored" data-anchor-id="planejamento">Planejamento</h3>
+<p>Existência e vigência do PlanMob, conteúdo, revisão, participação social. <strong>É o núcleo de D5.</strong> Não há registro digital de que um plano foi discutido em audiência pública. Este tema tende a se tornar o maior bloco remanescente da PeMOB.</p>
+</section>
+<section id="segurança-viária" class="level3">
+<h3 class="anchored" data-anchor-id="segurança-viária">Segurança viária</h3>
+<p>Óbitos e lesões. <strong>Migra para D3</strong>, por cruzamento com DATASUS e bases de trânsito, e para o registro de sinistros do PNDTPC (<a href="./IQTPC_Manual_de_calculo.html#subíndice-s-segurança-peso-018-em-d">Manual, S-01</a>). Restam em D5 as ações e programas locais, que não têm registro nacional.</p>
+</section>
+<section id="fiscalização" class="level3">
+<h3 class="anchored" data-anchor-id="fiscalização">Fiscalização</h3>
+<p>Estrutura, efetivo, autuações. <strong>Parcialmente D2</strong> (existência e natureza da entidade reguladora designada, art. 10) e <strong>parcialmente D5</strong> (capacidade instalada, prática fiscalizatória).</p>
+</section>
+<section id="financiamento" class="level3">
+<h3 class="anchored" data-anchor-id="financiamento">Financiamento</h3>
+<p>Subsídio, fontes extratarifárias, receita contratual. <strong>D2 e D3.</strong> Transferências federais já constam de sistemas da União. Subsídio local com origem orçamentária identificável é dado estrutural, não survey. Resta em D5 a existência de fundo específico e sua governança.</p>
+</section>
+<section id="infraestrutura" class="level3">
+<h3 class="anchored" data-anchor-id="infraestrutura">Infraestrutura</h3>
+<p>Corredores, faixas exclusivas, terminais, ciclovias, acessibilidade de paradas. <strong>Migra para D1 e D2</strong>, idealmente como dado geoespacial, e não como quilometragem declarada. Esta é a migração de maior ganho de qualidade: 4.200 quilômetros declarados valem muito menos que a mesma rede em geometria verificável. O cadastro de infraestrutura de pontos e terminais é um dos quatro registros a criar no PNDTPC (<a href="./IQTPC_Manual_de_calculo.html#pré-requisitos-de-implantação">Manual, seção 12</a>).</p>
+<hr>
+</section>
+</section>
+<section id="o-irredutível-o-que-sobra-na-pemob" class="level2">
+<h2 class="anchored" data-anchor-id="o-irredutível-o-que-sobra-na-pemob">5. O irredutível: o que sobra na PeMOB</h2>
+<p>Após a triagem, a PeMOB residual concentra-se em quatro naturezas de informação, todas caracterizadas pela ausência de rastro digital:</p>
+<ol type="1">
+<li><strong>Governança e processo.</strong> Existência e vigência de plano, realização de audiência pública, funcionamento de conselho, forma de designação da entidade reguladora.</li>
+<li><strong>Intenção e projeto.</strong> Investimentos previstos, projetos em elaboração, metas assumidas, cronogramas de eletrificação.</li>
+<li><strong>Capacidade institucional.</strong> Existência de estrutura técnica dedicada, quadro de pessoal, ferramentas de planejamento em uso.</li>
+<li><strong>Contexto e justificativa.</strong> Explicação para descontinuidades e ocorrências excepcionais, que dão sentido a variações abruptas do dado automatizado.</li>
+</ol>
+<p>Esta última categoria merece atenção porque costuma ser esquecida: um sistema que sofreu paralisação prolongada apresentará queda no subíndice de confiabilidade, e <strong>a única fonte da explicação é o próprio titular</strong>. Sem um campo qualitativo, o índice registra o fato e perde a causa, o que empobrece a análise e aumenta a contestação.</p>
+<p>Ordem de grandeza pretendida: um questionário que possa ser respondido em menos de uma hora por um servidor com acesso às informações, contra o esforço atual de compilação distribuída por várias áreas da prefeitura.</p>
+<hr>
+</section>
+<section id="a-assimetria-por-porte" class="level2">
+<h2 class="anchored" data-anchor-id="a-assimetria-por-porte">6. A assimetria por porte</h2>
+<p>Esta é a principal ressalva ao desenho, e precisa estar explícita desde já.</p>
+<p><strong>A desidratação da PeMOB só funciona onde existe dado automatizado.</strong> Sistema sem GTFS, sem bilhetagem eletrônica e sem AVL não alimenta o PNDTPC, e para ele o destino D1 é inexistente. O resultado é perverso se não for antecipado: o município grande, que já tem sistemas, responde um questionário curto; o município pequeno, com menor capacidade técnica, continua respondendo o questionário longo.</p>
+<p>Três consequências de desenho:</p>
+<ol type="1">
+<li><strong>A PeMOB deve ter duas versões desde o início da transição</strong>: a residual, para sistemas integrados à plataforma, e a completa, para os demais. Isso reproduz a lógica do PLHIS Simplificado da habitação, mencionada no <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html">Anexo IV</a>, com o sinal invertido.</li>
+<li><strong>A migração de um sistema da versão completa para a residual deve ser explicitamente comemorada e comunicada.</strong> Ela sinaliza integração à plataforma, e transformar isso em marco reconhecível cria incentivo real.</li>
+<li><strong>O apoio técnico previsto no art. 20 da Lei nº 15.432/2026</strong> deve ser dirigido prioritariamente a viabilizar essa migração, notadamente à produção e publicação de GTFS, que é o insumo de menor custo e maior retorno.</li>
+</ol>
+<hr>
+</section>
+<section id="efeitos-colaterais-positivos" class="level2">
+<h2 class="anchored" data-anchor-id="efeitos-colaterais-positivos">7. Efeitos colaterais positivos</h2>
+<p><strong>Taxa de resposta.</strong> A combinação de questionário curto com obrigatoriedade decorrente dos arts. 13 e 21 ataca simultaneamente as duas causas do patamar de 58%: o custo de responder e a ausência de consequência por não responder. É razoável esperar convergência para os níveis observados no saneamento, onde a adimplência vinculada a recurso federal produz adesão elevada.</p>
+<p><strong>Auditabilidade.</strong> Dado bruto é conferível; agregado declarado não é. Isso viabiliza a aplicação da metodologia de certificação discutida no <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html">Anexo IV</a>, que não teria sobre o que operar em um universo de números autodeclarados.</p>
+<p><strong>Granularidade temporal.</strong> A PeMOB é anual porque survey é caro. Dado automatizado é contínuo. O IQTPC tem apuração contínua em seus componentes automatizados, com consolidação anual (<a href="./IQTPC_Manual_de_calculo.html#período-de-referência-periodicidade-e-publicação">Manual, seção 9</a>), o que muda a natureza do instrumento: de retrato para monitoramento.</p>
+<p><strong>Redução do risco de erro de preenchimento.</strong> Boa parte da inconsistência de bases declaratórias vem de interpretação divergente de definição, e não de má-fé. Dado bruto com dicionário único elimina a maior parte dessa classe de erro.</p>
+<p><strong>Liberação de capacidade da equipe.</strong> O esforço hoje dedicado a cobrar, validar e consistir respostas pode se deslocar para análise, que é onde o valor está.</p>
+<hr>
+</section>
+<section id="a-família-pemob" class="level2">
+<h2 class="anchored" data-anchor-id="a-família-pemob">8. A família PeMOB</h2>
+<p>A marca é preservada. Oito edições construíram reconhecimento institucional junto aos entes, e criar nomenclatura nova desperdiçaria esse capital e geraria confusão.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Respondente</th>
+<th>Natureza</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PeMOB Municipal</strong></td>
+<td>Titulares municipais</td>
+<td>Declaratório residual</td>
+<td>Existente, a desidratar</td>
+</tr>
+<tr class="even">
+<td><strong>PeMOB Metropolitana</strong></td>
+<td>Governos estaduais e operadores</td>
+<td>Declaratório residual</td>
+<td>Existente, a desidratar</td>
+</tr>
+<tr class="odd">
+<td><strong>PeMOB Usuário</strong></td>
+<td>Pessoas, usuárias e não usuárias</td>
+<td>Amostral probabilística</td>
+<td>A criar (<a href="./IQTPC_Anexo_II_pesquisa_nacional.html">Anexo II</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>A nomenclatura deixa evidente a divisão de trabalho: as duas primeiras perguntam ao poder público o que só ele sabe; a terceira pergunta às pessoas o que só elas sabem; e o PNDTPC mede o que ninguém precisa contar.</p>
+<hr>
+</section>
+<section id="cronograma-de-desidratação" class="level2">
+<h2 class="anchored" data-anchor-id="cronograma-de-desidratação">9. Cronograma de desidratação</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Edição</th>
+<th>Ação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PeMOB 2026</strong></td>
+<td>Ciclo normal. Em paralelo, triagem item a item do questionário segundo os cinco destinos, com registro da decisão por item</td>
+</tr>
+<tr class="even">
+<td><strong>PeMOB 2027</strong></td>
+<td>Primeira versão reduzida, com remoção dos itens já cobertos pela plataforma nos sistemas integrados. Ampliação do universo para além do recorte de 250 mil habitantes, conforme o art. 13. Duas versões, residual e completa</td>
+</tr>
+<tr class="odd">
+<td><strong>PeMOB 2028</strong></td>
+<td>Versão residual consolidada. Ano de eleição municipal, sem coleta da PeMOB Usuário</td>
+</tr>
+<tr class="even">
+<td><strong>PeMOB 2029</strong></td>
+<td>Primeiro ciclo da PeMOB Usuário nos Estratos A e B</td>
+</tr>
+<tr class="odd">
+<td><strong>PeMOB 2030</strong></td>
+<td>Publicação integrada: IQTPC, PeMOB residual e PeMOB Usuário em produto único</td>
+</tr>
+<tr class="even">
+<td><strong>PeMOB 2031 em diante</strong></td>
+<td>Revisão quadrienal do questionário residual, acompanhando a revisão de pesos e componentes do índice</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regra de transição.</strong> Um item só é removido da PeMOB depois de <strong>pelo menos um ciclo de sobreposição</strong>, em que o dado é coletado pelas duas vias e os resultados comparados. Remover antes da validação cria descontinuidade na série e destrói o ativo de oito edições, que é justamente o que se quer preservar.</p>
+<hr>
+</section>
+<section id="riscos" class="level2">
+<h2 class="anchored" data-anchor-id="riscos">10. Riscos</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Risco</th>
+<th>Efeito</th>
+<th>Mitigação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Remover item antes de a plataforma estar operante</td>
+<td>Buraco na série histórica</td>
+<td>Ciclo de sobreposição obrigatório antes de qualquer remoção</td>
+</tr>
+<tr class="even">
+<td>Perda de itens sem equivalente na plataforma</td>
+<td>Empobrecimento temático da série</td>
+<td>Triagem item a item documentada, com justificativa registrada por item removido</td>
+</tr>
+<tr class="odd">
+<td>Questionário curto interpretado como redução de exigência</td>
+<td>Percepção de afrouxamento</td>
+<td>Comunicar como transferência de encargo, não como redução: menos perguntas porque mais dado</td>
+</tr>
+<tr class="even">
+<td>Sistemas sem automação ficarem com carga relativamente maior</td>
+<td>Iniquidade de esforço entre entes</td>
+<td>Duas versões do instrumento; apoio técnico do art. 20 dirigido à migração</td>
+</tr>
+<tr class="odd">
+<td>Perda da informação qualitativa de contexto</td>
+<td>Índice sem explicação para variações abruptas</td>
+<td>Campo qualitativo obrigatório na PeMOB residual</td>
+</tr>
+<tr class="even">
+<td>Confusão entre PeMOB Usuário e PeMOB Municipal</td>
+<td>Erro de interpretação dos resultados</td>
+<td>Publicação separada, com identificação clara de respondente e método</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Proposta técnica da CGDI/DEREG/SEMOB/MCID. A triagem por tema apresentada na seção 4 é indicativa e deve ser refeita item a item sobre o questionário vigente.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./IQTPC_Anexo_II_pesquisa_nacional.html" class="pagination-link" aria-label="Anexo II, Proposta da PeMOB Usuário">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Anexo II, Proposta da PeMOB Usuário</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./IQTPC_Anexo_IV_aproveitamento_politicas_MCID.html" class="pagination-link" aria-label="Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades">
+        <span class="nav-page-text"><span class="chapter-title">Anexo IV, Aproveitamento de instrumentos das demais políticas do Ministério das Cidades</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>CGDI/DEREG/SEMOB/MCID</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Proposta técnica, setembro de 2026</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
