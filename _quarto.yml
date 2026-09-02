@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "IQTPC, Índice de Qualidade do Transporte Público Coletivo"
+  title: "IQTPC — Índice de Qualidade do Transporte Público Coletivo"
   subtitle: "Proposta técnica"
   output-file: "IQTPC"
   author: "CGDI/DEREG/SEMOB/MCID"
@@ -16,21 +16,34 @@ book:
     style: docked
     collapse-level: 1
   chapters:
-    - index.qmd
-    - IQTPC_parametros_qualidade_transporte_publico.qmd
-    - IQTPC_Manual_de_calculo.qmd
-    - IQTPC_Anexo_I_matriz_origem_dados.qmd
-    - IQTPC_Anexo_II_pesquisa_nacional.qmd
-    - IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd
-    - IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd
+    - text: "Índice"
+      file: index.qmd
+    - text: "Documento principal"
+      file: IQTPC_parametros_qualidade_transporte_publico.qmd
+    - text: "Manual de cálculo"
+      file: IQTPC_Manual_de_calculo.qmd
+    - text: "Anexo I — Matriz de origem dos dados"
+      file: IQTPC_Anexo_I_matriz_origem_dados.qmd
+    - text: "Anexo II — Pesquisa nacional"
+      file: IQTPC_Anexo_II_pesquisa_nacional.qmd
+    - text: "Anexo III — Arquitetura de coleta"
+      file: IQTPC_Anexo_III_arquitetura_coleta_pemob.qmd
+    - text: "Anexo IV — Políticas irmãs do MCID"
+      file: IQTPC_Anexo_IV_aproveitamento_politicas_MCID.qmd
 
 format:
   html:
     theme: cosmo
+    css: custom.css
     toc: true
     toc-depth: 4
     number-sections: false
     code-copy: false
+    grid:
+      sidebar-width: 300px
+      body-width: 950px
+      margin-width: 300px
+      gutter-width: 1.5em
   pdf:
     documentclass: report
     toc: true

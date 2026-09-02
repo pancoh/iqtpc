@@ -1,4 +1,4 @@
-# Anexo III, Arquitetura de coleta e desidratação da PeMOB
+# Anexo III — Arquitetura de coleta e desidratação da PeMOB
 
 ## Divisão de trabalho entre PNDTPC, SIMU, PeMOB Municipal, PeMOB Metropolitana e PeMOB Usuário
 

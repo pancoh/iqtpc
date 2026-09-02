@@ -1,4 +1,12 @@
-# IQTPC, Índice de Qualidade do Transporte Público Coletivo
+## O que é isto
+
+O Índice de Qualidade do Transporte Público Coletivo (IQTPC) é uma proposta de nota única para medir a qualidade do transporte público em cada cidade do Brasil, uma espécie de IDEB para o setor: assim como o IDEB resume a qualidade da educação em cada escola numa nota única, o IQTPC resume a qualidade do transporte público em cada cidade. A nota combina duas partes: se o serviço existe e chega às pessoas (acesso) e se ele funciona bem (pontualidade, segurança, conforto, entre outros aspectos).
+
+A proposta nasce do art. 31 da Lei nº 15.432/2026, que determina a criação desse índice nacional. Os documentos abaixo detalham como o índice será calculado, de onde vêm os dados usados e quais as consequências para os municípios (como acesso a recursos e obrigações de envio de dados).
+
+Este conjunto ainda é uma proposta técnica. Antes de virar norma, passa por consulta pública e por ajustes feitos a partir de um piloto.
+
+---
 
 ## Índice dos documentos e ordem de precedência
 
@@ -52,7 +60,3 @@
 | Custo da pesquisa, cenário recomendado | R$ 2 a 4 milhões por ano |
 | Custo da pesquisa, piloto | R$ 0,9 a 2,0 milhões |
 | Universo | cerca de 1.700 sistemas municipais; cerca de 82% da população |
-
----
-
-*Todos os documentos estão em Markdown e podem ser convertidos para o padrão SEI.*

@@ -1,0 +1,24 @@
+/* Sidebar de navegação: menos denso, no estilo mkdocs-material */
+#quarto-sidebar .sidebar-item-container {
+  line-height: 1.5;
+}
+
+#quarto-sidebar .sidebar-item {
+  margin-bottom: 0.15rem;
+}
+
+#quarto-sidebar .sidebar-item .sidebar-item-container {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+#quarto-sidebar .sidebar-item a.sidebar-link,
+#quarto-sidebar .sidebar-item a.sidebar-link .chapter-title {
+  font-size: 0.95rem;
+  white-space: normal;
+}
+
+#quarto-sidebar .sidebar-title {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
