@@ -1,3 +1,17 @@
+/* Impede que uma tabela larga alargue a página inteira: só ela rola na
+   horizontal, o corpo do texto fica fixo na largura da tela (como no
+   mkdocs-material). */
+body {
+  overflow-x: hidden;
+}
+
+#quarto-document-content table.table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Sidebar de navegação: menos denso em telas largas, no estilo mkdocs-material */
 #quarto-sidebar .sidebar-item-container {
   line-height: 1.5;
