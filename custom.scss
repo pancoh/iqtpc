@@ -1,3 +1,5 @@
+/*-- scss:rules --*/
+
 /* Impede que uma tabela larga alargue a página inteira: só ela rola na
    horizontal, o corpo do texto fica fixo na largura da tela (como no
    mkdocs-material).
@@ -73,22 +75,25 @@ body {
     font-size: 1.05rem;
   }
 
+  /* Fundo e cor do texto na mesma regra: nunca podem aplicar em separado
+     (texto branco sobre fundo claro fica ilegível) */
   #quarto-sidebar .sidebar-title {
     font-size: 1.15rem;
     padding: 0.75rem 1rem;
     margin: -0.5rem -1rem 0.5rem -1rem;
-    background-color: var(--bs-primary);
+    background-color: $primary;
+    color: $white;
   }
 
   #quarto-sidebar .sidebar-title a {
-    color: #fff;
+    color: inherit;
   }
 
   /* Barra superior fixa: destaque colorido e sempre visível, como o
-     cabeçalho do mkdocs-material (o padrão do Quarto a esconde ao rolar).
-     O seletor precisa de nav.: o do Bootstrap tem especificidade maior. */
+     cabeçalho do mkdocs-material (o padrão do Quarto a esconde ao rolar) */
   #quarto-header nav.quarto-secondary-nav {
-    background-color: var(--bs-primary);
+    background-color: $primary;
+    color: $white;
     border-bottom: none;
   }
 
@@ -100,7 +105,7 @@ body {
   #quarto-header nav.quarto-secondary-nav .quarto-search-button,
   #quarto-header nav.quarto-secondary-nav .quarto-page-breadcrumbs a,
   #quarto-header nav.quarto-secondary-nav .breadcrumb-item {
-    color: #fff;
+    color: inherit;
   }
 
   #quarto-header nav.quarto-secondary-nav button.quarto-btn-toggle,
