@@ -1,4 +1,4 @@
-/* Sidebar de navegação: menos denso, no estilo mkdocs-material */
+/* Sidebar de navegação: menos denso em telas largas, no estilo mkdocs-material */
 #quarto-sidebar .sidebar-item-container {
   line-height: 1.5;
 }
@@ -7,18 +7,69 @@
   margin-bottom: 0.15rem;
 }
 
-#quarto-sidebar .sidebar-item .sidebar-item-container {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
 #quarto-sidebar .sidebar-item a.sidebar-link,
 #quarto-sidebar .sidebar-item a.sidebar-link .chapter-title {
-  font-size: 0.95rem;
   white-space: normal;
 }
 
 #quarto-sidebar .sidebar-title {
-  font-size: 1.05rem;
   margin-bottom: 1.25rem;
+}
+
+/* Telas largas (desktop): itens compactos */
+@media (min-width: 992px) {
+  #quarto-sidebar .sidebar-item .sidebar-item-container {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #quarto-sidebar .sidebar-item a.sidebar-link,
+  #quarto-sidebar .sidebar-item a.sidebar-link .chapter-title {
+    font-size: 0.95rem;
+  }
+
+  #quarto-sidebar .sidebar-title {
+    font-size: 1.05rem;
+  }
+}
+
+/* Celular e tablet: menu em gaveta, alvos de toque maiores, no estilo mkdocs-material */
+@media (max-width: 991.98px) {
+  #quarto-sidebar .sidebar-item .sidebar-item-container {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  #quarto-sidebar .sidebar-item a.sidebar-link,
+  #quarto-sidebar .sidebar-item a.sidebar-link .chapter-title {
+    font-size: 1.05rem;
+  }
+
+  #quarto-sidebar .sidebar-title {
+    font-size: 1.15rem;
+    padding: 0.75rem 1rem;
+    margin: -0.5rem -1rem 0.5rem -1rem;
+    background-color: var(--bs-primary);
+  }
+
+  #quarto-sidebar .sidebar-title a {
+    color: #fff;
+  }
+
+  /* Barra superior fixa: destaque colorido, como no cabeçalho do mkdocs-material */
+  .quarto-secondary-nav {
+    background-color: var(--bs-primary);
+  }
+
+  .quarto-secondary-nav .quarto-btn-toggle,
+  .quarto-secondary-nav .quarto-search-button,
+  .quarto-secondary-nav nav.quarto-page-breadcrumbs a {
+    color: #fff !important;
+  }
+
+  .quarto-secondary-nav button.quarto-btn-toggle,
+  .quarto-secondary-nav button.quarto-search-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
 }
